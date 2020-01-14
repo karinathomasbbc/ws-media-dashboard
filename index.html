@@ -51,21 +51,19 @@
       </style>
       <script lang="javascript">
 const PASS = "&#9989;";
-const FAIL = " &#10060; Incorrect renderer";
+const FAIL = " &#10060;";
 
 const getSimorghPageStatus = id => {
-  return checkForFailures(
-    id.then(pageId => {
+  return id.then(pageId => {
       return isSimorghPage(pageId) ? PASS : FAIL;
-    })
+    }
   );
 };
 
 const getPALPageStatus = id => {
-  return checkForFailures(
-    id.then(pageId => {
+  return id.then(pageId => {
       return isPALPage(pageId) ? PASS : FAIL;
-    })
+    }
   );
 };
 
@@ -127,7 +125,8 @@ const parseId = html => {
 };
 
 const getPageId = url => {
-  const prefix = "https://cors-anywhere.herokuapp.com/";
+  // const prefix = "https://cors-anywhere.herokuapp.com/";
+  const prefix = '';
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {
@@ -151,20 +150,6 @@ const isSimorghPage = id => {
 
 const isPALPage = id => {
   return id === "responsive-news";
-};
-
-const checkForFailures = async result => {
-  const hasFailure = (await result) === FAIL;
-  const WARN = "orange";
-  let colour = document.body.style.backgroundColor;
-
-  if (colour !== WARN) {
-    colour = hasFailure ? WARN : "white";
-  }
-
-  document.body.style.backgroundColor = colour;
-
-  return result;
 };
 
 const notApplicable = () => {};
