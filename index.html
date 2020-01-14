@@ -1,1030 +1,2180 @@
 <html>
-<meta http-equiv="refresh" content="60000" />
+   <meta http-equiv="refresh" content="60000" />
+   <head>
+      <style type="text/css">
+         h1 {
+         font-family: Arial, sans-serif;
+         font-size: 32px;
+         font-weight: bold;
+         text-align: center;
+         }
+         .tg {
+         border-collapse: collapse;
+         border-spacing: 0;
+         }
+         .tg td {
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+         padding: 10px 5px;
+         border-style: solid;
+         border-width: 1px;
+         overflow: hidden;
+         word-break: normal;
+         border-color: black;
+         }
+         .tg th {
+         font-family: Arial, sans-serif;
+         font-size: 14px;
+         font-weight: normal;
+         padding: 10px 5px;
+         border-style: solid;
+         border-width: 1px;
+         overflow: hidden;
+         word-break: normal;
+         border-color: black;
+         }
+         .tg .tg-7btt {
+         font-weight: bold;
+         border-color: inherit;
+         text-align: center;
+         vertical-align: top;
+         }
+         .tg .tg-0pky {
+         border-color: inherit;
+         text-align: left;
+         vertical-align: top;
+         }
+         .tg .tg-0lax {
+         text-align: left;
+         vertical-align: top;
+         }
+      </style>
+      <script lang="javascript">
+const PASS = "&#9989;";
+const FAIL = " &#10060; Incorrect renderer";
 
-<head>
-    <style type="text/css">
-        h1 {
-            font-family: Arial, sans-serif;
-            font-size: 32px;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        .tg {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        
-        .tg td {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: black;
-        }
-        
-        .tg th {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: black;
-        }
-        
-        .tg .tg-7btt {
-            font-weight: bold;
-            border-color: inherit;
-            text-align: center;
-            vertical-align: top;
-        }
-        
-        .tg .tg-0pky {
-            border-color: inherit;
-            text-align: left;
-            vertical-align: top;
-        }
-        
-        .tg .tg-0lax {
-            text-align: left;
-            vertical-align: top;
-        }
-    </style>
+const getSimorghPageStatus = id => {
+  return checkForFailures(
+    id.then(pageId => {
+      return isSimorghPage(pageId) ? PASS : FAIL;
+    })
+  );
+};
 
-    <script lang="javascript">
-        const PASS = '&#9989;';
-        const FAIL = ' &#10060; Incorrect renderer';
+const getPALPageStatus = id => {
+  return checkForFailures(
+    id.then(pageId => {
+      return isPALPage(pageId) ? PASS : FAIL;
+    })
+  );
+};
 
-        const fetchPage = url => {
-            const prefix = 'https://cors-anywhere.herokuapp.com/'
-            return fetch(`${prefix}${url}`, {
-                    headers: {
-                        'Content-Type': 'application/json',
-                    }
-                })
-                .then(response => {
-                    return response.ok ? PASS : FAIL
-                })
-                .catch(error => {
-                    return FAIL
-                });
-        };
+const getElementId = (service, env, pageType, suffix) => {
+  const elementId = `${service}_${env}_${pageType}_${suffix}`;
+  console.log("elementID: ", elementId);
+  return elementId;
+};
 
-        const getLiveRadioUrl = (service, environment, radioId) => {
-            const env = environment === 'live' ? '' : `${environment}.`;
-            radioId = radioId || service.split('/')[0];
+const setPageStatus = async (service, pageType, environment) => {
+  const { env, path, renderer } = environment;
+  const elementId = getElementId(service, env, pageType, "status");
+  const url = getUrl(service, env, path);
 
-            return `www.${env}bbc.com/${service}/bbc_${radioId}_radio/liveradio.json`;
-        }
+  if (renderer === "Simorgh") {
+    document.getElementById(elementId).innerHTML = await getSimorghPageStatus(
+      getPageId(url)
+    );
+  } else if (renderer === "PAL") {
+    document.getElementById(elementId).innerHTML = await getPALPageStatus(
+      getPageId(url)
+    );
+  }
+};
 
-        const simorghLiveRadioPage = (service, environment, radioId) => {
-            return checkForFailures(fetchPage(getLiveRadioUrl(service, environment, radioId)));
-        };
+const setRenderer = (service, pageType, environment) => {
+  const { env, path, renderer } = environment;
 
-        const palLiveRadioPage = (service, environment, radioId) => {
-            let promise = fetchPage(getLiveRadioUrl(service, environment, radioId));
+  if (renderer !== "") {
+    const elementId = getElementId(service, env, pageType, "renderer");
+    const url = getUrl(service, env, path);
+    document.getElementById(
+      elementId
+    ).innerHTML = `<a target="_blank" href="${url}">${renderer}</a>`;
+  }
+};
 
-            return checkForFailures(promise.then(result => {
-                return (result === FAIL) ? PASS : FAIL;
-            }));
-        };
+const handleResponse = response => {
+  let text = null;
 
-        const checkForFailures = async result => {
-            const hasFailure = await result === FAIL;
-            const WARN = 'orange';
-            let colour = document.body.style.backgroundColor;
+  try {
+    if (response.ok) {
+      text = response.text();
+    }
+  } catch (e) {
+    console.log("ERROR", e);
+  }
 
-            if (colour !== WARN) {
-                colour = hasFailure ? WARN : 'white';
+  return text;
+};
+
+const parseId = html => {
+  let id = null;
+  if (html) {
+    var doc = new DOMParser().parseFromString(html, "text/html");
+    id = doc.documentElement.id;
+  }
+  return id;
+};
+
+const getPageId = url => {
+  const prefix = "https://cors-anywhere.herokuapp.com/";
+  return fetch(`${prefix}${url}`)
+    .then(handleResponse)
+    .then(data => {
+      return parseId(data);
+    })
+    .catch(error => {
+      return null;
+    });
+};
+
+const getUrl = (service, environment, path) => {
+  const serv = service.split("/")[0];
+  let env = environment.split("_")[0];
+  env = env === "live" ? "" : `${env}.`;
+  return `https://www.${env}bbc.com/${service}/${path}`;
+};
+
+const isSimorghPage = id => {
+  return id === "";
+};
+
+const isPALPage = id => {
+  return id === "responsive-news";
+};
+
+const checkForFailures = async result => {
+  const hasFailure = (await result) === FAIL;
+  const WARN = "orange";
+  let colour = document.body.style.backgroundColor;
+
+  if (colour !== WARN) {
+    colour = hasFailure ? WARN : "white";
+  }
+
+  document.body.style.backgroundColor = colour;
+
+  return result;
+};
+
+const notApplicable = () => {};
+
+const services = [
+    {
+      service: "afaanoromoo",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afaanoromoo_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afaanoromoo_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afaanoromoo_radio/liveradio"
             }
-
-            document.body.style.backgroundColor = colour;
-
-            return result;
-        };
-
-        const loadData = async() => {
-            document.getElementById('afaanoromoo_test_liveRadio').innerHTML = await simorghLiveRadioPage('afaanoromoo', 'test');
-            document.getElementById('afaanoromoo_stage_liveRadio').innerHTML = await simorghLiveRadioPage('afaanoromoo', 'stage');
-            document.getElementById('afaanoromoo_live_liveRadio').innerHTML = await simorghLiveRadioPage('afaanoromoo', 'live');
-
-            document.getElementById('afrique_test_liveRadio').innerHTML = await simorghLiveRadioPage('afrique', 'test');
-            document.getElementById('afrique_stage_liveRadio').innerHTML = await simorghLiveRadioPage('afrique', 'stage');
-            document.getElementById('afrique_live_liveRadio').innerHTML = await simorghLiveRadioPage('afrique', 'live');
-
-            document.getElementById('amharic_test_liveRadio').innerHTML = await simorghLiveRadioPage('amharic', 'test');
-            document.getElementById('amharic_stage_liveRadio').innerHTML = await simorghLiveRadioPage('amharic', 'stage');
-            document.getElementById('amharic_live_liveRadio').innerHTML = await simorghLiveRadioPage('amharic', 'live');
-
-            document.getElementById('arabic_test_liveRadio').innerHTML = await simorghLiveRadioPage('arabic', 'test');
-            document.getElementById('arabic_stage_liveRadio').innerHTML = await palLiveRadioPage('arabic', 'stage');;
-            document.getElementById('arabic_live_liveRadio').innerHTML = await palLiveRadioPage('arabic', 'live');
-
-            document.getElementById('bengali_test_liveRadio').innerHTML = await simorghLiveRadioPage('bengali', 'test', 'bangla');
-            document.getElementById('bengali_stage_liveRadio').innerHTML = await simorghLiveRadioPage('bengali', 'stage', 'bangla');
-            document.getElementById('bengali_live_liveRadio').innerHTML = await simorghLiveRadioPage('bengali', 'live', 'bangla');
-
-            document.getElementById('burmese_test_liveRadio').innerHTML = await simorghLiveRadioPage('burmese', 'test');
-            document.getElementById('burmese_stage_liveRadio').innerHTML = await simorghLiveRadioPage('burmese', 'stage');
-            document.getElementById('burmese_live_liveRadio').innerHTML = await simorghLiveRadioPage('burmese', 'live');
-
-            document.getElementById('gahuza_test_liveRadio').innerHTML = await simorghLiveRadioPage('gahuza', 'test');
-            document.getElementById('gahuza_stage_liveRadio').innerHTML = await simorghLiveRadioPage('gahuza', 'stage');
-            document.getElementById('gahuza_live_liveRadio').innerHTML = await simorghLiveRadioPage('gahuza', 'live');
-
-            document.getElementById('hausa_test_liveRadio').innerHTML = await simorghLiveRadioPage('hausa', 'test');
-            document.getElementById('hausa_stage_liveRadio').innerHTML = await palLiveRadioPage('hausa', 'stage');
-            document.getElementById('hausa_live_liveRadio').innerHTML = await palLiveRadioPage('hausa', 'live');
-
-            document.getElementById('hindi_test_liveRadio').innerHTML = await simorghLiveRadioPage('hindi', 'test');
-            document.getElementById('hindi_stage_liveRadio').innerHTML = await palLiveRadioPage('hindi', 'stage');
-            document.getElementById('hindi_live_liveRadio').innerHTML = await palLiveRadioPage('hindi', 'live');
-
-            document.getElementById('indonesia_test_liveRadio').innerHTML = await simorghLiveRadioPage('indonesia', 'test', 'indonesian');
-            document.getElementById('indonesia_stage_liveRadio').innerHTML = await simorghLiveRadioPage('indonesia', 'stage', 'indonesian');
-            document.getElementById('indonesia_live_liveRadio').innerHTML = await simorghLiveRadioPage('indonesia', 'live', 'indonesian');
-
-            document.getElementById('korean_test_liveRadio').innerHTML = await simorghLiveRadioPage('korean', 'test');
-            document.getElementById('korean_stage_liveRadio').innerHTML = await simorghLiveRadioPage('korean', 'stage');
-            document.getElementById('korean_live_liveRadio').innerHTML = await simorghLiveRadioPage('korean', 'live');
-
-            document.getElementById('kyrgyz_test_liveRadio').innerHTML = await simorghLiveRadioPage('kyrgyz', 'test');
-            document.getElementById('kyrgyz_stage_liveRadio').innerHTML = await simorghLiveRadioPage('kyrgyz', 'stage');
-            document.getElementById('kyrgyz_live_liveRadio').innerHTML = await simorghLiveRadioPage('kyrgyz', 'live');
-
-            document.getElementById('nepali_test_liveRadio').innerHTML = await simorghLiveRadioPage('nepali', 'test');
-            document.getElementById('nepali_stage_liveRadio').innerHTML = await simorghLiveRadioPage('nepali', 'stage');
-            document.getElementById('nepali_live_liveRadio').innerHTML = await simorghLiveRadioPage('nepali', 'live');
-
-            document.getElementById('pashto_test_liveRadio').innerHTML = await simorghLiveRadioPage('pashto', 'test');
-            document.getElementById('pashto_stage_liveRadio').innerHTML = await simorghLiveRadioPage('pashto', 'stage');
-            document.getElementById('pashto_live_liveRadio').innerHTML = await simorghLiveRadioPage('pashto', 'live');
-
-            document.getElementById('persian_test_liveRadio').innerHTML = await simorghLiveRadioPage('persian', 'test');
-            document.getElementById('persian_stage_liveRadio').innerHTML = await palLiveRadioPage('persian', 'stage');
-            document.getElementById('persian_live_liveRadio').innerHTML = await palLiveRadioPage('persian', 'live');
-
-            document.getElementById('persian_dari_test_liveRadio').innerHTML = await simorghLiveRadioPage('persian', 'test', 'dari');
-            document.getElementById('persian_dari_stage_liveRadio').innerHTML = await palLiveRadioPage('persian', 'stage', 'dari');
-            document.getElementById('persian_dari_live_liveRadio').innerHTML = await palLiveRadioPage('persian', 'live', 'dari');
-
-            document.getElementById('sinhala_test_liveRadio').innerHTML = await simorghLiveRadioPage('sinhala', 'test');
-            document.getElementById('sinhala_stage_liveRadio').innerHTML = await simorghLiveRadioPage('sinhala', 'stage');
-            document.getElementById('sinhala_live_liveRadio').innerHTML = await simorghLiveRadioPage('sinhala', 'live');
-
-            document.getElementById('somali_test_liveRadio').innerHTML = await simorghLiveRadioPage('somali', 'test');
-            document.getElementById('somali_stage_liveRadio').innerHTML = await palLiveRadioPage('somali', 'stage');
-            document.getElementById('somali_live_liveRadio').innerHTML = await palLiveRadioPage('somali', 'live');
-
-            document.getElementById('swahili_test_liveRadio').innerHTML = await simorghLiveRadioPage('swahili', 'test');
-            document.getElementById('swahili_stage_liveRadio').innerHTML = await simorghLiveRadioPage('swahili', 'stage');
-            document.getElementById('swahili_live_liveRadio').innerHTML = await simorghLiveRadioPage('swahili', 'live');
-
-            document.getElementById('tamil_test_liveRadio').innerHTML = await simorghLiveRadioPage('tamil', 'test');
-            document.getElementById('tamil_stage_liveRadio').innerHTML = await simorghLiveRadioPage('tamil', 'stage');
-            document.getElementById('tamil_live_liveRadio').innerHTML = await simorghLiveRadioPage('tamil', 'live');
-
-            document.getElementById('tigrinya_test_liveRadio').innerHTML = await simorghLiveRadioPage('tigrinya', 'test');
-            document.getElementById('tigrinya_stage_liveRadio').innerHTML = await simorghLiveRadioPage('tigrinya', 'stage');
-            document.getElementById('tigrinya_live_liveRadio').innerHTML = await simorghLiveRadioPage('tigrinya', 'live');
-
-            document.getElementById('urdu_test_liveRadio').innerHTML = await simorghLiveRadioPage('urdu', 'test');
-            document.getElementById('urdu_stage_liveRadio').innerHTML = await palLiveRadioPage('urdu', 'stage');
-            document.getElementById('urdu_live_liveRadio').innerHTML = await palLiveRadioPage('urdu', 'live');
-
-            document.getElementById('uzbek_test_liveRadio').innerHTML = await simorghLiveRadioPage('uzbek', 'test');
-            document.getElementById('uzbek_stage_liveRadio').innerHTML = await palLiveRadioPage('uzbek', 'stage');
-            document.getElementById('uzbek_live_liveRadio').innerHTML = await palLiveRadioPage('uzbek', 'live');
-
-            document.getElementById('zhongwen_simp_test_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/simp', 'test', 'cantonese');
-            document.getElementById('zhongwen_simp_stage_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/simp', 'stage', 'cantonese');
-            document.getElementById('zhongwen_simp_live_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/simp', 'live', 'cantonese');
-
-            document.getElementById('zhongwen_trad_test_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/trad', 'test', 'cantonese');
-            document.getElementById('zhongwen_trad_stage_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/trad', 'stage', 'cantonese');
-            document.getElementById('zhongwen_trad_live_liveRadio').innerHTML = await palLiveRadioPage('zhongwen/trad', 'live', 'cantonese');
-
+          ]
         }
-    </script>
-</head>
-<h1>BBC World Service - Media - Page Status</h1>
+      ]
+    },
+    {
+      service: "afrique",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afrique_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afrique_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_afrique_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "amharic",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_amharic_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_amharic_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_amharic_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "arabic",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_arabic_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_arabic_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_arabic_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "azeri",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "bengali",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_bangla_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_bangla_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_bangla_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "burmese",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_burmese_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_burmese_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_burmese_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "cymrufyw",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "gahuza",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_gahuza_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_gahuza_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_gahuza_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "gujarati",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "hausa",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hausa_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hausa_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hausa_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "hindi",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hindi_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hindi_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_hindi_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "igbo",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "indonesia",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_indonesian_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_indonesian_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_indonesian_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "japanese",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "korean",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_korean_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_korean_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_korean_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "kyrgyz",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_kyrgyz_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_kyrgyz_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_kyrgyz_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "marathi",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "mundo",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "naidheachdan",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "nepali",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_nepali_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_nepali_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_nepali_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "news",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "pashto",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_pashto_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_pashto_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_pashto_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "persian",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_persian_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_persian_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_persian_radio/liveradio"
+            },
+            {
+              env: "test_dari",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_dari_radio/liveradio"
+            },
+            {
+              env: "stage_dari",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_dari_radio/liveradio"
+            },
+            {
+              env: "live_dari",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_dari_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "pidgin",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "portuguese",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "punjabi",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "russian",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "scotland",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "serbian/cyr",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "serbian/lat",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "sinhala",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_sinhala_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_sinhala_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_sinhala_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "somali",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_somali_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_somali_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_somali_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "swahili",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_swahili_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_swahili_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_swahili_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "tamil",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tamil_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tamil_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tamil_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "telugu",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "thai",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "tigrinya",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tigrinya_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tigrinya_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_tigrinya_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "turkce",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "ukchina/simp",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "ukchina/trad",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "ukrainian",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "urdu",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_urdu_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_urdu_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_urdu_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "uzbek",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_uzbek_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_uzbek_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_uzbek_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "vietnamese",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "yoruba",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "stage",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            },
+            {
+              env: "live",
+              renderer: "",
+              setStatus: notApplicable,
+              setRenderer: notApplicable,
+              path: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "zhongwen/simp",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      service: "zhongwen/trad",
+      pageTypes: [
+        {
+          type: "liveRadio",
+          environments: [
+            {
+              env: "test",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            },
+            {
+              env: "stage",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            },
+            {
+              env: "live",
+              renderer: "PAL",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "bbc_cantonese_radio/liveradio"
+            }
+          ]
+        }
+      ]
+    }
+  ];
 
-<body onload="loadData()">
-<table id="grid" align="center" class="tg">
-  <tr>
-    <td valign="top">
-    <table id="col-1" class="tg">
-        <tr>
-            <th class="tg-7btt" rowspan="3">Service</th>
-            <th class="tg-7btt" colspan="12">Page Type</th>
-        </tr>
-        <tr>
-            <th class="tg-baqh" colspan="6">Live Radio</th>
-        </tr>
-        <tr>
-            <th class="tg-7btt" colspan="2">Test</td>
-                <th class="tg-7btt" colspan="2">Stage</td>
-                    <th class="tg-7btt" colspan="2">Live</td>
-        </tr>
+const checkAllPages = async () => {
+  try {
+    services.forEach(service => {
+      service.pageTypes.forEach(pageType => {
+        pageType.environments.forEach(environment => {
+          const { type } = pageType;
+          environment.setStatus(service.service, type, environment);
+          environment.setRenderer(service.service, type, environment);
+        });
+      });
+    });
+  } catch (e) {
+    //Nothing for the moment
+  }
+};
 
-        <!-- afaanoromoo -->
-        <tr>
-            <!-- Live Radio Page -->
-            <td class="tg-c3ow">afaanoromoo</td>
-            <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/afaanoromoo/bbc_afaanoromoo_radio/liveradio">Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afaanoromoo_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.stage.bbc.com/afaanoromoo/bbc_afaanoromoo_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afaanoromoo_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.bbc.com/afaanoromoo/bbc_afaanoromoo_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afaanoromoo_live_liveRadio"></td>
-      </tr>
-
-      <!-- afrique -->
+const loadData = async () => {
+  checkAllPages();
+};
+</script>
+   </head>
+   <h1>BBC World Service - Media - Page Status</h1>
+   <body onload="loadData()">
+      <table id="grid" align="center" class="tg">
       <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">afrique</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/afrique/bbc_afrique_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afrique_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.stage.bbc.com/afrique/bbc_afrique_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afrique_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/afrique/bbc_afrique_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="afrique_live_liveRadio"></td>
-      </tr>
-
-      <!-- amharic -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">amharic</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/amharic/bbc_amharic_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="amharic_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.stage.bbc.com/amharic/bbc_amharic_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="amharic_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/amharic/bbc_amharic_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="amharic_live_liveRadio"></td>
-      </tr>
-
-      <!-- Arabic -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">arabic</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/arabic/bbc_arabic_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="arabic_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/arabic/bbc_arabic_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="arabic_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/arabic/bbc_arabic_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="arabic_live_liveRadio"></td>
-      </tr>
-
-     <!-- azeri -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">azeri</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-      <!-- bengali -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">bengali</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/bengali/bbc_bangla_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="bengali_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/bengali/bbc_bangla_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="bengali_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/bengali/bbc_bangla_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="bengali_live_liveRadio"></td>
-      </tr>
-
-      <!-- Burmese -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">burmese</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/burmese/bbc_burmese_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="burmese_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.stage.bbc.com/burmese/bbc_burmese_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="burmese_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/burmese/bbc_burmese_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="burmese_live_liveRadio"></td>
-      </tr>
-
-              <!-- cymrufyw -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">cymrufyw</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-      <!-- gahuza -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">gahuza</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/gahuza/bbc_gahuza_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="gahuza_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/gahuza/bbc_gahuza_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="gahuza_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/gahuza/bbc_gahuza_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="gahuza_live_liveRadio"></td>
-      </tr>
-
-      <!-- gujarati -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">gujarati</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-      <!-- hausa -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">hausa</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/hausa/bbc_hausa_radio/liveradio"
-          >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="hausa_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/hausa/bbc_hausa_radio/liveradio"
-          >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="hausa_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/hausa/bbc_hausa_radio/liveradio">PAL</a>
-            </td>
-            <td class="tg-0lax" id="hausa_live_liveRadio"></td>
-        </tr>
-
-        <!-- hindi -->
-        <tr>
-            <td class="tg-c3ow">hindi</td>
-            <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/hindi/bbc_hindi_radio/liveradio">Simorgh</a
-    >
-  </td>
-  <td class="tg-0lax" id="hindi_test_liveRadio"></td>
-  <td class="tg-0pky">
-    <a href="https://www.stage.bbc.com/hindi/bbc_hindi_radio/liveradio"
-      >PAL</a
-    >
-  </td>
-  <!-- igbo -->
-  <td class="tg-0lax" id="hindi_stage_liveRadio"></td>
-  <td class="tg-0pky">
-    <a href="https://www.bbc.com/hindi/bbc_hindi_radio/liveradio">PAL</a>
-            </td>
-            <td class="tg-0lax" id="hindi_live_liveRadio"></td>
-        </tr>
-        <tr>
-            <!-- Live Radio Page -->
-            <td class="tg-c3ow">igbo</td>
-            <td class="tg-0pky" colspan="6"></td>
-
-        </tr>
-
-        <!-- Indonesia -->
-        <tr>
-            <!-- Live Radio Page -->
-            <td class="tg-c3ow">indonesia</td>
-            <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/indonesia/bbc_indonesian_radio/liveradio">Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="indonesia_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a
-            href="https://www.stage.bbc.com/indonesia/bbc_indonesian_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="indonesia_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/indonesia/bbc_indonesian_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="indonesia_live_liveRadio"></td>
-      </tr>
-
-      <!-- japanese -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">japanese</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-            <!-- Korean -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">korean</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/korean/bbc_korean_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="korean_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/korean/bbc_korean_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="korean_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/korean/bbc_korean_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="korean_live_liveRadio"></td>
-            </tr>
-    </td>
-
-      
-    </table>
-  </td>
-
-    <td valign="top">
-      <table id ="col-2" class="tg">
-        <tr>
-          <th class="tg-7btt" rowspan="3">Service</th>
-          <th class="tg-7btt" colspan="12">Page Type</th>
-      </tr>
-      <tr>
-          <th class="tg-baqh" colspan="6">Live Radio</th>
-      </tr>
-      <tr>
-          <th class="tg-7btt" colspan="2">Test</td>
-              <th class="tg-7btt" colspan="2">Stage</td>
+         <td valign="top">
+            <table id="col-1" class="tg">
+               <tr>
+                  <th class="tg-7btt" rowspan="3">Service</th>
+                  <th class="tg-7btt" colspan="12">Page Type</th>
+               </tr>
+               <tr>
+                  <th class="tg-baqh" colspan="6">Live Radio</th>
+               </tr>
+               <tr>
+                  <th class="tg-7btt" colspan="2">Test</td>
+                  <th class="tg-7btt" colspan="2">Stage</td>
                   <th class="tg-7btt" colspan="2">Live</td>
-      </tr>
-      <!-- kyrgyz -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">kyrgyz</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/kyrgyz/bbc_kyrgyz_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="kyrgyz_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/kyrgyz/bbc_kyrgyz_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="kyrgyz_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/kyrgyz/bbc_kyrgyz_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="kyrgyz_live_liveRadio"></td>
-      </tr>
-
-            <!-- marathi -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">marathi</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-
-              <!-- mundo -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">mundo</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-
-      <!-- naidheachdan -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">naidheachdan</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-      <!-- nepali -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">nepali</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/nepali/bbc_nepali_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="nepali_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/nepali/bbc_nepali_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="nepali_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/nepali/bbc_nepali_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="nepali_live_liveRadio"></td>
-      </tr>
-
-              <!-- news -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">news</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-      <!-- Pashto -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">pashto</td>
-        <td class="tg-0pky">
-          <a href="https://www.test.bbc.com/pashto/bbc_pashto_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="pashto_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/pashto/bbc_pashto_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="pashto_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/pashto/bbc_pashto_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="pashto_live_liveRadio"></td>
-      </tr>
-
-      <!-- persian -->
-      <tr>
-        <!-- Live Radio Page - persian -->
-        <td class="tg-c3ow" rowspan="2">persian</td>
-		<tr>
-        <td class="tg-0pky">
-          <span><a href="https://www.test.bbc.com/persian/bbc_persian_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/persian/bbc_persian_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/persian/bbc_persian_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_live_liveRadio"></td>
-		</tr>
-
-		<!-- Live Radio Page - dari -->
-		<tr>
-		<td class="tg-0pky">persian (dari)</td>
-        <td class="tg-0pky">
-          <span><a href="https://www.test.bbc.com/persian/bbc_dari_radio/liveradio"
-            >Simorgh</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_dari_test_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.stage.bbc.com/persian/bbc_dari_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_dari_stage_liveRadio"></td>
-        <td class="tg-0pky">
-          <a href="https://www.bbc.com/persian/bbc_dari_radio/liveradio"
-            >PAL</a
-          >
-        </td>
-        <td class="tg-0lax" id="persian_dari_live_liveRadio"></td>
-		</tr>
-      </tr>
-
-      <!-- pidgin -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">pidgin</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-
-                          <!-- portuguese -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">portuguese</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-                  <!-- punjabi -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">punjabi</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-
-                        <!-- russian -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">russian</td>
-        <td class="tg-0pky" colspan="6"></td>
-      </tr>
-
-                      <!-- scotland -->
-      <tr>
-        <!-- Live Radio Page -->
-        <td class="tg-c3ow">scotland</td>
-        <td class="tg-0pky" colspan="6"></td>
-
-      </tr>
-
-             <!-- serbian -->
-             <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">serbian</td>
-              <td class="tg-0pky" colspan="6"/>
-            </tr>
-      
-                        <!-- sinhala -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">sinhala</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/sinhala/bbc_sinhala_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="sinhala_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/sinhala/bbc_sinhala_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="sinhala_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/sinhala/bbc_sinhala_radio/liveradio"
-                  >Sinhala</a
-                >
-              </td>
-              <td class="tg-0lax" id="sinhala_live_liveRadio"></td>
-            </tr>
-      
-            <!-- somali -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">somali</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/somali/bbc_somali_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="somali_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/somali/bbc_somali_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="somali_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/somali/bbc_somali_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="somali_live_liveRadio"></td>
-            </tr>
-    
-      </table>
-    </td>
-
-    <td valign="top">
-      <table id ="col-3" class="tg">
-        <tr>
-          <th class="tg-7btt" rowspan="3">Service</th>
-          <th class="tg-7btt" colspan="12">Page Type</th>
-      </tr>
-      <tr>
-          <th class="tg-baqh" colspan="6">Live Radio</th>
-      </tr>
-      <tr>
-          <th class="tg-7btt" colspan="2">Test</td>
-              <th class="tg-7btt" colspan="2">Stage</td>
-                  <th class="tg-7btt" colspan="2">Live</td>
-      </tr>
-      
-      <!-- swahili -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">swahili</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/swahili/bbc_swahili_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="swahili_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a
-                  href="https://www.stage.bbc.com/swahili/bbc_swahili_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="swahili_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/swahili/bbc_swahili_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="swahili_live_liveRadio"></td>
-            </tr>
-      
-                  <!-- tamil -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">tamil</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/tamil/bbc_tamil_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tamil_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/tamil/bbc_tamil_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tamil_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/tamil/bbc_tamil_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tamil_live_liveRadio"></td>
-            </tr>
-      
-                  <!-- telugu -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">telugu</td>
-              <td class="tg-0pky" colspan="6"></td>
-            </tr>
-      
-            <!-- thai -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">thai</td>
-              <td class="tg-0pky" colspan="6"></td>
-            </tr>
-      
-            <!-- Tigrinya -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">tigrinya</td>
-              <td class="tg-0pky">
-                <a
-                  href="https://www.test.bbc.com/tigrinya/bbc_tigrinya_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tigrinya_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a
-                  href="https://www.stage.bbc.com/tigrinya/bbc_tigrinya_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tigrinya_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/tigrinya/bbc_tigrinya_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="tigrinya_live_liveRadio"></td>
-            </tr>
-      
-                  <!-- turkce -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">turkce</td>
-              <td class="tg-0pky" colspan="6"></td>
-      
-            </tr>
-      
-            <!-- ukchina -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">ukchina</td>
-              <td class="tg-0pky" colspan="6"></td>
-      
-            </tr>
-      
-                        <!-- ukrainian -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">ukrainian</td>
-              <td class="tg-0pky" colspan="6"></td>
-      
-            </tr>
-      
-                  <!-- urdu -->
-            <tr>
-              <!-- Live Radio Page -->
-              <td class="tg-c3ow">urdu</td>
-              <td class="tg-0pky">
-                <a href="https://www.test.bbc.com/urdu/bbc_urdu_radio/liveradio"
-                  >Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="urdu_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/urdu/bbc_urdu_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="urdu_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/urdu/bbc_urdu_radio/liveradio">PAL</a>
-                  </td>
-                  <td class="tg-0lax" id="urdu_live_liveRadio"></td>
-              </tr>
-      
-              <!-- uzbek -->
-              <tr>
+               </tr>
+               <!-- afaanoromoo -->
+               <tr>
+                  <td class="tg-c3ow">afaanoromoo</td>
                   <!-- Live Radio Page -->
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="afaanoromoo_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afaanoromoo_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="afaanoromoo_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afaanoromoo_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="afaanoromoo_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afaanoromoo_live_liveRadio_status"></td>
+               </tr>
+               <!-- afrique -->
+               <tr>
+                  <td class="tg-c3ow">afrique</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="afrique_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afrique_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="afrique_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afrique_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="afrique_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="afrique_live_liveRadio_status"></td>
+               </tr>
+               <!-- amharic -->
+               <tr>
+                  <td class="tg-c3ow">amharic</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="amharic_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="amharic_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="amharic_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="amharic_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="amharic_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="amharic_live_liveRadio_status"></td>
+               </tr>
+               <!-- Arabic -->
+               <tr>
+                  <td class="tg-c3ow">arabic</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="arabic_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="arabic_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="arabic_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="arabic_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="arabic_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="arabic_live_liveRadio_status"></td>
+               </tr>
+               <!-- azeri -->
+               <tr>
+                  <td class="tg-c3ow">azeri</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- bengali -->
+               <tr>
+                  <td class="tg-c3ow">bengali</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="bengali_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="bengali_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="bengali_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="bengali_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="bengali_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="bengali_live_liveRadio_status"></td>
+               </tr>
+               <!-- Burmese -->
+               <tr>
+                  <td class="tg-c3ow">burmese</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="burmese_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="burmese_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="burmese_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="burmese_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="burmese_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="burmese_live_liveRadio_status"></td>
+               </tr>
+               <!-- cymrufyw -->
+               <tr>
+                  <td class="tg-c3ow">cymrufyw</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- gahuza -->
+               <tr>
+                  <td class="tg-c3ow">gahuza</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="gahuza_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="gahuza_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="gahuza_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="gahuza_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="gahuza_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="gahuza_live_liveRadio_status"></td>
+               </tr>
+               <!-- gujarati -->
+               <tr>
+                  <td class="tg-c3ow">gujarati</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- hausa -->
+               <tr>
+                  <td class="tg-c3ow">hausa</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="hausa_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hausa_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="hausa_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hausa_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="hausa_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hausa_live_liveRadio_status"></td>
+               </tr>
+               <!-- hindi -->
+               <tr>
+                  <td class="tg-c3ow">hindi</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="hindi_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hindi_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="hindi_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hindi_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="hindi_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="hindi_live_liveRadio_status"></td>
+               </tr>
+               <!-- igbo -->
+               <tr>
+                  <td class="tg-c3ow">igbo</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- indonesia -->
+               <tr>
+                <td class="tg-c3ow">indonesia</td>
+                <!-- Live Radio Page -->
+                <td class="tg-0lax" id="indonesia_test_liveRadio_renderer"></td>
+                <td class="tg-0lax" id="indonesia_test_liveRadio_status"></td>
+                <td class="tg-0lax" id="indonesia_stage_liveRadio_renderer"></td>
+                <td class="tg-0lax" id="indonesia_stage_liveRadio_status"></td>
+                <td class="tg-0lax" id="indonesia_live_liveRadio_renderer"></td>
+                <td class="tg-0lax" id="indonesia_live_liveRadio_status"></td>
+             </tr>
+               <!-- japanese -->
+               <tr>
+                  <td class="tg-c3ow">japanese</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- Korean -->
+               <tr>
+                  <td class="tg-c3ow">korean</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="korean_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="korean_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="korean_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="korean_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="korean_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="korean_live_liveRadio_status"></td>
+               </tr>
+               <!-- kyrgyz -->
+               <tr>
+                  <td class="tg-c3ow">kyrgyz</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="kyrgyz_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="kyrgyz_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="kyrgyz_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="kyrgyz_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="kyrgyz_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="kyrgyz_live_liveRadio_status"></td>
+               </tr>
+               </td>
+            </table>
+         </td>
+         <td valign="top">
+            <table id="col-2" class="tg">
+               <tr>
+                  <th class="tg-7btt" rowspan="3">Service</th>
+                  <th class="tg-7btt" colspan="12">Page Type</th>
+               </tr>
+               <tr>
+                  <th class="tg-baqh" colspan="6">Live Radio</th>
+               </tr>
+               <tr>
+                  <th class="tg-7btt" colspan="2">Test</td>
+                  <th class="tg-7btt" colspan="2">Stage</td>
+                  <th class="tg-7btt" colspan="2">Live</td>
+               </tr>
+               <!-- marathi -->
+               <tr>
+                  <td class="tg-c3ow">marathi</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- mundo -->
+               <tr>
+                  <td class="tg-c3ow">mundo</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- naidheachdan -->
+               <tr>
+                  <td class="tg-c3ow">naidheachdan</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- nepali -->
+               <tr>
+                  <td class="tg-c3ow">nepali</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="nepali_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="nepali_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="nepali_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="nepali_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="nepali_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="nepali_live_liveRadio_status"></td>
+               </tr>
+               <!-- news -->
+               <tr>
+                  <td class="tg-c3ow">news</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- Pashto -->
+               <tr>
+                  <td class="tg-c3ow">pashto</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="pashto_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="pashto_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="pashto_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="pashto_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="pashto_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="pashto_live_liveRadio_status"></td>
+               </tr>
+               <!-- persian -->
+               <tr>
+                  <td class="tg-c3ow">persian</td>
+                  <!-- Live Radio Page - persian -->
+                  <td class="tg-0lax" id="persian_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="persian_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="persian_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_live_liveRadio_status"></td>
+               </tr>
+               <!-- persian (dari) -->
+               <tr>
+                  <td class="tg-0pky">persian (dari)</td>
+                  <!-- Live Radio Page - dari -->
+                  <td class="tg-0lax" id="persian_test_dari_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_test_dari_liveRadio_status"></td>
+                  <td class="tg-0lax" id="persian_stage_dari_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_stage_dari_liveRadio_status"></td>
+                  <td class="tg-0lax" id="persian_live_dari_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="persian_live_dari_liveRadio_status"></td>
+               </tr>
+               </tr>
+               <!-- pidgin -->
+               <tr>
+                  <td class="tg-c3ow">pidgin</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- portuguese -->
+               <tr>
+                  <td class="tg-c3ow">portuguese</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- punjabi -->
+               <tr>
+                  <td class="tg-c3ow">punjabi</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- russian -->
+               <tr>
+                  <td class="tg-c3ow">russian</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- scotland -->
+               <tr>
+                  <td class="tg-c3ow">scotland</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- serbian (cyr) -->
+               <tr>
+                  <td class="tg-c3ow">serbian (cyr)</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"/>
+               </tr>
+               <!-- serbian (lat) -->
+               <tr>
+                  <td class="tg-c3ow">serbian (lat)</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"/>
+               </tr>
+               <!-- sinhala -->
+               <tr>
+                  <td class="tg-c3ow">sinhala</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="sinhala_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="sinhala_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="sinhala_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="sinhala_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="sinhala_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="sinhala_live_liveRadio_status"></td>
+               </tr>
+            </table>
+         </td>
+         <td valign="top">
+            <table id ="col-3" class="tg">
+               <tr>
+                  <th class="tg-7btt" rowspan="3">Service</th>
+                  <th class="tg-7btt" colspan="12">Page Type</th>
+               </tr>
+               <tr>
+                  <th class="tg-baqh" colspan="6">Live Radio</th>
+               </tr>
+               <tr>
+                  <th class="tg-7btt" colspan="2">Test</td>
+                  <th class="tg-7btt" colspan="2">Stage</td>
+                  <th class="tg-7btt" colspan="2">Live</td>
+               </tr>
+               <!-- somali -->
+               <tr>
+                  <td class="tg-c3ow">somali</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="somali_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="somali_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="somali_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="somali_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="somali_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="somali_live_liveRadio_status"></td>
+               </tr>
+               <!-- swahili -->
+               <tr>
+                  <td class="tg-c3ow">swahili</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="swahili_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="swahili_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="swahili_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="swahili_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="swahili_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="swahili_live_liveRadio_status"></td>
+               </tr>
+               <!-- tamil -->
+               <tr>
+                  <td class="tg-c3ow">tamil</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="tamil_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tamil_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="tamil_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tamil_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="tamil_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tamil_live_liveRadio_status"></td>
+               </tr>
+               <!-- telugu -->
+               <tr>
+                  <td class="tg-c3ow">telugu</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- thai -->
+               <tr>
+                  <td class="tg-c3ow">thai</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- Tigrinya -->
+               <tr>
+                  <td class="tg-c3ow">tigrinya</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="tigrinya_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tigrinya_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="tigrinya_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tigrinya_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="tigrinya_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="tigrinya_live_liveRadio_status"></td>
+               </tr>
+               <!-- turkce -->
+               <tr>
+                  <td class="tg-c3ow">turkce</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- ukchina (simp) -->
+               <tr>
+                  <td class="tg-c3ow">ukchina (simp)</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- ukchina (trad) -->
+               <tr>
+                  <td class="tg-c3ow">ukchina (trad)</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- ukrainian -->
+               <tr>
+                  <td class="tg-c3ow">ukrainian</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- urdu -->
+               <tr>
+                  <td class="tg-c3ow">urdu</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="urdu_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="urdu_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="urdu_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="urdu_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="urdu_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="urdu_live_liveRadio_status"></td>
+               </tr>
+               <!-- uzbek -->
+               <tr>
                   <td class="tg-c3ow">uzbek</td>
-                  <td class="tg-0pky">
-                      <a href="https://www.test.bbc.com/uzbek/bbc_uzbek_radio/liveradio">Simorgh</a
-                >
-              </td>
-              <td class="tg-0lax" id="uzbek_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/uzbek/bbc_uzbek_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="uzbek_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/uzbek/bbc_uzbek_radio/liveradio">PAL</a>
-                  </td>
-                  <td class="tg-0lax" id="uzbek_live_liveRadio"></td>
-              </tr>
-      
-              <!-- vietnamese -->
-              <tr>
                   <!-- Live Radio Page -->
+                  <td class="tg-0lax" id="uzbek_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="uzbek_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="uzbek_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="uzbek_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="uzbek_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="uzbek_live_liveRadio_status"></td>
+               </tr>
+               <!-- vietnamese -->
+               <tr>
                   <td class="tg-c3ow">vietnamese</td>
-                  <td class="tg-0pky" colspan="6"></td>
-              </tr>
-      
-              <!-- yoruba -->
-              <tr>
                   <!-- Live Radio Page -->
-                  <td class="tg-c3ow">yoruba</td>
                   <td class="tg-0pky" colspan="6"></td>
-      
-              </tr>
-      
-              <!-- zhongwen -->
-              <tr>
-                  <!-- Live Radio Page - simp -->
+               </tr>
+               <!-- yoruba -->
+               <tr>
+                  <td class="tg-c3ow">yoruba</td>
+                  <!-- Live Radio Page -->
+                  <td class="tg-0pky" colspan="6"></td>
+               </tr>
+               <!-- zhongwen -->
+               <tr>
                   <td class="tg-c3ow">zhongwen (simp)</td>
-                  <td class="tg-0pky">
-                      <a href="https://www.test.bbc.com/zhongwen/simp/bbc_cantonese_radio/liveradio">PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="zhongwen_simp_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/zhongwen/simp/bbc_cantonese_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="zhongwen_simp_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/zhongwen/simp/bbc_cantonese_radio/liveradio">PAL</a>
-                  </td>
-                  <td class="tg-0lax" id="zhongwen_simp_live_liveRadio"></td>
-      
-                  <tr>
-                      <!-- Live Radio Page - trad -->
-                      <td class="tg-c3ow">zhongwen (trad)</td>
-                      <td class="tg-0pky">
-                          <a href="https://www.test.bbc.com/zhongwen/trad/bbc_cantonese_radio/liveradio">PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="zhongwen_trad_test_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.stage.bbc.com/zhongwen/trad/bbc_cantonese_radio/liveradio"
-                  >PAL</a
-                >
-              </td>
-              <td class="tg-0lax" id="zhongwen_trad_stage_liveRadio"></td>
-              <td class="tg-0pky">
-                <a href="https://www.bbc.com/zhongwen/trad/bbc_cantonese_radio/liveradio">PAL</a>
-                      </td>
-                      <td class="tg-0lax" id="zhongwen_trad_live_liveRadio"></td>
-                  </tr>
-              </tr>
-    </td>
-</tr>
-</table>
-</body>
-
+                  <!-- Live Radio Page - simp -->
+                  <td class="tg-0lax" id="zhongwen/simp_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/simp_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="zhongwen/simp_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/simp_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="zhongwen/simp_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/simp_live_liveRadio_status"></td>
+               <tr>
+                  <td class="tg-c3ow">zhongwen (trad)</td>
+                  <!-- Live Radio Page - trad -->
+                  <td class="tg-0lax" id="zhongwen/trad_test_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/trad_test_liveRadio_status"></td>
+                  <td class="tg-0lax" id="zhongwen/trad_stage_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/trad_stage_liveRadio_status"></td>
+                  <td class="tg-0lax" id="zhongwen/trad_live_liveRadio_renderer"></td>
+                  <td class="tg-0lax" id="zhongwen/trad_live_liveRadio_status"></td>
+               </tr>
+               </tr>
+               </td>
+               </tr>
+            </table>
+   </body>
 </html>
