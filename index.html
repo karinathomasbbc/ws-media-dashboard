@@ -21,31 +21,20 @@
          overflow: hidden;
          word-break: normal;
          border-color: black;
+         text-align: left;
+         vertical-align: top;
          }
          .tg th {
          font-family: Arial, sans-serif;
          font-size: 14px;
-         font-weight: normal;
+         font-weight: bold;
          padding: 10px 5px;
          border-style: solid;
          border-width: 1px;
          overflow: hidden;
          word-break: normal;
          border-color: black;
-         }
-         .tg .tg-7btt {
-         font-weight: bold;
-         border-color: inherit;
          text-align: center;
-         vertical-align: top;
-         }
-         .tg .tg-0pky {
-         border-color: inherit;
-         text-align: left;
-         vertical-align: top;
-         }
-         .tg .tg-0lax {
-         text-align: left;
          vertical-align: top;
          }
       </style>
@@ -97,7 +86,7 @@ const setRenderer = (service, pageType, environment) => {
     const url = getUrl(service, env, path);
     document.getElementById(
       elementId
-    ).innerHTML = `<a target="_blank" href="${url}">${renderer}</a>`;
+    ).innerHTML = `<a target="_blank" href="${url}">${pageType} - ${renderer}</a>`;
   }
 };
 
@@ -151,7 +140,9 @@ const isPALPage = id => {
   return id === "responsive-news";
 };
 
-const notApplicable = () => {};
+const generateCellHTML = () => {
+  return '<td></td>'
+};
 
 const services = [
     {
@@ -182,8 +173,33 @@ const services = [
               path: "bbc_afaanoromoo_radio/liveradio"
             }
           ]
-        }
-      ]
+        },
+            {
+          type: "MAP",
+          environments: [
+            {
+              env: "test",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "home"
+          },
+                      {
+              env: "stage",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "home"
+          },
+                      {
+              env: "live",
+              renderer: "Simorgh",
+              setStatus: setPageStatus,
+              setRenderer: setRenderer,
+              path: "home"
+          }
+          ]}
+          ]
     },
     {
       service: "afrique",
@@ -287,22 +303,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -380,22 +396,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -442,22 +458,22 @@ const services = [
             {
               env: "test",
               renderer: "Simorgh",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "Simorgh",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "Simorgh",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -535,22 +551,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -597,22 +613,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -690,22 +706,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -721,22 +737,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -752,22 +768,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -814,22 +830,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -928,22 +944,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -959,22 +975,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -990,22 +1006,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1021,22 +1037,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1052,22 +1068,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1083,22 +1099,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1114,22 +1130,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1269,22 +1285,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1300,22 +1316,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1362,22 +1378,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1393,22 +1409,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1424,22 +1440,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1455,22 +1471,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1548,22 +1564,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1579,22 +1595,22 @@ const services = [
             {
               env: "test",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "stage",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             },
             {
               env: "live",
               renderer: "",
-              setStatus: notApplicable,
-              setRenderer: notApplicable,
+              setStatus: () => {},
+              setRenderer: () => {},
               path: ""
             }
           ]
@@ -1693,467 +1709,774 @@ const loadData = async () => {
          <td valign="top">
             <table id="col-1" class="tg">
                <tr>
-                  <th class="tg-7btt" rowspan="3">Service</th>
-                  <th class="tg-7btt" colspan="12">Page Type</th>
-               </tr>
-               <tr>
-                  <th class="tg-baqh" colspan="6">Live Radio</th>
-               </tr>
-               <tr>
-                  <th class="tg-7btt" colspan="2">Test</td>
-                  <th class="tg-7btt" colspan="2">Stage</td>
-                  <th class="tg-7btt" colspan="2">Live</td>
+                 <th >Service</td>
+                  <th >Test</td>
+                  <th >Stage</td>
+                  <th >Live</td>
                </tr>
                <!-- afaanoromoo -->
                <tr>
-                  <td class="tg-c3ow">afaanoromoo</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="afaanoromoo_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afaanoromoo_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="afaanoromoo_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afaanoromoo_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="afaanoromoo_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afaanoromoo_live_liveRadio_status"></td>
+                  <td>afaanoromoo</td>
+                  <td>
+                  <span id="afaanoromoo_test_liveRadio_status"></span>
+                  <span id="afaanoromoo_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afaanoromoo_test_MAP_status"></span>
+                  <span id="afaanoromoo_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="afaanoromoo_stage_liveRadio_status"></span>
+                  <span id="afaanoromoo_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afaanoromoo_stage_MAP_status"></span>
+                  <span id="afaanoromoo_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="afaanoromoo_live_liveRadio_status"></span>
+                  <span id="afaanoromoo_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afaanoromoo_live_MAP_status"></span>
+                  <span id="afaanoromoo_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- afrique -->
                <tr>
-                  <td class="tg-c3ow">afrique</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="afrique_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afrique_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="afrique_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afrique_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="afrique_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="afrique_live_liveRadio_status"></td>
-               </tr>
+                  <td>afrique</td>
+                  <td>
+                  <span id="afrique_test_liveRadio_status"></span>
+                  <span id="afrique_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afrique_test_MAP_status"></span>
+                  <span id="afrique_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="afrique_stage_liveRadio_status"></span>
+                  <span id="afrique_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afrique_stage_MAP_status"></span>
+                  <span id="afrique_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="afrique_live_liveRadio_status"></span>
+                  <span id="afrique_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="afrique_live_MAP_status"></span>
+                  <span id="afrique_live_MAP_renderer"></span>
+                  </td>
+           </tr>
                <!-- amharic -->
                <tr>
-                  <td class="tg-c3ow">amharic</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="amharic_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="amharic_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="amharic_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="amharic_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="amharic_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="amharic_live_liveRadio_status"></td>
+                  <td>amharic</td>
+                  <td>
+                  <span id="amharic_test_liveRadio_status"></span>
+                  <span id="amharic_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="amharic_test_MAP_status"></span>
+                  <span id="amharic_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="amharic_stage_liveRadio_status"></span>
+                  <span id="amharic_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="amharic_stage_MAP_status"></span>
+                  <span id="amharic_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="amharic_live_liveRadio_status"></span>
+                  <span id="amharic_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="amharic_live_MAP_status"></span>
+                  <span id="amharic_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- Arabic -->
                <tr>
-                  <td class="tg-c3ow">arabic</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="arabic_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="arabic_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="arabic_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="arabic_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="arabic_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="arabic_live_liveRadio_status"></td>
-               </tr>
+                  <td>arabic</td>
+                  <td>
+                  <span id="arabic_test_liveRadio_status"></span>
+                  <span id="arabic_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="arabic_test_MAP_status"></span>
+                  <span id="arabic_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="arabic_stage_liveRadio_status"></span>
+                  <span id="arabic_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="arabic_stage_MAP_status"></span>
+                  <span id="arabic_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="arabic_live_liveRadio_status"></span>
+                  <span id="arabic_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="arabic_live_MAP_status"></span>
+                  <span id="arabic_live_MAP_renderer"></span>
+                  </td>
+                               </tr>
                <!-- azeri -->
                <tr>
-                  <td class="tg-c3ow">azeri</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>azeri</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- bengali -->
                <tr>
-                  <td class="tg-c3ow">bengali</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="bengali_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="bengali_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="bengali_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="bengali_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="bengali_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="bengali_live_liveRadio_status"></td>
+                  <td>bengali</td>
+                  <td>
+                  <span id="bengali_test_liveRadio_status"></span>
+                  <span id="bengali_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="bengali_test_MAP_status"></span>
+                  <span id="bengali_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="bengali_stage_liveRadio_status"></span>
+                  <span id="bengali_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="bengali_stage_MAP_status"></span>
+                  <span id="bengali_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="bengali_live_liveRadio_status"></span>
+                  <span id="bengali_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="bengali_live_MAP_status"></span>
+                  <span id="bengali_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- Burmese -->
                <tr>
-                  <td class="tg-c3ow">burmese</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="burmese_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="burmese_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="burmese_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="burmese_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="burmese_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="burmese_live_liveRadio_status"></td>
+                  <td>burmese</td>
+                  <td>
+                  <span id="burmese_test_liveRadio_status"></span>
+                  <span id="burmese_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="burmese_test_MAP_status"></span>
+                  <span id="burmese_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="burmese_stage_liveRadio_status"></span>
+                  <span id="burmese_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="burmese_stage_MAP_status"></span>
+                  <span id="burmese_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="burmese_live_liveRadio_status"></span>
+                  <span id="burmese_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="burmese_live_MAP_status"></span>
+                  <span id="burmese_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- cymrufyw -->
                <tr>
-                  <td class="tg-c3ow">cymrufyw</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>cymrufyw</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- gahuza -->
                <tr>
-                  <td class="tg-c3ow">gahuza</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="gahuza_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="gahuza_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="gahuza_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="gahuza_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="gahuza_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="gahuza_live_liveRadio_status"></td>
-               </tr>
+                  <td>gahuza</td>
+                  <td>
+                  <span id="gahuza_test_liveRadio_status"></span>
+                  <span id="gahuza_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="gahuza_test_MAP_status"></span>
+                  <span id="gahuza_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="gahuza_stage_liveRadio_status"></span>
+                  <span id="gahuza_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="gahuza_stage_MAP_status"></span>
+                  <span id="gahuza_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="gahuza_live_liveRadio_status"></span>
+                  <span id="gahuza_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="gahuza_live_MAP_status"></span>
+                  <span id="gahuza_live_MAP_renderer"></span>
+                  </td>     
+                          </tr>
                <!-- gujarati -->
                <tr>
-                  <td class="tg-c3ow">gujarati</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>gujarati</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- hausa -->
                <tr>
-                  <td class="tg-c3ow">hausa</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="hausa_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hausa_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="hausa_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hausa_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="hausa_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hausa_live_liveRadio_status"></td>
-               </tr>
+                  <td>hausa</td>
+                  <td>
+                  <span id="hausa_test_liveRadio_status"></span>
+                  <span id="hausa_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hausa_test_MAP_status"></span>
+                  <span id="hausa_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="hausa_stage_liveRadio_status"></span>
+                  <span id="hausa_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hausa_stage_MAP_status"></span>
+                  <span id="hausa_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="hausa_live_liveRadio_status"></span>
+                  <span id="hausa_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hausa_live_MAP_status"></span>
+                  <span id="hausa_live_MAP_renderer"></span>
+                  </td>
+                               </tr>
                <!-- hindi -->
                <tr>
-                  <td class="tg-c3ow">hindi</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="hindi_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hindi_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="hindi_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hindi_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="hindi_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="hindi_live_liveRadio_status"></td>
+                  <td>hindi</td>
+                  <td>
+                  <span id="hindi_test_liveRadio_status"></span>
+                  <span id="hindi_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hindi_test_MAP_status"></span>
+                  <span id="hindi_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="hindi_stage_liveRadio_status"></span>
+                  <span id="hindi_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hindi_stage_MAP_status"></span>
+                  <span id="hindi_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="hindi_live_liveRadio_status"></span>
+                  <span id="hindi_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="hindi_live_MAP_status"></span>
+                  <span id="hindi_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- igbo -->
                <tr>
-                  <td class="tg-c3ow">igbo</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>igbo</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- indonesia -->
                <tr>
-                <td class="tg-c3ow">indonesia</td>
-                <!-- Live Radio Page -->
-                <td class="tg-0lax" id="indonesia_test_liveRadio_renderer"></td>
-                <td class="tg-0lax" id="indonesia_test_liveRadio_status"></td>
-                <td class="tg-0lax" id="indonesia_stage_liveRadio_renderer"></td>
-                <td class="tg-0lax" id="indonesia_stage_liveRadio_status"></td>
-                <td class="tg-0lax" id="indonesia_live_liveRadio_renderer"></td>
-                <td class="tg-0lax" id="indonesia_live_liveRadio_status"></td>
+                <td>indonesia</td>
+                <td>
+                  <span id="indonesia_test_liveRadio_status"></span>
+                  <span id="indonesia_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="indonesia_test_MAP_status"></span>
+                  <span id="indonesia_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="indonesia_stage_liveRadio_status"></span>
+                  <span id="indonesia_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="indonesia_stage_MAP_status"></span>
+                  <span id="indonesia_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="indonesia_live_liveRadio_status"></span>
+                  <span id="indonesia_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="indonesia_live_MAP_status"></span>
+                  <span id="indonesia_live_MAP_renderer"></span>
+                  </td>
              </tr>
                <!-- japanese -->
                <tr>
-                  <td class="tg-c3ow">japanese</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>japanese</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- Korean -->
                <tr>
-                  <td class="tg-c3ow">korean</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="korean_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="korean_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="korean_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="korean_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="korean_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="korean_live_liveRadio_status"></td>
+                  <td>korean</td>
+                <td>
+                  <span id="korean_test_liveRadio_status"></span>
+                  <span id="korean_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="korean_test_MAP_status"></span>
+                  <span id="korean_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="korean_stage_liveRadio_status"></span>
+                  <span id="korean_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="korean_stage_MAP_status"></span>
+                  <span id="korean_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="korean_live_liveRadio_status"></span>
+                  <span id="korean_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="korean_live_MAP_status"></span>
+                  <span id="korean_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- kyrgyz -->
                <tr>
-                  <td class="tg-c3ow">kyrgyz</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="kyrgyz_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="kyrgyz_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="kyrgyz_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="kyrgyz_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="kyrgyz_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="kyrgyz_live_liveRadio_status"></td>
+                  <td>kyrgyz</td>
+                <td>
+                  <span id="kyrgyz_test_liveRadio_status"></span>
+                  <span id="kyrgyz_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="kyrgyz_test_MAP_status"></span>
+                  <span id="kyrgyz_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="kyrgyz_stage_liveRadio_status"></span>
+                  <span id="kyrgyz_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="kyrgyz_stage_MAP_status"></span>
+                  <span id="kyrgyz_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="kyrgyz_live_liveRadio_status"></span>
+                  <span id="kyrgyz_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="kyrgyz_live_MAP_status"></span>
+                  <span id="kyrgyz_live_MAP_renderer"></span>
+                  </td>
                </tr>
-               </td>
             </table>
          </td>
          <td valign="top">
             <table id="col-2" class="tg">
-               <tr>
-                  <th class="tg-7btt" rowspan="3">Service</th>
-                  <th class="tg-7btt" colspan="12">Page Type</th>
-               </tr>
-               <tr>
-                  <th class="tg-baqh" colspan="6">Live Radio</th>
-               </tr>
-               <tr>
-                  <th class="tg-7btt" colspan="2">Test</td>
-                  <th class="tg-7btt" colspan="2">Stage</td>
-                  <th class="tg-7btt" colspan="2">Live</td>
+                  <tr>
+                  <th>Service</td>
+                  <th>Test</td>
+                  <th>Stage</td>
+                  <th>Live</td>
                </tr>
                <!-- marathi -->
                <tr>
-                  <td class="tg-c3ow">marathi</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>marathi</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- mundo -->
                <tr>
-                  <td class="tg-c3ow">mundo</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>mundo</td>
+                  <td colspan="3"></td>
                </tr>
                <!-- naidheachdan -->
                <tr>
-                  <td class="tg-c3ow">naidheachdan</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>naidheachdan</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- nepali -->
                <tr>
-                  <td class="tg-c3ow">nepali</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="nepali_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="nepali_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="nepali_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="nepali_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="nepali_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="nepali_live_liveRadio_status"></td>
-               </tr>
+                  <td>nepali</td>
+                <td>
+                  <span id="nepali_test_liveRadio_status"></span>
+                  <span id="nepali_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="nepali_test_MAP_status"></span>
+                  <span id="nepali_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="nepali_stage_liveRadio_status"></span>
+                  <span id="nepali_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="nepali_stage_MAP_status"></span>
+                  <span id="nepali_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="nepali_live_liveRadio_status"></span>
+                  <span id="nepali_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="nepali_live_MAP_status"></span>
+                  <span id="nepali_live_MAP_renderer"></span>
+                  </td>
+                               </tr>
                <!-- news -->
                <tr>
-                  <td class="tg-c3ow">news</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>news</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- Pashto -->
                <tr>
-                  <td class="tg-c3ow">pashto</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="pashto_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="pashto_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="pashto_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="pashto_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="pashto_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="pashto_live_liveRadio_status"></td>
+                  <td>pashto</td>
+                  <td>
+                  <span id="pashto_test_liveRadio_status"></span>
+                  <span id="pashto_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="pashto_test_MAP_status"></span>
+                  <span id="pashto_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="pashto_stage_liveRadio_status"></span>
+                  <span id="pashto_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="pashto_stage_MAP_status"></span>
+                  <span id="pashto_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="pashto_live_liveRadio_status"></span>
+                  <span id="pashto_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="pashto_live_MAP_status"></span>
+                  <span id="pashto_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- persian -->
                <tr>
-                  <td class="tg-c3ow">persian</td>
-                  <!-- Live Radio Page - persian -->
-                  <td class="tg-0lax" id="persian_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="persian_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="persian_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_live_liveRadio_status"></td>
-               </tr>
+                  <td>persian</td>
+                  <td>
+                  <span id="persian_test_liveRadio_status"></span>
+                  <span id="persian_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_test_MAP_status"></span>
+                  <span id="persian_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="persian_stage_liveRadio_status"></span>
+                  <span id="persian_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_stage_MAP_status"></span>
+                  <span id="persian_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="persian_live_liveRadio_status"></span>
+                  <span id="persian_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_live_MAP_status"></span>
+                  <span id="persian_live_MAP_renderer"></span>
+                  </td>
+                </tr>
                <!-- persian (dari) -->
                <tr>
-                  <td class="tg-0pky">persian (dari)</td>
-                  <!-- Live Radio Page - dari -->
-                  <td class="tg-0lax" id="persian_test_dari_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_test_dari_liveRadio_status"></td>
-                  <td class="tg-0lax" id="persian_stage_dari_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_stage_dari_liveRadio_status"></td>
-                  <td class="tg-0lax" id="persian_live_dari_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="persian_live_dari_liveRadio_status"></td>
-               </tr>
+                  <td>persian (dari)</td>
+                  <td>
+                  <span id="persian_test_dari_liveRadio_status"></span>
+                  <span id="persian_test_dari_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_test_dari_MAP_status"></span>
+                  <span id="persian_test_dari_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="persian_stage_dari_liveRadio_status"></span>
+                  <span id="persian_stage_dari_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_stage_dari_MAP_status"></span>
+                  <span id="persian_stage_dari_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="persian_live_dari_liveRadio_status"></span>
+                  <span id="persian_live_dari_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="persian_live_dari_MAP_status"></span>
+                  <span id="persian_live_dari_MAP_renderer"></span>
+                  </td>
+                </tr>
                </tr>
                <!-- pidgin -->
                <tr>
-                  <td class="tg-c3ow">pidgin</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>pidgin</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- portuguese -->
                <tr>
-                  <td class="tg-c3ow">portuguese</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>portuguese</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- punjabi -->
                <tr>
-                  <td class="tg-c3ow">punjabi</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>punjabi</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- russian -->
                <tr>
-                  <td class="tg-c3ow">russian</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>russian</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- scotland -->
                <tr>
-                  <td class="tg-c3ow">scotland</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>scotland</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- serbian (cyr) -->
                <tr>
-                  <td class="tg-c3ow">serbian (cyr)</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"/>
+                  <td>serbian (cyr)</td>
+                  <td  colspan="3"/>
                </tr>
                <!-- serbian (lat) -->
                <tr>
-                  <td class="tg-c3ow">serbian (lat)</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"/>
+                  <td>serbian (lat)</td>
+                  <td  colspan="3"/>
                </tr>
                <!-- sinhala -->
                <tr>
-                  <td class="tg-c3ow">sinhala</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="sinhala_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="sinhala_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="sinhala_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="sinhala_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="sinhala_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="sinhala_live_liveRadio_status"></td>
+                  <td>sinhala</td>
+                  <td>
+                  <span id="sinhala_test_liveRadio_status"></span>
+                  <span id="sinhala_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="sinhala_test_MAP_status"></span>
+                  <span id="sinhala_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="sinhala_stage_liveRadio_status"></span>
+                  <span id="sinhala_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="sinhala_stage_MAP_status"></span>
+                  <span id="sinhala_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="sinhala_live_liveRadio_status"></span>
+                  <span id="sinhala_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="sinhala_live_MAP_status"></span>
+                  <span id="sinhala_live_MAP_renderer"></span>
+                  </td>
                </tr>
             </table>
          </td>
          <td valign="top">
             <table id ="col-3" class="tg">
-               <tr>
-                  <th class="tg-7btt" rowspan="3">Service</th>
-                  <th class="tg-7btt" colspan="12">Page Type</th>
-               </tr>
-               <tr>
-                  <th class="tg-baqh" colspan="6">Live Radio</th>
-               </tr>
-               <tr>
-                  <th class="tg-7btt" colspan="2">Test</td>
-                  <th class="tg-7btt" colspan="2">Stage</td>
-                  <th class="tg-7btt" colspan="2">Live</td>
+                <tr>
+                  <th>Service</th>
+                  <th>Test</td>
+                  <th>Stage</td>
+                  <th>Live</td>
                </tr>
                <!-- somali -->
                <tr>
-                  <td class="tg-c3ow">somali</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="somali_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="somali_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="somali_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="somali_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="somali_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="somali_live_liveRadio_status"></td>
+                  <td>somali</td>
+                  <td>
+                  <span id="somali_test_liveRadio_status"></span>
+                  <span id="somali_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="somali_test_MAP_status"></span>
+                  <span id="somali_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="somali_stage_liveRadio_status"></span>
+                  <span id="somali_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="somali_stage_MAP_status"></span>
+                  <span id="somali_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="somali_live_liveRadio_status"></span>
+                  <span id="somali_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="somali_live_MAP_status"></span>
+                  <span id="somali_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- swahili -->
                <tr>
-                  <td class="tg-c3ow">swahili</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="swahili_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="swahili_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="swahili_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="swahili_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="swahili_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="swahili_live_liveRadio_status"></td>
+                  <td>swahili</td>
+                  <td>
+                  <span id="swahili_test_liveRadio_status"></span>
+                  <span id="swahili_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="swahili_test_MAP_status"></span>
+                  <span id="swahili_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="swahili_stage_liveRadio_status"></span>
+                  <span id="swahili_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="swahili_stage_MAP_status"></span>
+                  <span id="swahili_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="swahili_live_liveRadio_status"></span>
+                  <span id="swahili_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="swahili_live_MAP_status"></span>
+                  <span id="swahili_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- tamil -->
                <tr>
-                  <td class="tg-c3ow">tamil</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="tamil_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tamil_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="tamil_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tamil_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="tamil_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tamil_live_liveRadio_status"></td>
+                  <td>tamil</td>
+                  <td>
+                  <span id="tamil_test_liveRadio_status"></span>
+                  <span id="tamil_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tamil_test_MAP_status"></span>
+                  <span id="tamil_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="tamil_stage_liveRadio_status"></span>
+                  <span id="tamil_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tamil_stage_MAP_status"></span>
+                  <span id="tamil_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="tamil_live_liveRadio_status"></span>
+                  <span id="tamil_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tamil_live_MAP_status"></span>
+                  <span id="tamil_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- telugu -->
                <tr>
-                  <td class="tg-c3ow">telugu</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>telugu</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- thai -->
                <tr>
-                  <td class="tg-c3ow">thai</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>thai</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- Tigrinya -->
                <tr>
-                  <td class="tg-c3ow">tigrinya</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="tigrinya_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tigrinya_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="tigrinya_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tigrinya_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="tigrinya_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="tigrinya_live_liveRadio_status"></td>
+                  <td>tigrinya</td>
+                  <td>
+                  <span id="tigrinya_test_liveRadio_status"></span>
+                  <span id="tigrinya_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tigrinya_test_MAP_status"></span>
+                  <span id="tigrinya_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="tigrinya_stage_liveRadio_status"></span>
+                  <span id="tigrinya_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tigrinya_stage_MAP_status"></span>
+                  <span id="tigrinya_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="tigrinya_live_liveRadio_status"></span>
+                  <span id="tigrinya_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="tigrinya_live_MAP_status"></span>
+                  <span id="tigrinya_live_MAP_renderer"></span>
+                  </td>
                </tr>
                <!-- turkce -->
                <tr>
-                  <td class="tg-c3ow">turkce</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>turkce</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- ukchina (simp) -->
                <tr>
-                  <td class="tg-c3ow">ukchina (simp)</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>ukchina (simp)</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- ukchina (trad) -->
                <tr>
-                  <td class="tg-c3ow">ukchina (trad)</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>ukchina (trad)</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- ukrainian -->
                <tr>
-                  <td class="tg-c3ow">ukrainian</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>ukrainian</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- urdu -->
                <tr>
-                  <td class="tg-c3ow">urdu</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="urdu_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="urdu_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="urdu_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="urdu_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="urdu_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="urdu_live_liveRadio_status"></td>
-               </tr>
+                  <td>urdu</td>
+                  <td>
+                  <span id="urdu_test_liveRadio_status"></span>
+                  <span id="urdu_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="urdu_test_MAP_status"></span>
+                  <span id="urdu_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="urdu_stage_liveRadio_status"></span>
+                  <span id="urdu_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="urdu_stage_MAP_status"></span>
+                  <span id="urdu_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="urdu_live_liveRadio_status"></span>
+                  <span id="urdu_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="urdu_live_MAP_status"></span>
+                  <span id="urdu_live_MAP_renderer"></span>
+                  </td>               
+                </tr>
                <!-- uzbek -->
                <tr>
-                  <td class="tg-c3ow">uzbek</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0lax" id="uzbek_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="uzbek_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="uzbek_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="uzbek_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="uzbek_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="uzbek_live_liveRadio_status"></td>
-               </tr>
+                  <td>uzbek</td>
+                  <td>
+                  <span id="uzbek_test_liveRadio_status"></span>
+                  <span id="uzbek_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="uzbek_test_MAP_status"></span>
+                  <span id="uzbek_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="uzbek_stage_liveRadio_status"></span>
+                  <span id="uzbek_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="uzbek_stage_MAP_status"></span>
+                  <span id="uzbek_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="uzbek_live_liveRadio_status"></span>
+                  <span id="uzbek_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="uzbek_live_MAP_status"></span>
+                  <span id="uzbek_live_MAP_renderer"></span>
+                  </td>
+                </tr>
                <!-- vietnamese -->
                <tr>
-                  <td class="tg-c3ow">vietnamese</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>vietnamese</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- yoruba -->
                <tr>
-                  <td class="tg-c3ow">yoruba</td>
-                  <!-- Live Radio Page -->
-                  <td class="tg-0pky" colspan="6"></td>
+                  <td>yoruba</td>
+                  <td  colspan="3"></td>
                </tr>
                <!-- zhongwen -->
                <tr>
-                  <td class="tg-c3ow">zhongwen (simp)</td>
-                  <!-- Live Radio Page - simp -->
-                  <td class="tg-0lax" id="zhongwen/simp_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/simp_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="zhongwen/simp_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/simp_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="zhongwen/simp_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/simp_live_liveRadio_status"></td>
-               <tr>
-                  <td class="tg-c3ow">zhongwen (trad)</td>
-                  <!-- Live Radio Page - trad -->
-                  <td class="tg-0lax" id="zhongwen/trad_test_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/trad_test_liveRadio_status"></td>
-                  <td class="tg-0lax" id="zhongwen/trad_stage_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/trad_stage_liveRadio_status"></td>
-                  <td class="tg-0lax" id="zhongwen/trad_live_liveRadio_renderer"></td>
-                  <td class="tg-0lax" id="zhongwen/trad_live_liveRadio_status"></td>
+                  <td>zhongwen (simp)</td>
+                  <td>
+                  <span id="zhongwen/simp_test_liveRadio_status"></span>
+                  <span id="zhongwen/simp_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/simp_test_MAP_status"></span>
+                  <span id="zhongwen/simp_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="zhongwen/simp_stage_liveRadio_status"></span>
+                  <span id="zhongwen/simp_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/simp_stage_MAP_status"></span>
+                  <span id="zhongwen/simp_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="zhongwen/simp_live_liveRadio_status"></span>
+                  <span id="zhongwen/simp_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/simp_live_MAP_status"></span>
+                  <span id="zhongwen/simp_live_MAP_renderer"></span>
+                  </td>
+                               <tr>
+                  <td>zhongwen (trad)</td>
+                  <td>
+                  <span id="zhongwen/trad_test_liveRadio_status"></span>
+                  <span id="zhongwen/trad_test_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/trad_test_MAP_status"></span>
+                  <span id="zhongwen/trad_test_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="zhongwen/trad_stage_liveRadio_status"></span>
+                  <span id="zhongwen/trad_stage_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/trad_stage_MAP_status"></span>
+                  <span id="zhongwen/trad_stage_MAP_renderer"></span>
+                  </td>
+                  <td>
+                  <span id="zhongwen/trad_live_liveRadio_status"></span>
+                  <span id="zhongwen/trad_live_liveRadio_renderer"></span>
+                  <p/>
+                  <span id="zhongwen/trad_live_MAP_status"></span>
+                  <span id="zhongwen/trad_live_MAP_renderer"></span>
+                  </td>
                </tr>
                </tr>
                </td>
