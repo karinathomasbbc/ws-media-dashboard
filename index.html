@@ -125,8 +125,7 @@ const parseId = html => {
 };
 
 const getPageId = url => {
-  // const prefix = "https://cors-anywhere.herokuapp.com/";
-  const prefix = '';
+  const prefix = "https://cors-anywhere.herokuapp.com/";
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {
@@ -1708,7 +1707,6 @@ const loadData = async () => {
                <!-- afaanoromoo -->
                <tr>
                   <td class="tg-c3ow">afaanoromoo</td>
-                  <!-- Live Radio Page -->
                   <!-- Live Radio Page -->
                   <td class="tg-0lax" id="afaanoromoo_test_liveRadio_renderer"></td>
                   <td class="tg-0lax" id="afaanoromoo_test_liveRadio_status"></td>
