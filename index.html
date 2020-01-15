@@ -58,7 +58,6 @@ const getPALPageStatus = id => {
 
 const getElementId = (service, env, pageType, suffix) => {
   const elementId = `${service}_${env}_${pageType}_${suffix}`;
-  console.log("elementID: ", elementId);
   return elementId;
 };
 
@@ -66,6 +65,11 @@ const setPageStatus = async (service, pageType, environment) => {
   const { env, path, renderer } = environment;
   const elementId = getElementId(service, env, pageType, "status");
   const url = getUrl(service, env, path);
+
+  if (!env.includes('live')) {
+    console.log(`Temporarily skipping status check of ${url} for ${env} environment`);
+  } else {
+    console.log(`Checking status of ${url}`);
 
   if (renderer === "Simorgh") {
     document.getElementById(elementId).innerHTML = await getSimorghPageStatus(
@@ -75,6 +79,7 @@ const setPageStatus = async (service, pageType, environment) => {
     document.getElementById(elementId).innerHTML = await getPALPageStatus(
       getPageId(url)
     );
+  }
   }
 };
 
