@@ -94,6 +94,11 @@ const setRenderer = (service, pageType, environment) => {
   }
 };
 
+const setPageType = (service, pageType) => {
+    const elementId = `${service}_${pageType}`;
+    document.getElementById(elementId).innerHTML = pageType;
+};
+
 const handleResponse = response => {
   let text = null;
 
@@ -1763,6 +1768,7 @@ const checkAllPages = async () => {
         pageType.environments.forEach(environment => {
           const { type } = pageType;
           if (environment.renderer !=='') {
+            setPageType(service.service, type);
             setPageStatus(service.service, type, environment);
             setRenderer(service.service, type, environment);
           }
