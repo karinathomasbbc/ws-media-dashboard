@@ -86,7 +86,7 @@ const setRenderer = (service, pageType, environment) => {
     const url = getUrl(service, env, path);
     document.getElementById(
       elementId
-    ).innerHTML = `<a target="_blank" href="${url}">${pageType} - ${renderer}</a>`;
+    ).innerHTML = `<a target="_blank" href="${url}">${pageType} (${renderer.substring(0,3)})</a>`;
   }
 };
 
@@ -326,17 +326,17 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
+              renderer: 'PAL',
               path: 'region-49364777'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
+              renderer: 'PAL',
               path: 'region-49364777'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
+              renderer: 'PAL',
               path: 'region-51069170'
             }
           ]
@@ -371,17 +371,17 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
+              renderer: "PAL",
               path: "news-49579870"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
+              renderer: "PAL",
               path: "news-49579870"
             },
             {
               env: "live",
-              renderer: "Simorgh",
+              renderer: "PAL",
               path: "news-51095390"
             }
           ]
@@ -416,18 +416,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-49571787"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-49571787"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-51097769"
             }
           ]
         }
@@ -435,28 +435,7 @@ const services = [
     },
     {
       service: "cymrufyw",
-      pageTypes: [
-        {
-          type: "articles",
-          environments: [
-            {
-              env: "test",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "stage",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "live",
-              renderer: 'Simorgh',
-              path: ''
-            }
-          ]
-        }
-      ]
+      pageTypes: []
     },
     {
       service: "gahuza",
@@ -486,18 +465,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "amakuru-49534170"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "amakuru-49534170"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "amakuru-51108248"
             }
           ]
         }
@@ -511,18 +490,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49502679'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49502679'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-51099136'
             }
           ]
         }
@@ -556,18 +535,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "labarai-49513456"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "labarai-49513456"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "labarai-51100239"
             }
           ]
         }
@@ -601,18 +580,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-51106346"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-51106346"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-51106346"
             }
           ]
         }
@@ -627,17 +606,17 @@ const services = [
             {
               env: "test",
               renderer: 'Simorgh',
-              path: ''
+              path: '23182843'
             },
             {
               env: "stage",
               renderer: 'Simorgh',
-              path: ''
+              path: '23182843'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'afirika-51107146'
             }
           ]
         }
@@ -671,18 +650,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-49591990"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-49591990"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-51102836"
             }
           ]
         }
@@ -697,17 +676,17 @@ const services = [
             {
               env: "test",
               renderer: 'Simorgh',
-              path: ''
+              path: 'video-23248670'
             },
             {
               env: "stage",
               renderer: 'Simorgh',
-              path: ''
+              path: 'video-23248670'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'video-51103346'
             }
           ]
         }
@@ -741,18 +720,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-48422241"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-48422241"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-48422241"
             }
           ]
         }
@@ -786,18 +765,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "sapar-tv-48695523"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "sapar-tv-48695523"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "entertainment-51113261"
             }
           ]
         }
@@ -811,18 +790,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-48062804'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-48062804'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-51095482'
             }
           ]
         }
@@ -836,18 +815,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'noticias-49546078'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'noticias-49546078'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'noticias-51099029'
             }
           ]
         }
@@ -855,28 +834,7 @@ const services = [
     },
     {
       service: "naidheachdan",
-      pageTypes: [
-        {
-          type: "articles",
-          environments: [
-            {
-              env: "test",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "stage",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "live",
-              renderer: 'Simorgh',
-              path: ''
-            }
-          ]
-        }
-      ]
+      pageTypes: [      ]
     },
     {
       service: "nepali",
@@ -906,18 +864,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-49613544"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-49613544"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-51096149"
             }
           ]
         }
@@ -926,26 +884,6 @@ const services = [
     {
       service: "news",
       pageTypes: [
-        {
-          type: "articles",
-          environments: [
-            {
-              env: "test",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "stage",
-              renderer: 'Simorgh',
-              path: ''
-            },
-            {
-              env: "live",
-              renderer: 'Simorgh',
-              path: ''
-            }
-          ]
-        }
       ]
     },
     {
@@ -976,18 +914,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "afghanistan-49628873"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "afghanistan-49628873"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "afghanistan-51095893"
             }
           ]
         }
@@ -1036,18 +974,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "iran-51114600"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "iran-51114600"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "iran-51114595"
             }
           ]
         }
@@ -1062,17 +1000,17 @@ const services = [
             {
               env: "test",
               renderer: 'Simorgh',
-              path: ''
+              path: '23248703'
             },
             {
               env: "stage",
               renderer: 'Simorgh',
-              path: ''
+              path: '23248703'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'tori-51096699'
             }
           ]
         }
@@ -1086,18 +1024,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'geral-49602758'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'geral-49602758'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'geral-51092067'
             }
           ]
         }
@@ -1111,18 +1049,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'international-49567825'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'international-49567825'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-51106988'
             }
           ]
         }
@@ -1136,28 +1074,28 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49281069'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49281069'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49281069'
             }
           ]
-        }
+        },
       ]
     },
     {
       service: "scotland",
       pageTypes: [
         {
-          type: "articles",
+          type: "frontPage",
           environments: [
             {
               env: "test",
@@ -1186,18 +1124,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51052616'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51052616'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51052616'
             }
           ]
         }
@@ -1211,18 +1149,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51096369'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51096369'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'svet-51096369'
             }
           ]
         }
@@ -1257,17 +1195,17 @@ const services = [
             {
               env: "test",
               renderer: "Simorgh",
-              path: ""
+              path: "23248970"
             },
             {
               env: "stage",
               renderer: "Simorgh",
-              path: ""
+              path: "23248970"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "sri-lanka-51037588"
             }
           ]
         }
@@ -1301,18 +1239,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-48870869"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-48870869"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "51050628"
             }
           ]
         }
@@ -1346,18 +1284,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "51106402"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "51106402"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "51106402"
             }
           ]
         }
@@ -1391,18 +1329,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "science-49626264"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "science-49626264"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "global-51099200"
             }
           ]
         }
@@ -1416,18 +1354,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-49647976'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-49647976'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'india-49647976'
             }
           ]
         }
@@ -1441,18 +1379,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'international-51113461'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'international-51113461'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'international-51113461'
             }
           ]
         }
@@ -1486,18 +1424,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-51060789"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-51060789"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "news-51060789"
             }
           ]
         }
@@ -1511,18 +1449,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'haberler-dunya-51110866'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'haberler-dunya-51110866'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'haberler-dunya-51110866'
             }
           ]
         }
@@ -1536,18 +1474,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             }
           ]
         }
@@ -1561,18 +1499,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: '51085214'
             }
           ]
         }
@@ -1586,18 +1524,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'learningenglish-51110076'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'learningenglish-51110076'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'learningenglish-51110076'
             }
           ]
         }
@@ -1631,18 +1569,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "pakistan-49644768"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "pakistan-49644768"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "pakistan-49644768"
             }
           ]
         }
@@ -1676,18 +1614,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-50461363"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-50461363"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "media-50461363"
             }
           ]
         }
@@ -1701,18 +1639,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49614583'
             },
             {
               env: "stage",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49614583'
             },
             {
               env: "live",
-              renderer: 'Simorgh',
-              path: ''
+              renderer: 'PAL',
+              path: 'media-49614583'
             }
           ]
         }
@@ -1771,18 +1709,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             }
           ]
         }
@@ -1816,18 +1754,18 @@ const services = [
           environments: [
             {
               env: "test",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             },
             {
               env: "stage",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             },
             {
               env: "live",
-              renderer: "Simorgh",
-              path: ""
+              renderer: "PAL",
+              path: "chinese-news-51088031"
             }
           ]
         }
@@ -2040,16 +1978,16 @@ const loadData = async () => {
             <tr>
               <td>cymrufyw</td>
               <td>
-                <span id="cymrufyw_test_articles_status"></span>
-                <span id="cymrufyw_test_articles_renderer"></span>
+                <span id="cymrufyw_test_article_status"></span>
+                <span id="cymrufyw_test_article_renderer"></span>
               </td>
               <td>
-                <span id="cymrufyw_stage_articles_status"></span>
-                <span id="cymrufyw_stage_articles_renderer"></span>
+                <span id="cymrufyw_stage_article_status"></span>
+                <span id="cymrufyw_stage_article_renderer"></span>
               </td>
               <td>
-                <span id="cymrufyw_live_articles_status"></span>
-                <span id="cymrufyw_live_articles_renderer"></span>
+                <span id="cymrufyw_live_article_status"></span>
+                <span id="cymrufyw_live_article_renderer"></span>
               </td>
             </tr>
             <!-- gahuza -->
@@ -2296,16 +2234,19 @@ const loadData = async () => {
             <tr>
               <td>naidheachdan</td>
               <td>
-                <span id="naidheachdan_test_articles_status"></span>
-                <span id="naidheachdan_test_articles_renderer"></span>
+                <span id="naidheachdan_test_MAP_status"></span>
+                <span id="naidheachdan_test_MAP_renderer"></span>
+                <p/>
+                <span id="naidheachdan_test_MAP_status"></span>
+                <span id="naidheachdan_test_MAP_renderer"></span>
               </td>
               <td>
-                <span id="naidheachdan_stage_articles_status"></span>
-                <span id="naidheachdan_stage_articles_renderer"></span>
+                <span id="naidheachdan_stage_MAP_status"></span>
+                <span id="naidheachdan_stage_MAP_renderer"></span>
               </td>
               <td>
-                <span id="naidheachdan_live_articles_status"></span>
-                <span id="naidheachdan_live_articles_renderer"></span>
+                <span id="naidheachdan_live_MAP_status"></span>
+                <span id="naidheachdan_live_MAP_renderer"></span>
               </td>
             </tr>
             <!-- nepali -->
@@ -2337,16 +2278,16 @@ const loadData = async () => {
             <tr>
               <td>news</td>
               <td>
-                <span id="news_test_articles_status"></span>
-                <span id="news_test_articles_renderer"></span>
+                <span id="news_test_article_status"></span>
+                <span id="news_test_article_renderer"></span>
               </td>
               <td>
-                <span id="news_stage_articles_status"></span>
-                <span id="news_stage_articles_renderer"></span>
+                <span id="news_stage_article_status"></span>
+                <span id="news_stage_article_renderer"></span>
             </td>
             <td>
-                <span id="news_live_articles_status"></span>
-                <span id="news_live_articles_renderer"></span>
+                <span id="news_live_article_status"></span>
+                <span id="news_live_article_renderer"></span>
               </td>
             </tr>
             <!-- Pashto -->
@@ -2497,16 +2438,16 @@ const loadData = async () => {
           <tr>
             <td>scotland</td>
               <td>
-                <span id="scotland_test_articles_status"></span>
-                <span id="scotland_test_articles_renderer"></span>
+                <span id="scotland_test_frontPage_status"></span>
+                <span id="scotland_test_frontPage_renderer"></span>
               </td>
               <td>
-                <span id="scotland_stage_articles_status"></span>
-                <span id="scotland_stage_articles_renderer"></span>
+                <span id="scotland_stage_frontPage_status"></span>
+                <span id="scotland_stage_frontPage_renderer"></span>
               </td>
               <td>
-                <span id="scotland_live_articles_status"></span>
-                <span id="scotland_live_articles_renderer"></span>
+                <span id="scotland_live_frontPage_status"></span>
+                <span id="scotland_live_frontPage_renderer"></span>
               </td>
 
           </tr>
