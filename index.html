@@ -204,7 +204,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -234,7 +234,7 @@
                     renderer: "Simorgh",
                     path: "bbc_afrique_radio/liveradio"
                 }]
-            }, , {
+            }, {
                 type: "MAP",
                 category: 'media',
                 environments: [{
@@ -249,6 +249,22 @@
                     env: "live",
                     renderer: "PAL",
                     path: "region-51111406"
+                }]
+            }, {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "PAL",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "PAL",
+                    path: ""
                 }]
             }]
         }, {
@@ -285,6 +301,23 @@
                     renderer: "PAL",
                     path: "51030416"
                 }]
+            },
+            {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "PAL",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "PAL",
+                    path: ""
+                }]
             }]
         }, {
             service: "arabic",
@@ -320,6 +353,23 @@
                     renderer: "PAL",
                     path: "media-51123379"
                 }]
+            },
+            {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "PAL",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "PAL",
+                    path: ""
+                }]
             }]
         }, {
             service: "azeri",
@@ -338,6 +388,23 @@
                     env: "live",
                     renderer: 'PAL',
                     path: 'region-51069170'
+                }]
+            },
+            {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "Simorgh",
+                    path: ""
                 }]
             }]
         }, {
@@ -374,6 +441,23 @@
                     renderer: "PAL",
                     path: "news-51095390"
                 }]
+            },
+            {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "PAL",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "PAL",
+                    path: ""
+                }]
             }]
         }, {
             service: "burmese",
@@ -408,6 +492,23 @@
                     env: "live",
                     renderer: "PAL",
                     path: "media-51097769"
+                }]
+            },
+            {
+                type: "home",
+                category: 'home',
+                environments: [{
+                    env: "test",
+                    renderer: "Simorgh",
+                    path: ""
+                }, {
+                    env: "stage",
+                    renderer: "PAL",
+                    path: ""
+                }, {
+                    env: "live",
+                    renderer: "PAL",
+                    path: ""
                 }]
             }]
         }, {
@@ -1449,8 +1550,9 @@
                                 let load = true;
 
                                 if (params) {
-                                    // load = (params.category && params.category.toLowerCase() === category.toLowerCase()) ||
-                                    //     (params.env && params.env.toLowerCase() === env.toLowerCase())
+                                    load = (params.category && params.category.toLowerCase() === category.toLowerCase())
+                                    // ||
+                                    // (params.env && params.env.toLowerCase() === env.toLowerCase())
                                 }
 
                                 if (load) {
@@ -1522,7 +1624,24 @@
                         <span id="afaanoromoo_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="afaanoromoo_home"></td>
+                    <td>
+                        <span class="status" id="afaanoromoo_test_home_status"></span>
+                        <span id="afaanoromoo_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afaanoromoo_stage_home_status"></span>
+                        <span id="afaanoromoo_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afaanoromoo_live_home_status"></span>
+                        <span id="afaanoromoo_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
+
                 <!-- afrique -->
                 <tr>
                     <th colspan="4">afrique</th>
@@ -1560,7 +1679,24 @@
                         <span id="afrique_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="afrique_home"></td>
+                    <td>
+                        <span class="status" id="afrique_test_home_status"></span>
+                        <span id="afrique_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afrique_stage_home_status"></span>
+                        <span id="afrique_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afrique_live_home_status"></span>
+                        <span id="afrique_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
+
                 <!-- amharic -->
                 <tr>
                     <th colspan="4">amharic</th>
@@ -1598,6 +1734,22 @@
                         <span id="amharic_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="amharic_home"></td>
+                    <td>
+                        <span class="status" id="amharic_test_home_status"></span>
+                        <span id="amharic_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="amharic_stage_home_status"></span>
+                        <span id="amharic_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="amharic_live_home_status"></span>
+                        <span id="amharic_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- arabic -->
                 <tr>
@@ -1636,8 +1788,23 @@
                         <span id="arabic_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="arabic_home"></td>
+                    <td>
+                        <span class="status" id="arabic_test_home_status"></span>
+                        <span id="arabic_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="arabic_stage_home_status"></span>
+                        <span id="arabic_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="arabic_live_home_status"></span>
+                        <span id="arabic_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
-
                 <!-- azeri -->
                 <tr>
                     <th colspan="4">azeri</th>
@@ -1658,6 +1825,22 @@
                         <span id="azeri_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="azeri_home"></td>
+                    <td>
+                        <span class="status" id="azeri_test_home_status"></span>
+                        <span id="azeri_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="azeri_stage_home_status"></span>
+                        <span id="azeri_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="azeri_live_home_status"></span>
+                        <span id="azeri_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- bengali -->
                 <tr>
@@ -1696,6 +1879,22 @@
                         <span id="bengali_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="bengali_home"></td>
+                    <td>
+                        <span class="status" id="bengali_test_home_status"></span>
+                        <span id="bengali_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="bengali_stage_home_status"></span>
+                        <span id="bengali_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="bengali_live_home_status"></span>
+                        <span id="bengali_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- Burmese -->
                 <tr>
@@ -1732,6 +1931,23 @@
                     <td>
                         <span class="status" id="burmese_live_MAP_status"></span>
                         <span id="burmese_live_MAP_renderer"></span>
+                    </td>
+                </tr>
+                                <!-- home -->
+                <tr>
+                    <td id="burmese_home"></td>
+                    <td>
+                        <span class="status" id="burmese_test_home_status"></span>
+                        <span id="burmese_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="burmese_stage_home_status"></span>
+                        <span id="burmese_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="burmese_live_home_status"></span>
+                        <span id="burmese_live_home_renderer"></span>
+                        <br/>
                     </td>
                 </tr>
         </td>
