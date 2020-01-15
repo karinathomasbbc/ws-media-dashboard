@@ -79,15 +79,15 @@
 
             const element = document.getElementById(elementId);
             if (element) {
-            if (renderer === "Simorgh") {
-                element.innerHTML = await getSimorghPageStatus(
-                    getPageId(url)
-                );
-            } else if (renderer === "PAL") {
-                element.innerHTML = await getPALPageStatus(
-                    getPageId(url)
-                );
-            }
+                if (renderer === "Simorgh") {
+                    element.innerHTML = await getSimorghPageStatus(
+                        getPageId(url)
+                    );
+                } else if (renderer === "PAL") {
+                    element.innerHTML = await getPALPageStatus(
+                        getPageId(url)
+                    );
+                }
             }
         };
 
@@ -101,7 +101,7 @@
                 const url = getUrl(service, env, path);
                 const element = document.getElementById(elementId);
                 if (element) {
-element.innerHTML = `<a target="_blank" href="${url}">${renderer.substring(0,3).toUpperCase()}</a>`;
+                    element.innerHTML = `<a target="_blank" href="${url}">${renderer.substring(0,3).toUpperCase()}</a>`;
                 }
             }
         };
@@ -111,7 +111,7 @@ element.innerHTML = `<a target="_blank" href="${url}">${renderer.substring(0,3).
             const element = document.getElementById(elementId);
 
             if (element) {
-            element.innerHTML = pageType;
+                element.innerHTML = pageType;
             }
         };
 
@@ -199,7 +199,7 @@ element.innerHTML = `<a target="_blank" href="${url}">${renderer.substring(0,3).
                     renderer: "PAL",
                     path: "oduu-51103116"
                 }]
-            },{
+            }, {
                 type: "home",
                 category: 'home',
                 environments: [{
