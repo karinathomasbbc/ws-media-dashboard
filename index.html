@@ -119,7 +119,7 @@ const parseId = html => {
 };
 
 const getPageId = url => {
-  const prefix = "https://cors-anywhere.herokuapp.com/";
+  const prefix = "https://ws-media-cors.herokuapp.com/";
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {
