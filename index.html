@@ -17,7 +17,7 @@
         .tg td {
             font-family: Arial, sans-serif;
             font-size: 14px;
-            padding: 5px 5px;
+            padding: 2px 5px;
             border-style: dotted;
             border-width: 1px;
             overflow: hidden;
@@ -30,7 +30,7 @@
         .tg th {
             font-family: Arial, sans-serif;
             font-size: 16px;
-            padding: 5px 5px;
+            padding: 2px 5px;
             border-style: dotted;
             border-width: 1px;
             overflow: hidden;
@@ -1575,11 +1575,11 @@
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "live",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }]
             }]
@@ -1610,11 +1610,11 @@
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "live",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }]
             }]
@@ -1645,11 +1645,11 @@
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "live",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }]
             }]
@@ -1762,7 +1762,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "Simorgh",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1797,7 +1797,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "Simorgh",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1938,11 +1938,11 @@
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "live",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }]
             }]
@@ -2008,11 +2008,11 @@
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "live",
-                    renderer: "PAL",
+                    renderer: "Simorgh",
                     path: ""
                 }]
             }]
@@ -2055,7 +2055,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "Simorgh",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -2106,7 +2106,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "Simorgh",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -2141,7 +2141,7 @@
                             if (environment.renderer !== '') {
                                 let load = true;
 
-                                if (params) {
+                                if (params && params.category) {
                                     load = (params.category && params.category.toLowerCase() === category.toLowerCase())
                                     // ||
                                     // (params.env && params.env.toLowerCase() === env.toLowerCase())
@@ -3701,6 +3701,23 @@
                         <span id="tamil_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="tamil_home"></td>
+                    <td>
+                        <span class="status" id="tamil_test_home_status"></span>
+                        <span id="tamil_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="tamil_stage_home_status"></span>
+                        <span id="tamil_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="tamil_live_home_status"></span>
+                        <span id="tamil_live_home_renderer"></span>
+                        <br/>
+                    </td>
+                </tr>
                 <!-- telugu -->
                 <tr>
                     <th colspan="4">telugu</th>
@@ -3719,6 +3736,23 @@
                     <td>
                         <span class="status" id="telugu_live_MAP_status"></span>
                         <span id="telugu_live_MAP_renderer"></span>
+                    </td>
+                </tr>
+                <!-- home -->
+                <tr>
+                    <td id="telugu_home"></td>
+                    <td>
+                        <span class="status" id="telugu_test_home_status"></span>
+                        <span id="telugu_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="telugu_stage_home_status"></span>
+                        <span id="telugu_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="telugu_live_home_status"></span>
+                        <span id="telugu_live_home_renderer"></span>
+                        <br/>
                     </td>
                 </tr>
                 <!-- thai -->
@@ -3741,6 +3775,22 @@
                         <span id="thai_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="thai_home"></td>
+                    <td>
+                        <span class="status" id="thai_test_home_status"></span>
+                        <span id="thai_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="thai_stage_home_status"></span>
+                        <span id="thai_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="thai_live_home_status"></span>
+                        <span id="thai_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- Tigrinya -->
                 <tr>
@@ -3779,8 +3829,23 @@
                         <span id="tigrinya_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="tigrinya_home"></td>
+                    <td>
+                        <span class="status" id="tigrinya_test_home_status"></span>
+                        <span id="tigrinya_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="tigrinya_stage_home_status"></span>
+                        <span id="tigrinya_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="tigrinya_live_home_status"></span>
+                        <span id="tigrinya_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
-
                 <!-- turkce -->
                 <tr>
                     <th colspan="4">turkce</th>
@@ -3801,7 +3866,23 @@
                         <span id="turkce_live_MAP_renderer"></span>
                     </td>
                 </tr>
-
+                <!-- home -->
+                <tr>
+                    <td id="turkce_home"></td>
+                    <td>
+                        <span class="status" id="turkce_test_home_status"></span>
+                        <span id="turkce_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="turkce_stage_home_status"></span>
+                        <span id="turkce_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="turkce_live_home_status"></span>
+                        <span id="turkce_live_home_renderer"></span>
+                        <br/>
+                    </td>
+                </tr>
                 <!-- ukchina (simp) -->
                 <tr>
                     <th colspan="4">ukchina/simp</th>
@@ -3822,6 +3903,22 @@
                         <span id="ukchina/simp_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="ukchina/simp_home"></td>
+                    <td>
+                        <span class="status" id="ukchina/simp_test_home_status"></span>
+                        <span id="ukchina/simp_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukchina/simp_stage_home_status"></span>
+                        <span id="ukchina/simp_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukchina/simp_live_home_status"></span>
+                        <span id="ukchina/simp_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- ukchina (trad) -->
                 <tr>
@@ -3843,6 +3940,22 @@
                         <span id="ukchina/trad_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="ukchina/trad_home"></td>
+                    <td>
+                        <span class="status" id="ukchina/trad_test_home_status"></span>
+                        <span id="ukchina/trad_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukchina/trad_stage_home_status"></span>
+                        <span id="ukchina/trad_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukchina/trad_live_home_status"></span>
+                        <span id="ukchina/trad_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
         </td>
         </table>
@@ -3876,6 +3989,22 @@
                         <span id="ukrainian_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="ukrainian_home"></td>
+                    <td>
+                        <span class="status" id="ukrainian_test_home_status"></span>
+                        <span id="ukrainian_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukrainian_stage_home_status"></span>
+                        <span id="ukrainian_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="ukrainian_live_home_status"></span>
+                        <span id="ukrainian_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- urdu -->
                 <tr>
@@ -3914,8 +4043,23 @@
                         <span id="urdu_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="urdu_home"></td>
+                    <td>
+                        <span class="status" id="urdu_test_home_status"></span>
+                        <span id="urdu_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="urdu_stage_home_status"></span>
+                        <span id="urdu_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="urdu_live_home_status"></span>
+                        <span id="urdu_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
-
                 <!-- uzbek -->
                 <tr>
                     <th colspan="4">uzbek</th>
@@ -3953,8 +4097,23 @@
                         <span id="uzbek_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="uzbek_home"></td>
+                    <td>
+                        <span class="status" id="uzbek_test_home_status"></span>
+                        <span id="uzbek_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="uzbek_stage_home_status"></span>
+                        <span id="uzbek_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="uzbek_live_home_status"></span>
+                        <span id="uzbek_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
-
                 <!-- vietnamese -->
                 <tr>
                     <th colspan="4">vietnamese</th>
@@ -3975,8 +4134,23 @@
                         <span id="vietnamese_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="vietnamese_home"></td>
+                    <td>
+                        <span class="status" id="vietnamese_test_home_status"></span>
+                        <span id="vietnamese_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="vietnamese_stage_home_status"></span>
+                        <span id="vietnamese_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="vietnamese_live_home_status"></span>
+                        <span id="vietnamese_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
-
                 <!-- yoruba -->
                 <tr>
                     <th colspan="4">yoruba</th>
@@ -3997,6 +4171,22 @@
                         <span id="yoruba_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="yoruba_home"></td>
+                    <td>
+                        <span class="status" id="yoruba_test_home_status"></span>
+                        <span id="yoruba_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="yoruba_stage_home_status"></span>
+                        <span id="yoruba_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="yoruba_live_home_status"></span>
+                        <span id="yoruba_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- zhongwen/simp -->
                 <tr>
@@ -4035,6 +4225,22 @@
                         <span id="zhongwen/simp_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="zhongwen/simp_home"></td>
+                    <td>
+                        <span class="status" id="zhongwen/simp_test_home_status"></span>
+                        <span id="zhongwen/simp_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="zhongwen/simp_stage_home_status"></span>
+                        <span id="zhongwen/simp_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="zhongwen/simp_live_home_status"></span>
+                        <span id="zhongwen/simp_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
                 <!-- zhongwen/trad -->
                 <tr>
@@ -4073,6 +4279,22 @@
                         <span id="zhongwen/trad_live_MAP_renderer"></span>
                     </td>
                 </tr>
+                <!-- home -->
+                <tr>
+                    <td id="zhongwen/trad_home"></td>
+                    <td>
+                        <span class="status" id="zhongwen/trad_test_home_status"></span>
+                        <span id="zhongwen/trad_test_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="zhongwen/trad_stage_home_status"></span>
+                        <span id="zhongwen/trad_stage_home_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="zhongwen/trad_live_home_status"></span>
+                        <span id="zhongwen/trad_live_home_renderer"></span>
+                        <br/>
+                    </td>
                 </tr>
         </td>
         </table>
