@@ -3,41 +3,51 @@
 
 <head>
     <style type="text/css">
+    body {
+      background-color: rgb(80, 80, 80);
+    }
+
+    a {
+      color: rgb(70, 165, 175);
+    }
         h1 {
             font-family: Arial, sans-serif;
             font-size: 24px;
             font-weight: bold;
             text-align: center;
+            color: whitesmoke;
         }
         
         .tg {
             border-collapse: collapse;
         }
-        
+
         .tg td {
             font-family: Arial, sans-serif;
             font-size: 14px;
             padding: 2px 5px;
-            border-style: dotted;
+            border-style: hidden;
             border-width: 1px;
             overflow: hidden;
             word-break: normal;
             border-color: rgba(0, 0, 0, 0.178);
             text-align: left;
             vertical-align: top;
+            color: whitesmoke;
         }
         
         .tg th {
             font-family: Arial, sans-serif;
             font-size: 16px;
             padding: 2px 5px;
-            border-style: dotted;
+            border-style: hidden;
             border-width: 1px;
             overflow: hidden;
             word-break: normal;
             border-color: rgba(0, 0, 0, 0.178);
             text-align: left;
             vertical-align: top;
+            color: whitesmoke;
         }
         
         .service {
@@ -50,8 +60,8 @@
         }
     </style>
     <script lang="javascript">
-        const PASS = "&#9989;";
-        const FAIL = "&#10060;";
+        const PASS = "&#128994;";
+        const FAIL = "&#128308;";
 
         const getSimorghPageStatus = id => {
             return id.then(pageId => {
@@ -2166,8 +2176,8 @@
         };
     </script>
 </head>
-<h1>BBC World Service - Media - Page Status</h1>
-
+<h1>BBC World Service - Page Status</h1>
+<title>BBC World Service - Page Status</title>
 <body onload="loadData()">
     <table align="center">
         <td valign="top">
