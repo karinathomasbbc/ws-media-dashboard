@@ -58,23 +58,25 @@
         }
         
         .status {
-            font-size: 12px;
+            font-size: 10px;
         }
     </style>
     <script lang="javascript">
         const PASS = "&#9989;";
         const FAIL = "&#10060;";
 
+        const PAGE_PASS = `<span title="Page OK">${PASS}</span>`;
+        const PAGE_FAIL = `<span title="Page Error">${FAIL}</span>`;
+
+        const MEDIA_PASS = `<span title="Media OK">${PASS}</span>`;
+        const MEDIA_FAIL = `<span title="Media Error">${FAIL}</span>`;
+
         const getSimorghPageStatus = id => {
-            return id.then(pageId => {
-                return isSimorghPage(pageId) ? PASS : FAIL;
-            });
+            return isSimorghPage(id) ? PAGE_PASS : PAGE_FAIL;
         };
 
         const getPALPageStatus = id => {
-            return id.then(pageId => {
-                return isPALPage(pageId) ? PASS : FAIL;
-            });
+            return isPALPage(id) ? PAGE_PASS : PAGE_FAIL;
         };
 
         const getElementId = (service, env, pageType, suffix) => {
@@ -82,24 +84,46 @@
             return elementId;
         };
 
-        const setPageStatus = async(service, pageType, environment) => {
+        const getMediaStatus = async outerHTML => {
+            let mediaStatus = '';
+            const mediaPage = new DOMParser().parseFromString(outerHTML, "text/html");
+            const mediaPlayerContainer = mediaPage.querySelector('iframe');
+
+            if (mediaPlayerContainer) {
+                const embedURL = mediaPlayerContainer.src;
+                const mediaHTML = await makeRequest(embedURL).then(result => {return result});
+                mediaStatus = (mediaHTML !== null) ? MEDIA_PASS : MEDIA_FAIL;
+            }
+
+            return mediaStatus;
+        };
+
+        const setStatus = async(service, pageType, environment) => {
             const {
                 env, path, renderer
             } = environment;
-            const elementId = getElementId(service, env, pageType, "status");
+            const { type, category } = pageType;
+            const elementId = getElementId(service, env, type, "status");
             const url = getUrl(service, env, path);
 
             const element = document.getElementById(elementId);
+
             if (element) {
+                const pageHTML = await makeRequest(url);
+                let pageStatus;
+
                 if (renderer === "Simorgh") {
-                    element.innerHTML = await getSimorghPageStatus(
-                        getPageId(url)
-                    );
+                    pageStatus = getSimorghPageStatus(parseId(pageHTML));
                 } else if (renderer === "PAL") {
-                    element.innerHTML = await getPALPageStatus(
-                        getPageId(url)
-                    );
+                    pageStatus = getPALPageStatus(parseId(pageHTML));
                 }
+
+                let mediaStatus = '';
+                if (category === 'media') {
+                    mediaStatus = await getMediaStatus(pageHTML);
+                }
+
+                element.innerHTML = pageStatus + mediaStatus;
             }
         };
 
@@ -150,17 +174,16 @@
             return id;
         };
 
-        const getPageId = url => {
+        const makeRequest = url => {
             const prefix = "https://ws-media-cors.herokuapp.com/";
             return fetch(`${prefix}${url}`)
                 .then(handleResponse)
-                .then(data => {
-                    return parseId(data);
-                })
+                .then(data =>  {return data})
                 .catch(error => {
+                    console.log(error);
                     return null;
                 });
-        };
+        }
 
         const getUrl = (service, environment, path) => {
             const serv = service.split("/")[0];
@@ -1914,7 +1937,7 @@
                 category: "media",
                 environments: [{
                     env: "test",
-                    renderer: "Simorgh",
+                    renderer: "N/A",
                     path: "bbc_uzbek_radio/liveradio"
                 }, {
                     env: "stage",
@@ -2161,7 +2184,7 @@
 
                                 if (load) {
                                     setPageType(service.service, type);
-                                    setPageStatus(service.service, type, environment);
+                                    setStatus(service.service, pageType, environment);
                                     setRenderer(service.service, type, environment);
                                 }
                             }
