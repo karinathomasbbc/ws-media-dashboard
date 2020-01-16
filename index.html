@@ -89,7 +89,7 @@
             const mediaPage = new DOMParser().parseFromString(outerHTML, "text/html");
             const mediaPlayerContainer = mediaPage.querySelector('iframe');
 
-            if (mediaPlayerContainer) {
+            if (mediaPlayerContainer !== null) {
                 const embedURL = mediaPlayerContainer.src;
                 const mediaHTML = await makeRequest(embedURL).then(result => {return result});
                 mediaStatus = (mediaHTML !== null) ? MEDIA_PASS : MEDIA_FAIL;
@@ -110,17 +110,17 @@
 
             if (element) {
                 const pageHTML = await makeRequest(url);
-                let pageStatus;
-
-                if (renderer === "Simorgh") {
-                    pageStatus = getSimorghPageStatus(parseId(pageHTML));
-                } else if (renderer === "PAL") {
-                    pageStatus = getPALPageStatus(parseId(pageHTML));
-                }
-
+                let pageStatus = '';
                 let mediaStatus = '';
-                if (category === 'media') {
-                    mediaStatus = await getMediaStatus(pageHTML);
+
+                if (renderer === "Simorgh" || renderer === "PAL") {
+                    pageStatus = renderer === "Simorgh" 
+                    ? getSimorghPageStatus(parseId(pageHTML)) 
+                    : getPALPageStatus(parseId(pageHTML));
+
+                    if (category === 'media') {
+                        mediaStatus = await getMediaStatus(pageHTML);
+                    }
                 }
 
                 element.innerHTML = pageStatus + mediaStatus;
