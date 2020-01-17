@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/media-dashboard-react/node_modules
+/media-dashboard-react/.pnp
+/media-dashboard-react/.pnp.js
+
+# testing
+/media-dashboard-react/coverage
+
+# production
+/media-dashboard-react/build
+
+# misc
+/media-dashboard-react/.DS_Store
+/media-dashboard-react/.env.local
+/media-dashboard-react/.env.development.local
+/media-dashboard-react/.env.test.local
+/media-dashboard-react/.env.production.local
+
+/media-dashboard-react/npm-debug.log*
+/media-dashboard-react/yarn-debug.log*
+/media-dashboard-react/yarn-error.log*
