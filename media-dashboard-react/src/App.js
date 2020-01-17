@@ -6,8 +6,6 @@ import Table from "./components/Table";
 const AppWrapper = styled.div`
   background-color: #282c34;
   min-height: 100vh;
-  width: 100%;
-  display: flex;
   color: white;
 `;
 

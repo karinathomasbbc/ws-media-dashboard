@@ -4,10 +4,10 @@ import Service from "./Service";
 import TableHeading from "./TableHeading";
 import TableRow from "./TableRow";
 
-const DataTable = styled.table`
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(8, auto);
+const DataTable = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 `;
 
 const Table = ({ services }) => {

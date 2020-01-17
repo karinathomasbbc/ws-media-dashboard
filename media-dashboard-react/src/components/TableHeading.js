@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import TableRow from "./TableRow";
 
-const TableHeadingRow = styled.tr``;
-
-const TableHeadingItem = styled.th`
-  min-width: 100px;
+const TableHeadingItem = styled.div`
+  /* min-width: 100px; */
+  flex: 1;
 `;
 
 const TableHeading = () => {
   return (
-    <TableHeadingRow>
+    <TableRow>
       <TableHeadingItem> </TableHeadingItem>
       <TableHeadingItem>Test</TableHeadingItem>
       <TableHeadingItem>Stage</TableHeadingItem>
       <TableHeadingItem>Live</TableHeadingItem>
-    </TableHeadingRow>
+    </TableRow>
   );
 };
 
