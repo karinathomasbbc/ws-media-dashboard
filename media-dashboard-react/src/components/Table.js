@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Service from "./Service";
 import TableHeading from "./TableHeading";
 import TableRow from "./TableRow";

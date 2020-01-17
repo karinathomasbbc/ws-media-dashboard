@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import TableRow from "./TableRow";
 import TableDataItem from "./TableDataItem";
 import EnvironmentItem from "./EnvironmentItem";
