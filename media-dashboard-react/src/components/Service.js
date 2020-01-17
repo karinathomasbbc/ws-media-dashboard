@@ -19,11 +19,13 @@ const Service = ({ serviceName, pageTypes }) => {
             <TableDataItem>{page.type}</TableDataItem>
             {page.environments.map(environment => {
               return (
-                <EnvironmentItem
-                  env={environment.env}
-                  renderer={environment.renderer}
-                  path={environment.path}
-                />
+                <TableDataItem>
+                  <EnvironmentItem
+                    env={environment.env}
+                    renderer={environment.renderer}
+                    path={environment.path}
+                  />
+                </TableDataItem>
               );
             })}
           </TableRow>
