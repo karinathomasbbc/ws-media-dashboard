@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import Service from "./Service";
-import TableHeading from "./TableHeading";
-import TableRow from "./TableRow";
+import TableKey from "./TableKey";
 
 const DataTable = styled.div`
   display: flex;
@@ -19,7 +18,7 @@ const ServicesWrapper = styled.div`
 const Table = ({ services }) => {
   return (
     <DataTable>
-      <TableHeading />
+      <TableKey />
       <ServicesWrapper>
         {services.map(service => {
           return (

@@ -6,5 +6,9 @@ export default {
   red: `#D53516`,
   yelow: `#F9CD01`,
   green: `#22e05e`,
-  blue: `#7BC7EF`
+  testBlue: `#7BC7EF`,
+  livePurple: `#624CAB`,
+  stagingAmber: `#ECD444`
 };
+
+// alt purple option 6E2594

@@ -18,7 +18,7 @@ const EnvironmentItem = ({ renderer }) => {
 
   return (
     <Wrapper>
-      <EnvironmentText> {handleEnvItemText(renderer)}</EnvironmentText>
+      <EnvironmentText>{handleEnvItemText(renderer)}</EnvironmentText>
     </Wrapper>
   );
 };
