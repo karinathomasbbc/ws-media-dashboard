@@ -2,17 +2,18 @@ import React from "react";
 import styled from "styled-components/macro";
 import services from "./consts/services";
 import Table from "./components/Table";
+import Colors from "./consts/Colors";
 
 const AppWrapper = styled.div`
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white;
+  background-color: ${Colors.backgroundGrey};
+  display: flex;
+  flex-direction: column;
 `;
 
 const TableWrapper = styled.div`
-  padding: 1rem;
+  margin: 2rem;
   border-radius: 4px;
-  background-color: white;
+  background-color: ${Colors.white};
 `;
 
 const App = () => {
