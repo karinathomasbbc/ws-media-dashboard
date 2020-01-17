@@ -3,11 +3,14 @@ import styled from "styled-components";
 
 const TableHeadingRow = styled.tr``;
 
-const TableHeadingItem = styled.th``;
+const TableHeadingItem = styled.th`
+  min-width: 100px;
+`;
 
-const TableHeading = ({}) => {
+const TableHeading = () => {
   return (
     <TableHeadingRow>
+      <TableHeadingItem> </TableHeadingItem>
       <TableHeadingItem>Test</TableHeadingItem>
       <TableHeadingItem>Stage</TableHeadingItem>
       <TableHeadingItem>Live</TableHeadingItem>
