@@ -4,17 +4,20 @@ import TableRow from "./TableRow";
 
 const TableHeadingItem = styled.div`
   /* min-width: 100px; */
-  flex: 1;
+  flex: 0.2;
+`;
+
+const TableHeadingRow = styled(TableRow)`
+  padding: 0 0.8rem;
 `;
 
 const TableHeading = () => {
   return (
-    <TableRow>
-      <TableHeadingItem> </TableHeadingItem>
+    <TableHeadingRow>
       <TableHeadingItem>Test</TableHeadingItem>
       <TableHeadingItem>Stage</TableHeadingItem>
       <TableHeadingItem>Live</TableHeadingItem>
-    </TableRow>
+    </TableHeadingRow>
   );
 };
 

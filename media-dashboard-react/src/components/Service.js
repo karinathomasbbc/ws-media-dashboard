@@ -6,8 +6,8 @@ import EnvironmentItem from "./EnvironmentItem";
 import Colors from "../consts/Colors";
 
 const ServiceWrapper = styled.div`
-  padding: 0.2rem;
-  margin: 0.5rem 0.5rem 0.2rem;
+  padding: 0.3rem;
+  margin: 0.5rem 0.5rem 0.3rem;
   border-bottom: ${Colors.darkGrey} 1px solid;
   flex: 1;
   min-width: 15%;
@@ -20,10 +20,12 @@ const ServiceTitleRow = styled(TableRow)`
 const ServiceTitle = styled.span`
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
 `;
 
 const PageTypeTitle = styled.span`
-  font-weight: bold;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 `;
 
 const PageTypeTitleDataItem = styled(TableDataItem)`

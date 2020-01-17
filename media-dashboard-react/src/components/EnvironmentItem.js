@@ -3,6 +3,10 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div``;
 
+const EnvironmentText = styled.span`
+  font-family: "Open Sans", sans-serif;
+`;
+
 const EnvironmentItem = ({ renderer }) => {
   const handleEnvItemText = text => {
     if (text.toLowerCase() === "simorgh") {
@@ -12,7 +16,11 @@ const EnvironmentItem = ({ renderer }) => {
     }
   };
 
-  return <Wrapper>{handleEnvItemText(renderer)}</Wrapper>;
+  return (
+    <Wrapper>
+      <EnvironmentText> {handleEnvItemText(renderer)}</EnvironmentText>
+    </Wrapper>
+  );
 };
 
 export default EnvironmentItem;

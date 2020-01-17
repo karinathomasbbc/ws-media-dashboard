@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import services from "./consts/services";
 import Table from "./components/Table";
 import Colors from "./consts/Colors";
+import "./consts/Typography.css";
 
 const AppWrapper = styled.div`
   background-color: ${Colors.backgroundGrey};

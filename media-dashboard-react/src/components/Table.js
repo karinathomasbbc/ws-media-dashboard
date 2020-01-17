@@ -19,9 +19,7 @@ const ServicesWrapper = styled.div`
 const Table = ({ services }) => {
   return (
     <DataTable>
-      <TableRow>
-        <TableHeading />
-      </TableRow>
+      <TableHeading />
       <ServicesWrapper>
         {services.map(service => {
           return (
