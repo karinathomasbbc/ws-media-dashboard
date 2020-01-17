@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import ServiceStatus from "./ServiceStatus";
+import TableRow from "./TableRow";
+import TableDataItem from "./TableDataItem";
 
 const ServiceWrapper = styled.div``;
 
-const Service = ({ title, pageTypes }) => {
+const Service = ({ serviceName, pageTypes }) => {
   return (
     <ServiceWrapper>
-      <span>{title}</span>
+      <TableRow>
+        <TableDataItem>{serviceName}</TableDataItem>
+      </TableRow>
     </ServiceWrapper>
   );
 };
