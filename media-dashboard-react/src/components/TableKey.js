@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import TableRow from "./TableRow";
-import Colors from "../consts/Colors";
+import Colors from "../consts/colors";
 
 const TableKeyItem = styled.div`
   /* min-width: 100px; */

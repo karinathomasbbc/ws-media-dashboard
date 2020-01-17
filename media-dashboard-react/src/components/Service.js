@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 import TableRow from "./TableRow";
 import TableDataItem from "./TableDataItem";
 import EnvironmentItem from "./EnvironmentItem";
-import Colors from "../consts/Colors";
+import Colors from "../consts/colors";
 
 const ServiceWrapper = styled.div`
   padding: 0.3rem;
