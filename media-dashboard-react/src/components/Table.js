@@ -7,9 +7,13 @@ import TableRow from "./TableRow";
 const DataTable = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 1rem;
   color: black;
+`;
+
+const ServicesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const Table = ({ services }) => {
@@ -18,14 +22,16 @@ const Table = ({ services }) => {
       <TableRow>
         <TableHeading />
       </TableRow>
-      {services.map(service => {
-        return (
-          <Service
-            serviceName={service.service}
-            pageTypes={service.pageTypes}
-          />
-        );
-      })}
+      <ServicesWrapper>
+        {services.map(service => {
+          return (
+            <Service
+              serviceName={service.service}
+              pageTypes={service.pageTypes}
+            />
+          );
+        })}
+      </ServicesWrapper>
     </DataTable>
   );
 };

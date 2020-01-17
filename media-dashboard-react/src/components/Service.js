@@ -3,9 +3,14 @@ import styled from "styled-components/macro";
 import TableRow from "./TableRow";
 import TableDataItem from "./TableDataItem";
 import EnvironmentItem from "./EnvironmentItem";
+import Colors from "../consts/Colors";
 
 const ServiceWrapper = styled.div`
-  margin: 0.4rem 0;
+  padding: 0.2rem;
+  margin: 0.5rem 0.5rem 0.2rem;
+  border-bottom: ${Colors.darkGrey} 1px solid;
+  flex: 1;
+  min-width: 20%;
 `;
 
 const ServiceTitleRow = styled(TableRow)`
