@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div``;
 
-const EnvironmentItem = ({ env, renderer, path }) => {
+const EnvironmentItem = ({ renderer }) => {
   return <Wrapper>{renderer}</Wrapper>;
 };
 

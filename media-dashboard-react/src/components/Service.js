@@ -7,7 +7,6 @@ import EnvironmentItem from "./EnvironmentItem";
 const ServiceWrapper = styled.div``;
 
 const Service = ({ serviceName, pageTypes }) => {
-  debugger;
   return (
     <ServiceWrapper>
       <TableRow>

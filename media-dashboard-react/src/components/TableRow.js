@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const TableRow = styled.tr``;
 
-const TableRowComponent = ({ children }) => {
-  return <TableRow>{children}</TableRow>;
+const TableRowComponent = ({ children, className }) => {
+  return <TableRow className={className}>{children}</TableRow>;
 };
 
 export default TableRowComponent;
