@@ -11,6 +11,8 @@ const AppWrapper = styled.div`
 
 const TableWrapper = styled.div`
   padding: 1rem;
+  border-radius: 4px;
+  background-color: white;
 `;
 
 const App = () => {

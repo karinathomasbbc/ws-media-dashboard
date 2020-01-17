@@ -8,6 +8,8 @@ const DataTable = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 1rem;
+  color: black;
 `;
 
 const Table = ({ services }) => {
