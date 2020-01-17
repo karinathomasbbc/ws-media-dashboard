@@ -10,7 +10,7 @@ const ServiceWrapper = styled.div`
   margin: 0.5rem 0.5rem 0.2rem;
   border-bottom: ${Colors.darkGrey} 1px solid;
   flex: 1;
-  min-width: 20%;
+  min-width: 15%;
 `;
 
 const ServiceTitleRow = styled(TableRow)`
@@ -24,6 +24,10 @@ const ServiceTitle = styled.span`
 
 const PageTypeTitle = styled.span`
   font-weight: bold;
+`;
+
+const PageTypeTitleDataItem = styled(TableDataItem)`
+  flex: 1.5;
 `;
 
 const capitaliseFirstLetter = string => {
@@ -43,17 +47,13 @@ const Service = ({ serviceName, pageTypes }) => {
       {pageTypes.map(page => {
         return (
           <TableRow>
-            <TableDataItem>
+            <PageTypeTitleDataItem>
               <PageTypeTitle>{page.type}</PageTypeTitle>
-            </TableDataItem>
+            </PageTypeTitleDataItem>
             {page.environments.map(environment => {
               return (
                 <TableDataItem>
-                  <EnvironmentItem
-                    env={environment.env}
-                    renderer={environment.renderer}
-                    path={environment.path}
-                  />
+                  <EnvironmentItem renderer={environment.renderer} />
                 </TableDataItem>
               );
             })}

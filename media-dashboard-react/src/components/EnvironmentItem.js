@@ -4,7 +4,15 @@ import styled from "styled-components/macro";
 const Wrapper = styled.div``;
 
 const EnvironmentItem = ({ renderer }) => {
-  return <Wrapper>{renderer}</Wrapper>;
+  const handleEnvItemText = text => {
+    if (text.toLowerCase() === "simorgh") {
+      return "Si";
+    } else {
+      return text;
+    }
+  };
+
+  return <Wrapper>{handleEnvItemText(renderer)}</Wrapper>;
 };
 
 export default EnvironmentItem;

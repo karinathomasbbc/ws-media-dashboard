@@ -5,8 +5,8 @@ const TableDataItem = styled.div`
   flex: 1;
 `;
 
-const TableDataItemComponent = ({ children }) => {
-  return <TableDataItem>{children}</TableDataItem>;
+const TableDataItemComponent = ({ children, className }) => {
+  return <TableDataItem className={className}>{children}</TableDataItem>;
 };
 
 export default TableDataItemComponent;
