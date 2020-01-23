@@ -2213,14 +2213,33 @@
             }
         };
 
+        const getSimorghStats = () => {
+
+        }
+
         const loadData = async() => {
             checkAllPages();
+            getSimorghStats();
         };
     </script>
 </head>
 <h1>BBC World Service - Page Status</h1>
 <title>BBC World Service - Page Status</title>
 <body onload="loadData()">
+    <table align='left' class='tg'>
+        <th colspan="3">Simorgh Statistics</th>
+            <tr>
+                <th>Test</th>
+                <th>Stage</th>
+                <th>Live</th>
+            </tr>
+            <tr>
+                <td id='environment_test'></td>
+                <td id='environment_stage'></td>
+                <td id='environment_live'></td>
+            </tr>
+        </tr>
+    </table>
     <table align="center">
         <td valign="top">
             <table id='col-1' class="tg">
