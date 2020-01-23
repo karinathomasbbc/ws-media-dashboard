@@ -63,20 +63,18 @@
     </style>
     <script lang="javascript">
         const PASS = "&#9989;";
-        const FAIL = "&#10060;";
+        const FAIL = (message = '') => `<span title="Error${message}">&#10060;</span>`;
 
         const PAGE_PASS = `<span title="Page OK">${PASS}</span>`;
-        const PAGE_FAIL = `<span title="Page Error">${FAIL}</span>`;
 
         const MEDIA_PASS = `<span title="Media OK">${PASS}</span>`;
-        const MEDIA_FAIL = `<span title="Media Error">${FAIL}</span>`;
 
         const getSimorghPageStatus = id => {
-            return isSimorghPage(id) ? PAGE_PASS : PAGE_FAIL;
+            return isSimorghPage(id) ? PAGE_PASS : FAIL(': Page is not rendered by Simorgh');
         };
 
         const getPALPageStatus = id => {
-            return isPALPage(id) ? PAGE_PASS : PAGE_FAIL;
+            return isPALPage(id) ? PAGE_PASS : FAIL(': Page is not rendered by PAL');
         };
 
         const getElementId = (service, env, pageType, suffix) => {
@@ -92,7 +90,7 @@
             if (mediaPlayerContainer !== null) {
                 const embedURL = mediaPlayerContainer.src;
                 const mediaHTML = await makeRequest(embedURL).then(result => {return result});
-                mediaStatus = (mediaHTML !== null) ? MEDIA_PASS : MEDIA_FAIL;
+                mediaStatus = (mediaHTML !== null) ? MEDIA_PASS : FAIL('- no media');
             }
 
             return mediaStatus;
@@ -239,7 +237,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -290,7 +288,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -342,7 +340,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -394,7 +392,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -482,7 +480,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -534,7 +532,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -588,7 +586,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -674,7 +672,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -725,7 +723,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -811,7 +809,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -897,7 +895,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1018,7 +1016,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1072,7 +1070,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -1126,11 +1124,11 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "live",
@@ -1189,7 +1187,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1259,7 +1257,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1329,7 +1327,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1453,7 +1451,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -1504,7 +1502,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1555,7 +1553,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1727,7 +1725,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "Simorgh",
                     path: ""
                 }, {
                     env: "stage",
@@ -1762,7 +1760,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1867,7 +1865,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -1918,7 +1916,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -2004,7 +2002,7 @@
                 category: 'home',
                 environments: [{
                     env: "test",
-                    renderer: "N/A",
+                    renderer: "PAL",
                     path: ""
                 }, {
                     env: "stage",
@@ -3307,7 +3305,7 @@
                 </tr>
                 <!-- persian (dari) -->
                 <tr>
-                    <th colspan="4">persian - dari liveRadio</th>
+                    <th colspan="4">persian - dari - radio</th>
                 </tr>
                 <!-- Live Radio -->
                 <tr>
