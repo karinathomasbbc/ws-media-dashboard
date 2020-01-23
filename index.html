@@ -2164,29 +2164,46 @@
                 }), {});
 
             try {
-                services.forEach(service => {
-                    service.pageTypes.forEach(pageType => {
-                        pageType.environments.forEach(environment => {
-                            const {
-                                type, category
-                            } = pageType;
+                let allServices = services;
+
+                if (params.service) {
+                    allServices = services.filter(serviceConfig => serviceConfig.service === params.service);
+                }
+
+                allServices.forEach(service => {
+
+                    let allPageTypes = service.pageTypes;
+
+                    if (params.pageType) {
+                        allPageTypes = service.pageTypes.filter(pageTypeConfig => pageTypeConfig.type === params.pageType);
+                    }
+
+                    if (params.category) {
+                        allPageTypes = allPageTypes.filter(pageTypeConfig => pageTypeConfig.category === params.category);
+                    }
+
+                    allPageTypes.forEach(pageType => {
+                        let allEnvironments = pageType.environments;
+
+                        if (params.env) {
+                            allEnvironments = pageType.environments.filter(environmentConfig => environmentConfig.env === params.env);
+                        }
+
+                        if (params.renderer) {
+                            allEnvironments = allEnvironments.filter(environmentConfig => environmentConfig.renderer === params.renderer);
+                        }
+
+                        allEnvironments.forEach(environment => {
+                            const serviceName = service.service;
+                            const page = pageType.type;
                             const {
                                 env, renderer
                             } = environment;
+
                             if (environment.renderer !== '') {
-                                let load = true;
-
-                                if (params && params.category) {
-                                    load = (params.category && params.category.toLowerCase() === category.toLowerCase())
-                                    // ||
-                                    // (params.env && params.env.toLowerCase() === env.toLowerCase())
-                                }
-
-                                if (load) {
-                                    setPageType(service.service, type);
-                                    setStatus(service.service, pageType, environment);
-                                    setRenderer(service.service, type, environment);
-                                }
+                                setPageType(serviceName, page);
+                                setStatus(serviceName, pageType, environment);
+                                setRenderer(serviceName, page, environment);
                             }
                         })
                     })
