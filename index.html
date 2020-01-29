@@ -86,9 +86,12 @@
             const mediaPage = new DOMParser().parseFromString(outerHTML, "text/html");
             const selector = platform === 'Canonical' ? 'iframe' : 'amp-iframe';
             const mediaPlayerContainer = mediaPage.querySelector(selector);
-            const embedURL = mediaPlayerContainer.getAttribute('src');
+            let mediaHTML = null;
 
-            const mediaHTML = await makeRequest(embedURL).then(result => {return result});
+            if (mediaPlayerContainer !== null) {
+            const embedURL = mediaPlayerContainer.getAttribute('src');
+                mediaHTML = await makeRequest(embedURL).then(result => {return result});
+            }
 
             return mediaHTML !== null ? MEDIA_PASS(platform) : FAIL(`- no media on ${platform}`);
         };
@@ -113,7 +116,7 @@
 
                 if (validRenderers.includes(renderer)) {
                     if (renderer === "Simorgh") {
-                        canonicalPageStatus = getSimorghPageStatus(parseId(canonicalUrl)) ;
+                        canonicalPageStatus = getSimorghPageStatus(parseId(canonicalHTML)) ;
                         const ampHTML = await makeRequest(canonicalUrl + '.amp');
                         ampPageStatus = getSimorghPageStatus(parseId(ampHTML), 'AMP') ;
 
@@ -166,9 +169,11 @@
             try {
                 if (response.ok) {
                     text = response.text();
+                } else {
+                    console.error(response);
                 }
             } catch (e) {
-                console.log("ERROR", e);
+                console.error(e);
             }
 
             return text;
@@ -233,6 +238,18 @@
                     env: "live",
                     renderer: "Simorgh",
                     path: "bbc_afaanoromoo_radio/liveradio"
+                },{
+                    env: "test_oromo",
+                    renderer: "PAL",
+                    path: "bbc_oromo_radio/liveradio"
+                }, {
+                    env: "stage_oromo",
+                    renderer: "PAL",
+                    path: "bbc_oromo_radio/liveradio"
+                }, {
+                    env: "live_oromo",
+                    renderer: "PAL",
+                    path: "bbc_oromo_radio/liveradio"
                 }]
             }, {
                 type: "MAP",
@@ -2320,7 +2337,27 @@
                         <br/>
                     </td>
                 </tr>
-
+                <!-- afaanoromoo (oromo) -->
+                <tr>
+                    <th colspan="4">afaanoromoo - oromo - radio</th>
+                </tr>
+                <!-- Live Radio -->
+                <tr>
+                    <td id="afaanoromoo_liveRadio"></td>
+                    <td>
+                        <span class="status" id="afaanoromoo_test_oromo_liveRadio_status"></span>
+                        <span id="afaanoromoo_test_oromo_liveRadio_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afaanoromoo_stage_oromo_liveRadio_status"></span>
+                        <span id="afaanoromoo_stage_oromo_liveRadio_renderer"></span>
+                    </td>
+                    <td>
+                        <span class="status" id="afaanoromoo_live_oromo_liveRadio_status"></span>
+                        <span id="afaanoromoo_live_oromo_liveRadio_renderer"></span>
+                        <br/>
+                    </td>
+                </tr>
                 <!-- afrique -->
                 <tr>
                     <th colspan="4">afrique</th>
