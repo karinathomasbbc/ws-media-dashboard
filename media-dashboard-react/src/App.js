@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import services from "./consts/services";
+import services from "./consts/serviceData";
 import Table from "./components/Table";
 import Colors from "./consts/colors";
 import "./consts/Typography.css";

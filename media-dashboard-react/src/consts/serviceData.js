@@ -1266,21 +1266,6 @@ export default [
             env: "live",
             renderer: "PAL",
             path: "bbc_persian_radio/liveradio"
-          },
-          {
-            env: "test_dari",
-            renderer: "Simorgh",
-            path: "bbc_dari_radio/liveradio"
-          },
-          {
-            env: "stage_dari",
-            renderer: "PAL",
-            path: "bbc_dari_radio/liveradio"
-          },
-          {
-            env: "live_dari",
-            renderer: "PAL",
-            path: "bbc_dari_radio/liveradio"
           }
         ]
       },
@@ -1323,6 +1308,32 @@ export default [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    service: "persian - dari",
+    pageTypes: [
+      {
+        type: "liveRadio",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "bbc_dari_radio/liveradio"
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: "bbc_dari_radio/liveradio"
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: "bbc_dari_radio/liveradio"
           }
         ]
       }
