@@ -75,12 +75,10 @@ const EnvironmentItem = ({ environment, serviceName, page }) => {
           ? getSimorghPageStatus(parseId(html))
           : getPALPageStatus(parseId(html));
 
-      if (pageCategory === "media") {
-        mediaStatus = await getMediaStatus(html);
-      }
+      // if (pageCategory === "media") {
+      //   mediaStatus = await getMediaStatus(html);
+      // }
     }
-
-    debugger;
 
     setPageStatus(pageStatus);
     setMediaStatus(mediaStatus);
