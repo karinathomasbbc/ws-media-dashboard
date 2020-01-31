@@ -1,4 +1,4 @@
-// import axios from 'Axios'
+import axios from "axios";
 
 const handleResponse = response => {
   let text = null;
@@ -13,8 +13,7 @@ const handleResponse = response => {
 };
 
 const makeRequest = url => {
-  debugger;
-  const prefix = "https://ws-media-cors.herokuapp.com/";
+  const prefix = "http://localhost:8080/";
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {

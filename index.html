@@ -176,6 +176,7 @@
 
         const makeRequest = url => {
             const prefix = "https://ws-media-cors.herokuapp.com/";
+            console.log(`${prefix}${url}`);
             return fetch(`${prefix}${url}`)
                 .then(handleResponse)
                 .then(data =>  {return data})
