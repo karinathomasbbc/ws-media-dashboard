@@ -454,10 +454,10 @@ export default [
       }
     ]
   },
-  {
-    service: "cymrufyw",
-    pageTypes: []
-  },
+  // {
+  //   service: "cymrufyw",
+  //   pageTypes: []
+  // },
   {
     service: "gahuza",
     pageTypes: [
@@ -1101,10 +1101,10 @@ export default [
       }
     ]
   },
-  {
-    service: "naidheachdan",
-    pageTypes: []
-  },
+  // {
+  //   service: "naidheachdan",
+  //   pageTypes: []
+  // },
   {
     service: "nepali",
     pageTypes: [
@@ -1173,10 +1173,10 @@ export default [
       }
     ]
   },
-  {
-    service: "news",
-    pageTypes: []
-  },
+  // {
+  //   service: "news",
+  //   pageTypes: []
+  // },
   {
     service: "pashto",
     pageTypes: [
@@ -1527,10 +1527,10 @@ export default [
       }
     ]
   },
-  {
-    service: "scotland",
-    pageTypes: []
-  },
+  // {
+  //   service: "scotland",
+  //   pageTypes: []
+  // },
   {
     service: "serbian/cyr",
     pageTypes: [
