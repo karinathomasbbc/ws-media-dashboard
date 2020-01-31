@@ -1,9 +1,10 @@
-const handleResponse = response => {
+const handleResponse = async response => {
   let text = null;
 
   try {
     if (response.ok) {
-      text = response.text();
+      text = await response.text();
+      return text;
     }
   } catch (e) {
     console.log("ERROR", e);
