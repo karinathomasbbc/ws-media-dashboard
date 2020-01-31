@@ -6,21 +6,25 @@ import EnvironmentItem from "./EnvironmentItem";
 import Colors from "../consts/colors";
 
 const ServiceWrapper = styled.div`
-  padding: 0.3rem;
+  padding: 0.3rem 0.3rem 0.5rem;
   margin: 0.5rem 0.5rem 0.3rem;
-  border-bottom: ${Colors.darkGrey} 1px solid;
+  border-bottom: ${Colors.backgroundGrey} 2px solid;
   flex: 1;
   min-width: 15%;
 `;
 
 const ServiceTitleRow = styled(TableRow)`
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.25rem;
 `;
 
 const ServiceTitle = styled.span`
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
+`;
+
+const PageTypeRow = styled(TableRow)`
+  padding-bottom: 0.1rem;
 `;
 
 const PageTypeTitle = styled.span`
@@ -48,7 +52,7 @@ const Service = ({ serviceName, pageTypes }) => {
       </ServiceTitleRow>
       {pageTypes.map(page => {
         return (
-          <TableRow>
+          <PageTypeRow>
             <PageTypeTitleDataItem>
               <PageTypeTitle>{page.type}</PageTypeTitle>
             </PageTypeTitleDataItem>
@@ -59,7 +63,7 @@ const Service = ({ serviceName, pageTypes }) => {
                 </TableDataItem>
               );
             })}
-          </TableRow>
+          </PageTypeRow>
         );
       })}
     </ServiceWrapper>
