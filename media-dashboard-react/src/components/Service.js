@@ -4,6 +4,7 @@ import TableRow from "./TableRow";
 import TableDataItem from "./TableDataItem";
 import EnvironmentItem from "./EnvironmentItem";
 import Colors from "../consts/colors";
+import makeRequest from "../helpers/MakeRequest";
 
 const ServiceWrapper = styled.div`
   padding: 0.3rem 0.3rem 0.5rem;
@@ -42,6 +43,17 @@ const capitaliseFirstLetter = string => {
   return splitString.join("");
 };
 
+const getUrl = (service, environment, path) => {
+  // const serv = service.split("/")[0];
+  let env = environment.split("_")[0];
+  env = env === "live" ? "" : `${env}.`;
+  return `https://www.${env}bbc.com/${service}/${path}`;
+};
+
+const getEnvironmentStatus = async path => {
+  let data = await makeRequest(path);
+};
+
 const Service = ({ serviceName, pageTypes }) => {
   return (
     <ServiceWrapper>
@@ -59,7 +71,14 @@ const Service = ({ serviceName, pageTypes }) => {
             {page.environments.map(environment => {
               return (
                 <TableDataItem>
-                  <EnvironmentItem renderer={environment.renderer} />
+                  <EnvironmentItem
+                    renderer={environment.renderer}
+                    getStatus={() =>
+                      getEnvironmentStatus(
+                        getUrl(serviceName, environment.env, environment.path)
+                      )
+                    }
+                  />
                 </TableDataItem>
               );
             })}
