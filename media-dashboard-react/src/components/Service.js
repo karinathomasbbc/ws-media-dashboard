@@ -62,6 +62,7 @@ const Service = ({ serviceName, pageTypes }) => {
                   <EnvironmentItem
                     environment={environment}
                     serviceName={serviceName}
+                    page={page}
                   />
                 </TableDataItem>
               );
