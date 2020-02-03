@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(80, 80, 80);
+}
+
+a {
+    color: rgb(70, 165, 175);
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.tg {
+    border-collapse: collapse;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-style: hidden;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: rgba(0, 0, 0, 0.178);
+    text-align: left;
+    vertical-align: top;
+    color: whitesmoke;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-style: hidden;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: rgba(0, 0, 0, 0.178);
+    text-align: left;
+    vertical-align: top;
+    color: whitesmoke;
+}
+
+.service {
+    font-weight: bold;
+    text-align: center;
+}
+
+.status {
+    font-size: 7px;
+}
