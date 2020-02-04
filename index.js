@@ -2424,7 +2424,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_urdu_radio/liveradio"
           }
         ]
