@@ -829,7 +829,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_hindi_radio/liveradio"
           }
         ]
