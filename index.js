@@ -1433,7 +1433,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_persian_radio/liveradio"
           },
           {
@@ -1448,7 +1448,7 @@ const services = [
           },
           {
             env: "live_dari",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_dari_radio/liveradio"
           }
         ]
