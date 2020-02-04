@@ -2492,7 +2492,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_uzbek_radio/liveradio"
           }
         ]
