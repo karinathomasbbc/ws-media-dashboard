@@ -97,7 +97,7 @@ const setRenderer = (service, pageType, environment) => {
 const setPageType = (service, pageType) => {
   const { variant } = service;
 
-  const variantPrefix = variant ? `/${variant}` : '';
+  const variantPrefix = variant ? `/${variant}` : "";
 
   const elementId = `${service.service}${variantPrefix}_${pageType}`;
   const element = document.getElementById(elementId);
@@ -2849,9 +2849,21 @@ const getSimorghStats = () => {
     });
   });
 
-  document.getElementById('Simorgh_liveRadio').innerHTML = `${simorghLiveRadio} / ${liveRadioServices} (${Math.round(simorghLiveRadio / liveRadioServices * 100)}%)`;
-  document.getElementById('Simorgh_MAP').innerHTML = `${simorghMapPage} / ${mapPageServices} (${Math.round(simorghMapPage / mapPageServices * 100)}%)`;
-  document.getElementById('Simorgh_home').innerHTML = `${simorghHomePage} / ${homePageServices} (${Math.round(simorghHomePage / homePageServices * 100)}%)`;
+  document.getElementById(
+    "Simorgh_liveRadio"
+  ).innerHTML = `${simorghLiveRadio} / ${liveRadioServices} (${Math.round(
+    (simorghLiveRadio / liveRadioServices) * 100
+  )}%)`;
+  document.getElementById(
+    "Simorgh_MAP"
+  ).innerHTML = `${simorghMapPage} / ${mapPageServices} (${Math.round(
+    (simorghMapPage / mapPageServices) * 100
+  )}%)`;
+  document.getElementById(
+    "Simorgh_home"
+  ).innerHTML = `${simorghHomePage} / ${homePageServices} (${Math.round(
+    (simorghHomePage / homePageServices) * 100
+  )}%)`;
 };
 
 const loadData = async () => {
