@@ -1,22 +1,12 @@
-const PASS = "&#9989;";
-const FAIL = (message = "") => `<span title="Error${message}">&#10060;</span>`;
-
-const PAGE_PASS = (platform = "Canonical") =>
-  `<span title="${platform} Page OK">${PASS}</span>`;
-
-const MEDIA_PASS = (platform = "Canonical") =>
-  `<span title="${platform} Media OK">${PASS}</span>`;
+const PASS = () => `<span title="All Checks OK">&#9989;</span>`;
+const FAIL = (message = "") => `<span title="${message}">&#10060;</span>`;
 
 const getSimorghPageStatus = (id, platform = "Canonical") => {
-  return isSimorghPage(id)
-    ? PAGE_PASS(platform)
-    : FAIL(`:${platform} Page is not rendered by Simorgh`);
+  return isSimorghPage(id) ? '' : `Error - ${platform} Page is not rendered by Simorgh`;
 };
 
 const getPALPageStatus = id => {
-  return isPALPage(id)
-    ? PAGE_PASS("PAL")
-    : FAIL(": Page is not rendered by PAL");
+  return isPALPage(id) ? '' : "Error - Page is not rendered by PAL";
 };
 
 const getElementId = (service, env, pageType, suffix) => {
@@ -37,9 +27,7 @@ const getMediaStatus = async (outerHTML, platform = "Canonical") => {
     });
   }
 
-  return mediaHTML !== null
-    ? MEDIA_PASS(platform)
-    : FAIL(`- no media on ${platform}`);
+  return mediaHTML !== null ? '' : `Error - media not available on ${platform}`;
 };
 
 const setStatus = async (service, pageType, environment) => {
@@ -73,10 +61,12 @@ const setStatus = async (service, pageType, environment) => {
       }
     }
 
-    let innerHTML = canonicalPageStatus + canonicalMediaStatus;
+    let results = [canonicalPageStatus, canonicalMediaStatus, ampPageStatus, ampMediaStatus];
 
-    if (ampPageStatus) {
-      innerHTML += `<br>${ampPageStatus}${ampMediaStatus}`;
+    let innerHTML = PASS;
+
+    if (results.includes('Error')) {
+      innerHTML = FAIL(results.join(','));
     }
 
     element.innerHTML = innerHTML;
