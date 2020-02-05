@@ -1,4 +1,4 @@
-const PASS = () => `<span title="All Checks OK">&#9989;</span>`;
+const PASS = '<span title="All Checks OK">&#9989;</span>';
 const FAIL = (message = "") => `<span title="${message}">&#10060;</span>`;
 
 const getSimorghPageStatus = (id, platform = "Canonical") => {
@@ -6,7 +6,7 @@ const getSimorghPageStatus = (id, platform = "Canonical") => {
 };
 
 const getPALPageStatus = id => {
-  return isPALPage(id) ? '' : "Error - Page is not rendered by PAL";
+  return isPALPage(id) ? '' : 'Error - Page is not rendered by PAL';
 };
 
 const getElementId = (service, env, pageType, suffix) => {
@@ -27,7 +27,7 @@ const getMediaStatus = async (outerHTML, platform = "Canonical") => {
     });
   }
 
-  return mediaHTML !== null ? '' : `Error - media not available on ${platform}`;
+  return mediaHTML === null ? `Error - ${platform} media not available` : '';
 };
 
 const setStatus = async (service, pageType, environment) => {
@@ -63,14 +63,9 @@ const setStatus = async (service, pageType, environment) => {
 
     let results = [canonicalPageStatus, canonicalMediaStatus, ampPageStatus, ampMediaStatus];
 
-    let innerHTML = PASS;
-
-    if (results.includes('Error')) {
-      innerHTML = FAIL(results.join(','));
+    const errorMessage = results.filter(result => result !== '').join(',');
+    element.innerHTML = errorMessage.indexOf('Error') >= 0 ? FAIL(errorMessage) : PASS;
     }
-
-    element.innerHTML = innerHTML;
-  }
 };
 
 const setRenderer = (service, pageType, environment) => {
