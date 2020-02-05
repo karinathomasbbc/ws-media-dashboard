@@ -95,7 +95,11 @@ const setRenderer = (service, pageType, environment) => {
 };
 
 const setPageType = (service, pageType) => {
-  const elementId = `${service}_${pageType}`;
+  const { variant } = service;
+
+  const variantPrefix = variant ? `/${variant}` : '';
+
+  const elementId = `${service.service}${variantPrefix}_${pageType}`;
   const element = document.getElementById(elementId);
 
   if (element) {
@@ -2780,11 +2784,10 @@ const checkAllPages = async () => {
         }
 
         allEnvironments.forEach(environment => {
-          const serviceName = service.service;
           const page = pageType.type;
 
           if (environment.renderer !== "") {
-            setPageType(serviceName, page);
+            setPageType(service, page);
             setStatus(service, pageType, environment);
             setRenderer(service, page, environment);
           }
@@ -2809,7 +2812,7 @@ const getSimorghStats = () => {
   const map = new Map();
   services.forEach(service => {
     if (!map.has(service.service)) {
-      map.set(service.service, service);
+      map.set(service.service, true);
       distinctServices.push(service);
     }
   });
@@ -2846,10 +2849,9 @@ const getSimorghStats = () => {
     });
   });
 
-  document.getElementById('Simorgh_liveRadio').innerHTML = `${Math.round(simorghLiveRadio / liveRadioServices * 100)}% (${simorghLiveRadio} / ${liveRadioServices} services)`;
-  document.getElementById('Simorgh_MAP').innerHTML = `${Math.round(simorghMapPage / mapPageServices * 100)}% (${simorghMapPage} / ${mapPageServices} services)`;
-  document.getElementById('Simorgh_home').innerHTML = `${Math.round(simorghHomePage / homePageServices * 100)}% (${simorghHomePage} / ${homePageServices} services)`;
-
+  document.getElementById('Simorgh_liveRadio').innerHTML = `${simorghLiveRadio} / ${liveRadioServices} (${Math.round(simorghLiveRadio / liveRadioServices * 100)}%)`;
+  document.getElementById('Simorgh_MAP').innerHTML = `${simorghMapPage} / ${mapPageServices} (${Math.round(simorghMapPage / mapPageServices * 100)}%)`;
+  document.getElementById('Simorgh_home').innerHTML = `${simorghHomePage} / ${homePageServices} (${Math.round(simorghHomePage / homePageServices * 100)}%)`;
 };
 
 const loadData = async () => {
