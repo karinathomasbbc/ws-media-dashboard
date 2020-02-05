@@ -2,16 +2,18 @@ const PASS = '<span title="All Checks OK">&#9989;</span>';
 const FAIL = (message = "") => `<span title="${message}">&#10060;</span>`;
 
 const getSimorghPageStatus = (id, platform = "Canonical") => {
-  return isSimorghPage(id) ? '' : `Error - ${platform} Page is not rendered by Simorgh`;
+  return isSimorghPage(id)
+    ? ""
+    : `Error - ${platform} Page is not rendered by Simorgh`;
 };
 
 const getPALPageStatus = id => {
-  return isPALPage(id) ? '' : 'Error - Page is not rendered by PAL';
+  return isPALPage(id) ? "" : "Error - Page is not rendered by PAL";
 };
 
 const getElementId = (service, env, pageType, suffix) => {
   const { variant } = service;
-  const variantPrefix = variant ? `/${variant}` : '';
+  const variantPrefix = variant ? `/${variant}` : "";
 
   const elementId = `${service.service}${variantPrefix}_${env}_${pageType}_${suffix}`;
   return elementId;
@@ -30,7 +32,7 @@ const getMediaStatus = async (outerHTML, platform = "Canonical") => {
     });
   }
 
-  return mediaHTML === null ? `Error - ${platform} media not available` : '';
+  return mediaHTML === null ? `Error - ${platform} media not available` : "";
 };
 
 const setStatus = async (service, pageType, environment) => {
@@ -64,11 +66,17 @@ const setStatus = async (service, pageType, environment) => {
       }
     }
 
-    let results = [canonicalPageStatus, canonicalMediaStatus, ampPageStatus, ampMediaStatus];
+    let results = [
+      canonicalPageStatus,
+      canonicalMediaStatus,
+      ampPageStatus,
+      ampMediaStatus
+    ];
 
-    const errorMessage = results.filter(result => result !== '').join(',');
-    element.innerHTML = errorMessage.indexOf('Error') >= 0 ? FAIL(errorMessage) : PASS;
-    }
+    const errorMessage = results.filter(result => result !== "").join(",");
+    element.innerHTML =
+      errorMessage.indexOf("Error") >= 0 ? FAIL(errorMessage) : PASS;
+  }
 };
 
 const setRenderer = (service, pageType, environment) => {
@@ -1679,7 +1687,7 @@ const services = [
   // },
   {
     service: "serbian",
-    variant: 'cyr',
+    variant: "cyr",
     pageTypes: [
       {
         type: "MAP",
@@ -1727,7 +1735,7 @@ const services = [
   },
   {
     service: "serbian",
-    variant: 'lat',
+    variant: "lat",
     pageTypes: [
       {
         type: "MAP",
@@ -2256,7 +2264,7 @@ const services = [
   },
   {
     service: "ukchina",
-    variant: 'simp',
+    variant: "simp",
     pageTypes: [
       {
         type: "MAP",
@@ -2304,7 +2312,7 @@ const services = [
   },
   {
     service: "ukchina",
-    variant: 'trad',
+    variant: "trad",
     pageTypes: [
       {
         type: "MAP",
@@ -2629,29 +2637,8 @@ const services = [
   },
   {
     service: "zhongwen",
-    variant: 'simp',
+    variant: "simp",
     pageTypes: [
-      {
-        type: "liveRadio",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: "simp/bbc_cantonese_radio/liveradio"
-          },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "simp/bbc_cantonese_radio/liveradio"
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: "simp/bbc_cantonese_radio/liveradio"
-          }
-        ]
-      },
       {
         type: "MAP",
         category: "media",
@@ -2698,29 +2685,8 @@ const services = [
   },
   {
     service: "zhongwen",
-    variant: 'trad',
+    variant: "trad",
     pageTypes: [
-      {
-        type: "liveRadio",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: "trad/bbc_cantonese_radio/liveradio"
-          },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "trad/bbc_cantonese_radio/liveradio"
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: "trad/bbc_cantonese_radio/liveradio"
-          }
-        ]
-      },
       {
         type: "MAP",
         category: "media",
@@ -2835,35 +2801,54 @@ const getSimorghStats = () => {
   let homePageServices = 0;
   let mapPageServices = 0;
 
+  let simorghLiveRadio = 0;
+  let simorghHomePage = 0;
+  let simorghMapPage = 0;
+
   const distinctServices = [];
   const map = new Map();
   services.forEach(service => {
-    if(!map.has(service.service)) {
+    if (!map.has(service.service)) {
       map.set(service.service, service);
       distinctServices.push(service);
     }
-  }
-  );
-
-  console.log(distinctServices);
+  });
 
   distinctServices.forEach(service => {
     service.pageTypes.forEach(pageType => {
-      switch(pageType.type) {
-        case 'liveRadio': 
-        liveRadioServices++;
-        break;
-        case 'home': 
-        homePageServices++;
-        break;
-        case 'MAP': 
-        mapPageServices++;
-        break;
+      switch (pageType.type) {
+        case "liveRadio":
+          liveRadioServices++;
+          break;
+        case "home":
+          homePageServices++;
+          break;
+        case "MAP":
+          mapPageServices++;
+          break;
       }
-    })
+
+      pageType.environments.forEach(environment => {
+        if (environment.env === "live" && environment.renderer === "Simorgh") {
+          switch (pageType.type) {
+            case "liveRadio":
+              simorghLiveRadio++;
+              break;
+            case "home":
+              simorghHomePage++;
+              break;
+            case "MAP":
+              simorghMapPage++;
+              break;
+          }
+        }
+      });
+    });
   });
 
-  console.log(`liveRadio ${liveRadioServices}; MAPs ${mapPageServices}; Home ${homePageServices}`);
+  document.getElementById('Simorgh_liveRadio').innerHTML = `${Math.round(simorghLiveRadio / liveRadioServices * 100)}% (${simorghLiveRadio} / ${liveRadioServices} services)`;
+  document.getElementById('Simorgh_MAP').innerHTML = `${Math.round(simorghMapPage / mapPageServices * 100)}% (${simorghMapPage} / ${mapPageServices} services)`;
+  document.getElementById('Simorgh_home').innerHTML = `${Math.round(simorghHomePage / homePageServices * 100)}% (${simorghHomePage} / ${homePageServices} services)`;
 
 };
 
