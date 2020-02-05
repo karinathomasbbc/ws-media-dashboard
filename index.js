@@ -10,7 +10,10 @@ const getPALPageStatus = id => {
 };
 
 const getElementId = (service, env, pageType, suffix) => {
-  const elementId = `${service}_${env}_${pageType}_${suffix}`;
+  const { variant } = service;
+  const variantPrefix = variant ? `/${variant}` : '';
+
+  const elementId = `${service.service}${variantPrefix}_${env}_${pageType}_${suffix}`;
   return elementId;
 };
 
@@ -34,7 +37,7 @@ const setStatus = async (service, pageType, environment) => {
   const { env, path, renderer } = environment;
   const { type, category } = pageType;
   const elementId = getElementId(service, env, type, "status");
-  const canonicalUrl = getUrl(service, env, path);
+  const canonicalUrl = getUrl(service.service, env, path);
 
   const element = document.getElementById(elementId);
 
@@ -73,7 +76,7 @@ const setRenderer = (service, pageType, environment) => {
 
   if (renderer !== "") {
     const elementId = getElementId(service, env, pageType, "renderer");
-    const url = getUrl(service, env, path);
+    const url = getUrl(service.service, env, path);
     const element = document.getElementById(elementId);
     if (element) {
       element.innerHTML = `<a target="_blank" href="${url}">${renderer
@@ -608,10 +611,10 @@ const services = [
       }
     ]
   },
-  {
-    service: "cymrufyw",
-    pageTypes: []
-  },
+  // {
+  //   service: "cymrufyw",
+  //   pageTypes: []
+  // },
   {
     service: "gahuza",
     pageTypes: [
@@ -1255,10 +1258,10 @@ const services = [
       }
     ]
   },
-  {
-    service: "naidheachdan",
-    pageTypes: []
-  },
+  // {
+  //   service: "naidheachdan",
+  //   pageTypes: []
+  // },
   {
     service: "nepali",
     pageTypes: [
@@ -1327,10 +1330,10 @@ const services = [
       }
     ]
   },
-  {
-    service: "news",
-    pageTypes: []
-  },
+  // {
+  //   service: "news",
+  //   pageTypes: []
+  // },
   {
     service: "pashto",
     pageTypes: [
@@ -1670,12 +1673,13 @@ const services = [
       }
     ]
   },
+  // {
+  //   service: "scotland",
+  //   pageTypes: []
+  // },
   {
-    service: "scotland",
-    pageTypes: []
-  },
-  {
-    service: "serbian/cyr",
+    service: "serbian",
+    variant: 'cyr',
     pageTypes: [
       {
         type: "MAP",
@@ -1684,17 +1688,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "svet-51052616"
+            path: "cyr/svet-51052616"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "svet-51052616"
+            path: "cyr/svet-51052616"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "svet-51052616"
+            path: "cyr/svet-51052616"
           }
         ]
       },
@@ -1705,24 +1709,25 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "cyr"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "cyr"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "cyr"
           }
         ]
       }
     ]
   },
   {
-    service: "serbian/lat",
+    service: "serbian",
+    variant: 'lat',
     pageTypes: [
       {
         type: "MAP",
@@ -1731,17 +1736,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "svet-51096369"
+            path: "lat/svet-51096369"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "svet-51096369"
+            path: "lat/svet-51096369"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "svet-51096369"
+            path: "lat/svet-51096369"
           }
         ]
       },
@@ -1752,17 +1757,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "lat"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "lat"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "lat"
           }
         ]
       }
@@ -2250,7 +2255,8 @@ const services = [
     ]
   },
   {
-    service: "ukchina/simp",
+    service: "ukchina",
+    variant: 'simp',
     pageTypes: [
       {
         type: "MAP",
@@ -2259,17 +2265,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "51085214"
+            path: "simp/51085214"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "51085214"
+            path: "simp/51085214"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "51085214"
+            path: "simp/51085214"
           }
         ]
       },
@@ -2280,24 +2286,25 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           }
         ]
       }
     ]
   },
   {
-    service: "ukchina/trad",
+    service: "ukchina",
+    variant: 'trad',
     pageTypes: [
       {
         type: "MAP",
@@ -2306,17 +2313,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "51085214"
+            path: "trad/51085214"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "51085214"
+            path: "trad/51085214"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "51085214"
+            path: "trad/51085214"
           }
         ]
       },
@@ -2327,17 +2334,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           }
         ]
       }
@@ -2621,7 +2628,8 @@ const services = [
     ]
   },
   {
-    service: "zhongwen/simp",
+    service: "zhongwen",
+    variant: 'simp',
     pageTypes: [
       {
         type: "liveRadio",
@@ -2630,17 +2638,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "simp/bbc_cantonese_radio/liveradio"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "simp/bbc_cantonese_radio/liveradio"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "simp/bbc_cantonese_radio/liveradio"
           }
         ]
       },
@@ -2651,17 +2659,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "simp/chinese-news-51088031"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "simp/chinese-news-51088031"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "simp/chinese-news-51088031"
           }
         ]
       },
@@ -2672,24 +2680,25 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "simp"
           }
         ]
       }
     ]
   },
   {
-    service: "zhongwen/trad",
+    service: "zhongwen",
+    variant: 'trad',
     pageTypes: [
       {
         type: "liveRadio",
@@ -2698,17 +2707,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "trad/bbc_cantonese_radio/liveradio"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "trad/bbc_cantonese_radio/liveradio"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "bbc_cantonese_radio/liveradio"
+            path: "trad/bbc_cantonese_radio/liveradio"
           }
         ]
       },
@@ -2719,17 +2728,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "trad/chinese-news-51088031"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "trad/chinese-news-51088031"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "chinese-news-51088031"
+            path: "trad/chinese-news-51088031"
           }
         ]
       },
@@ -2740,17 +2749,17 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           },
           {
             env: "stage",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "trad"
           }
         ]
       }
@@ -2807,12 +2816,11 @@ const checkAllPages = async () => {
         allEnvironments.forEach(environment => {
           const serviceName = service.service;
           const page = pageType.type;
-          const { env, renderer } = environment;
 
           if (environment.renderer !== "") {
             setPageType(serviceName, page);
-            setStatus(serviceName, pageType, environment);
-            setRenderer(serviceName, page, environment);
+            setStatus(service, pageType, environment);
+            setRenderer(service, page, environment);
           }
         });
       });
@@ -2822,7 +2830,42 @@ const checkAllPages = async () => {
   }
 };
 
-const getSimorghStats = () => {};
+const getSimorghStats = () => {
+  let liveRadioServices = 0;
+  let homePageServices = 0;
+  let mapPageServices = 0;
+
+  const distinctServices = [];
+  const map = new Map();
+  services.forEach(service => {
+    if(!map.has(service.service)) {
+      map.set(service.service, service);
+      distinctServices.push(service);
+    }
+  }
+  );
+
+  console.log(distinctServices);
+
+  distinctServices.forEach(service => {
+    service.pageTypes.forEach(pageType => {
+      switch(pageType.type) {
+        case 'liveRadio': 
+        liveRadioServices++;
+        break;
+        case 'home': 
+        homePageServices++;
+        break;
+        case 'MAP': 
+        mapPageServices++;
+        break;
+      }
+    })
+  });
+
+  console.log(`liveRadio ${liveRadioServices}; MAPs ${mapPageServices}; Home ${homePageServices}`);
+
+};
 
 const loadData = async () => {
   checkAllPages();
