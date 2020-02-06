@@ -170,6 +170,7 @@ const isPALPage = id => {
 const services = [
   {
     service: "afaanoromoo",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -343,6 +344,7 @@ const services = [
   },
   {
     service: "afrique",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -516,6 +518,7 @@ const services = [
   },
   {
     service: "amharic",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -689,6 +692,7 @@ const services = [
   },
   {
     service: "arabic",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -862,6 +866,7 @@ const services = [
   },
   {
     service: "azeri",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -1014,6 +1019,7 @@ const services = [
   },
   {
     service: "bengali",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1187,6 +1193,7 @@ const services = [
   },
   {
     service: "burmese",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1364,6 +1371,7 @@ const services = [
   // },
   {
     service: "gahuza",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1537,6 +1545,7 @@ const services = [
   },
   {
     service: "gujarati",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -1689,6 +1698,7 @@ const services = [
   },
   {
     service: "hausa",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1862,6 +1872,7 @@ const services = [
   },
   {
     service: "hindi",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2035,6 +2046,7 @@ const services = [
   },
   {
     service: "igbo",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -2187,6 +2199,7 @@ const services = [
   },
   {
     service: "indonesia",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2360,6 +2373,7 @@ const services = [
   },
   {
     service: "japanese",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -2512,6 +2526,7 @@ const services = [
   },
   {
     service: "korean",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2685,6 +2700,7 @@ const services = [
   },
   {
     service: "kyrgyz",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2858,6 +2874,7 @@ const services = [
   },
   {
     service: "marathi",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3010,6 +3027,7 @@ const services = [
   },
   {
     service: "mundo",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3166,6 +3184,7 @@ const services = [
   // },
   {
     service: "nepali",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3337,12 +3356,34 @@ const services = [
       }
     ]
   },
-  // {
-  //   service: "news",
-  //   pageTypes: []
-  // },
+  {
+    service: "news",
+    isW2020: false,
+    pageTypes: [{
+      type: "article",
+      category: "article",
+      environments: [
+        {
+          env: "test",
+          renderer: "Simorgh",
+          path: "articles/cn7k01xp8kxo"
+        },
+        {
+          env: "stage",
+          renderer: "Simorgh",
+          path: "articles/cn7k01xp8kxo"
+        },
+        {
+          env: "live",
+          renderer: "Simorgh",
+          path: "articles/cj7xrxz0e8zo"
+        }
+      ]
+    },]
+  },
   {
     service: "pashto",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3516,6 +3557,7 @@ const services = [
   },
   {
     service: "persian",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3704,6 +3746,7 @@ const services = [
   },
   {
     service: "pidgin",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3856,6 +3899,7 @@ const services = [
   },
   {
     service: "portuguese",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4008,6 +4052,7 @@ const services = [
   },
   {
     service: "punjabi",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4160,6 +4205,7 @@ const services = [
   },
   {
     service: "russian",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4317,6 +4363,7 @@ const services = [
   {
     service: "serbian",
     variant: "cyr",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4470,6 +4517,7 @@ const services = [
   {
     service: "serbian",
     variant: "lat",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4622,6 +4670,7 @@ const services = [
   },
   {
     service: "sinhala",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -4795,6 +4844,7 @@ const services = [
   },
   {
     service: "somali",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -4968,6 +5018,7 @@ const services = [
   },
   {
     service: "swahili",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5141,6 +5192,7 @@ const services = [
   },
   {
     service: "tamil",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5314,6 +5366,7 @@ const services = [
   },
   {
     service: "telugu",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -5466,6 +5519,7 @@ const services = [
   },
   {
     service: "thai",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -5618,6 +5672,7 @@ const services = [
   },
   {
     service: "tigrinya",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5791,6 +5846,7 @@ const services = [
   },
   {
     service: "turkce",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -5944,6 +6000,7 @@ const services = [
   {
     service: "ukchina",
     variant: "simp",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6097,6 +6154,7 @@ const services = [
   {
     service: "ukchina",
     variant: "trad",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6249,6 +6307,7 @@ const services = [
   },
   {
     service: "ukrainian",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6401,6 +6460,7 @@ const services = [
   },
   {
     service: "urdu",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -6574,6 +6634,7 @@ const services = [
   },
   {
     service: "uzbek",
+    isW2020: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -6747,6 +6808,7 @@ const services = [
   },
   {
     service: "vietnamese",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6899,6 +6961,7 @@ const services = [
   },
   {
     service: "yoruba",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7052,6 +7115,7 @@ const services = [
   {
     service: "zhongwen",
     variant: "simp",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7205,6 +7269,7 @@ const services = [
   {
     service: "zhongwen",
     variant: "trad",
+    isW2020: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7434,7 +7499,7 @@ const getPercentage = (numerator, denominator) => {
   return Math.round(percentage * 100);
 };
 
-const getSimorghStats = () => {
+const getWorldServiceStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
   let mapPageServices = 0;
@@ -7456,7 +7521,7 @@ const getSimorghStats = () => {
   const distinctServices = [];
   const map = new Map();
   services.forEach(service => {
-    if (!map.has(service.service)) {
+    if (service.isW2020 && !map.has(service.service)) {
       map.set(service.service, true);
       distinctServices.push(service);
     }
@@ -7524,48 +7589,145 @@ const getSimorghStats = () => {
     });
   });
 
-  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(
+  document.getElementById("Simorgh_W2020_liveRadio").innerHTML = getProgress(
     simorghLiveRadio,
     liveRadioServices
   );
 
-  document.getElementById("Simorgh_MAP").innerHTML = getProgress(
+  document.getElementById("Simorgh_W2020_MAP").innerHTML = getProgress(
     simorghMapPage,
     mapPageServices
   );
 
-  document.getElementById("Simorgh_home").innerHTML = getProgress(
+  document.getElementById("Simorgh_W2020_home").innerHTML = getProgress(
     simorghHomePage,
     homePageServices
   );
+
+  document.getElementById("Simorgh_W2020_article").innerHTML = getProgress(
+    simorghArticlePage,
+    articlePageServices
+  );
+
+  document.getElementById("Simorgh_W2020_story").innerHTML = getProgress(
+    simorghStoryPage,
+    storyPageServices
+  );
+
+  document.getElementById("Simorgh_W2020_photos").innerHTML = getProgress(
+    simorghPhotoPage,
+    photoPageServices
+  );
+
+  document.getElementById("Simorgh_W2020_onDemandRadio").innerHTML = getProgress(
+    simorghOnDemandRadioPage,
+    onDemandRadioPageServices
+  );
+
+  document.getElementById("Simorgh_W2020_onDemandTV").innerHTML = getProgress(
+    simorghOnDemandTVPage,
+    onDemandTVPageServices
+  );
+};
+
+const getPublicServiceStats = () => {
+  let homePageServices = 0;
+  let mapPageServices = 0;
+  let articlePageServices = 0;
+  let storyPageServices = 0;
+  let photoPageServices = 0;
+  let onDemandRadioPageServices = 0;
+  let onDemandTVPageServices = 0;
+
+  let simorghLiveRadio = 0;
+  let simorghHomePage = 0;
+  let simorghMapPage = 0;
+  let simorghArticlePage = 0;
+  let simorghStoryPage = 0;
+  let simorghPhotoPage = 0;
+  let simorghOnDemandRadioPage = 0;
+  let simorghOnDemandTVPage = 0;
+
+  const distinctServices = [];
+  const map = new Map();
+  services.forEach(service => {
+    if (!service.isW2020 && !map.has(service.service)) {
+      map.set(service.service, true);
+      distinctServices.push(service);
+    }
+  });
+
+  distinctServices.forEach(service => {
+    service.pageTypes.forEach(pageType => {
+      switch (pageType.type) {
+        case "home":
+          homePageServices++;
+          break;
+        case "MAP":
+          mapPageServices++;
+          break;
+        case "article":
+          articlePageServices++;
+          break;
+        case "STY":
+          storyPageServices++;
+          break;
+        case "PGL":
+          photoPageServices++;
+          break;
+        case "ODR":
+          onDemandRadioPageServices++;
+          break;
+        case "ODT":
+          onDemandTVPageServices++;
+          break;
+      }
+
+      pageType.environments.forEach(environment => {
+        if (environment.env === "live" && environment.renderer === "Simorgh") {
+          switch (pageType.type) {
+            case "liveRadio":
+              simorghLiveRadio++;
+              break;
+            case "home":
+              simorghHomePage++;
+              break;
+            case "MAP":
+              simorghMapPage++;
+              break;
+            case "article":
+              simorghArticlePage++;
+              break;
+            case "STY":
+              simorghStoryPage++;
+              break;
+            case "PGL":
+              simorghPhotoPage++;
+              break;
+          }
+        }
+      });
+    });
+  });
 
   document.getElementById("Simorgh_article").innerHTML = getProgress(
     simorghArticlePage,
     articlePageServices
   );
 
-  document.getElementById("Simorgh_story").innerHTML = getProgress(
-    simorghStoryPage,
-    storyPageServices
-  );
+  // document.getElementById("Simorgh_story").innerHTML = getProgress(
+  //   simorghStoryPage,
+  //   storyPageServices
+  // );
 
-  document.getElementById("Simorgh_photos").innerHTML = getProgress(
-    simorghPhotoPage,
-    photoPageServices
-  );
-
-  document.getElementById("Simorgh_onDemandRadio").innerHTML = getProgress(
-    simorghOnDemandRadioPage,
-    onDemandRadioPageServices
-  );
-
-  document.getElementById("Simorgh_onDemandTV").innerHTML = getProgress(
-    simorghOnDemandTVPage,
-    onDemandTVPageServices
-  );
+  // document.getElementById("Simorgh_photos").innerHTML = getProgress(
+  //   simorghPhotoPage,
+  //   photoPageServices
+  // );
 };
 
 const loadData = async () => {
+  getWorldServiceStats();
+  getPublicServiceStats();
   checkAllPages();
-  getSimorghStats();
 };
