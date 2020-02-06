@@ -170,7 +170,7 @@ const isPALPage = id => {
 const services = [
   {
     service: "afaanoromoo",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -344,7 +344,7 @@ const services = [
   },
   {
     service: "afrique",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -518,7 +518,7 @@ const services = [
   },
   {
     service: "amharic",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -692,7 +692,7 @@ const services = [
   },
   {
     service: "arabic",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -866,7 +866,7 @@ const services = [
   },
   {
     service: "azeri",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -1019,7 +1019,7 @@ const services = [
   },
   {
     service: "bengali",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1193,7 +1193,7 @@ const services = [
   },
   {
     service: "burmese",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1365,13 +1365,34 @@ const services = [
       }
     ]
   },
-  // {
-  //   service: "cymrufyw",
-  //   pageTypes: []
-  // },
+  {
+    service: "cymrufyw",
+    isWorldService: false,
+    pageTypes: [{
+      type: "article",
+      category: "article",
+      environments: [
+        {
+          env: "test",
+          renderer: "N/A",
+          path: "erthyglau/c06p32z9x2mo"
+        },
+        {
+          env: "stage",
+          renderer: "N/A",
+          path: "erthyglau/c06p32z9x2mo"
+        },
+        {
+          env: "live",
+          renderer: "N/A",
+          path: "erthyglau/c06p32z9x2mo"
+        }
+      ]
+    }]
+  },
   {
     service: "gahuza",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1545,7 +1566,7 @@ const services = [
   },
   {
     service: "gujarati",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -1698,7 +1719,7 @@ const services = [
   },
   {
     service: "hausa",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -1872,7 +1893,7 @@ const services = [
   },
   {
     service: "hindi",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2046,7 +2067,7 @@ const services = [
   },
   {
     service: "igbo",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -2199,7 +2220,7 @@ const services = [
   },
   {
     service: "indonesia",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2373,7 +2394,7 @@ const services = [
   },
   {
     service: "japanese",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -2526,7 +2547,7 @@ const services = [
   },
   {
     service: "korean",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2700,7 +2721,7 @@ const services = [
   },
   {
     service: "kyrgyz",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -2874,7 +2895,7 @@ const services = [
   },
   {
     service: "marathi",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3027,7 +3048,7 @@ const services = [
   },
   {
     service: "mundo",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3178,13 +3199,34 @@ const services = [
       }
     ]
   },
-  // {
-  //   service: "naidheachdan",
-  //   pageTypes: []
-  // },
+  {
+    service: "naidheachdan",
+    isWorldService: false,
+    pageTypes: [{
+      type: "article",
+      category: "article",
+      environments: [
+        {
+          env: "test",
+          renderer: "N/A",
+          path: "sgeulachdan/c18q7nedn2ko"
+        },
+        {
+          env: "stage",
+          renderer: "N/A",
+          path: "sgeulachdan/c18q7nedn2ko"
+        },
+        {
+          env: "live",
+          renderer: "N/A",
+          path: "sgeulachdan/c18q7nedn2ko"
+        }
+      ]
+    }]
+  },
   {
     service: "nepali",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3358,7 +3400,7 @@ const services = [
   },
   {
     service: "news",
-    isW2020: false,
+    isWorldService: false,
     pageTypes: [{
       type: "article",
       category: "article",
@@ -3383,7 +3425,7 @@ const services = [
   },
   {
     service: "pashto",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3557,7 +3599,7 @@ const services = [
   },
   {
     service: "persian",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -3746,7 +3788,7 @@ const services = [
   },
   {
     service: "pidgin",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -3899,7 +3941,7 @@ const services = [
   },
   {
     service: "portuguese",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4052,7 +4094,7 @@ const services = [
   },
   {
     service: "punjabi",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4205,7 +4247,7 @@ const services = [
   },
   {
     service: "russian",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4356,14 +4398,35 @@ const services = [
       }
     ]
   },
-  // {
-  //   service: "scotland",
-  //   pageTypes: []
-  // },
+  {
+    service: "scotland",
+    isWorldService: false,
+    pageTypes: [{
+      type: "article",
+      category: "article",
+      environments: [
+        {
+          env: "test",
+          renderer: "Simorgh",
+          path: "articles/czwj5l0n210o"
+        },
+        {
+          env: "stage",
+          renderer: "Simorgh",
+          path: "articles/czwj5l0n210o"
+        },
+        {
+          env: "live",
+          renderer: "Simorgh",
+          path: "articles/cm49v4x1r9lo"
+        }
+      ]
+    }]
+  },
   {
     service: "serbian",
     variant: "cyr",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4517,7 +4580,7 @@ const services = [
   {
     service: "serbian",
     variant: "lat",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -4670,7 +4733,7 @@ const services = [
   },
   {
     service: "sinhala",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -4844,7 +4907,7 @@ const services = [
   },
   {
     service: "somali",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5018,7 +5081,7 @@ const services = [
   },
   {
     service: "swahili",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5192,7 +5255,7 @@ const services = [
   },
   {
     service: "tamil",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5366,7 +5429,7 @@ const services = [
   },
   {
     service: "telugu",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -5519,7 +5582,7 @@ const services = [
   },
   {
     service: "thai",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -5672,7 +5735,7 @@ const services = [
   },
   {
     service: "tigrinya",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -5846,7 +5909,7 @@ const services = [
   },
   {
     service: "turkce",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6000,7 +6063,7 @@ const services = [
   {
     service: "ukchina",
     variant: "simp",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6154,7 +6217,7 @@ const services = [
   {
     service: "ukchina",
     variant: "trad",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6307,7 +6370,7 @@ const services = [
   },
   {
     service: "ukrainian",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6460,7 +6523,7 @@ const services = [
   },
   {
     service: "urdu",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -6634,7 +6697,7 @@ const services = [
   },
   {
     service: "uzbek",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "liveRadio",
@@ -6808,7 +6871,7 @@ const services = [
   },
   {
     service: "vietnamese",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -6961,7 +7024,7 @@ const services = [
   },
   {
     service: "yoruba",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7115,7 +7178,7 @@ const services = [
   {
     service: "zhongwen",
     variant: "simp",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7269,7 +7332,7 @@ const services = [
   {
     service: "zhongwen",
     variant: "trad",
-    isW2020: true,
+    isWorldService: true,
     pageTypes: [
       {
         type: "MAP",
@@ -7438,6 +7501,12 @@ const checkAllPages = async () => {
       );
     }
 
+    if (params.worldService) {
+      allServices = allServices.filter(
+        serviceConfig => serviceConfig.isWorldService === params.worldService
+      );
+    }
+
     allServices.forEach(service => {
       let allPageTypes = service.pageTypes;
 
@@ -7458,8 +7527,8 @@ const checkAllPages = async () => {
 
         if (params.env) {
           allEnvironments = pageType.environments.filter(
-            environmentConfig => environmentConfig.env === params.env
-          );
+            environmentConfig => environmentConfig.env.startsWith(params.env)
+            );
         }
 
         if (params.renderer) {
@@ -7521,7 +7590,7 @@ const getWorldServiceStats = () => {
   const distinctServices = [];
   const map = new Map();
   services.forEach(service => {
-    if (service.isW2020 && !map.has(service.service)) {
+    if (service.isWorldService && !map.has(service.service)) {
       map.set(service.service, true);
       distinctServices.push(service);
     }
@@ -7631,27 +7700,13 @@ const getWorldServiceStats = () => {
 };
 
 const getPublicServiceStats = () => {
-  let homePageServices = 0;
-  let mapPageServices = 0;
   let articlePageServices = 0;
-  let storyPageServices = 0;
-  let photoPageServices = 0;
-  let onDemandRadioPageServices = 0;
-  let onDemandTVPageServices = 0;
-
-  let simorghLiveRadio = 0;
-  let simorghHomePage = 0;
-  let simorghMapPage = 0;
   let simorghArticlePage = 0;
-  let simorghStoryPage = 0;
-  let simorghPhotoPage = 0;
-  let simorghOnDemandRadioPage = 0;
-  let simorghOnDemandTVPage = 0;
 
   const distinctServices = [];
   const map = new Map();
   services.forEach(service => {
-    if (!service.isW2020 && !map.has(service.service)) {
+    if (!service.isWorldService && !map.has(service.service)) {
       map.set(service.service, true);
       distinctServices.push(service);
     }
@@ -7660,49 +7715,16 @@ const getPublicServiceStats = () => {
   distinctServices.forEach(service => {
     service.pageTypes.forEach(pageType => {
       switch (pageType.type) {
-        case "home":
-          homePageServices++;
-          break;
-        case "MAP":
-          mapPageServices++;
-          break;
         case "article":
           articlePageServices++;
-          break;
-        case "STY":
-          storyPageServices++;
-          break;
-        case "PGL":
-          photoPageServices++;
-          break;
-        case "ODR":
-          onDemandRadioPageServices++;
-          break;
-        case "ODT":
-          onDemandTVPageServices++;
           break;
       }
 
       pageType.environments.forEach(environment => {
         if (environment.env === "live" && environment.renderer === "Simorgh") {
           switch (pageType.type) {
-            case "liveRadio":
-              simorghLiveRadio++;
-              break;
-            case "home":
-              simorghHomePage++;
-              break;
-            case "MAP":
-              simorghMapPage++;
-              break;
             case "article":
               simorghArticlePage++;
-              break;
-            case "STY":
-              simorghStoryPage++;
-              break;
-            case "PGL":
-              simorghPhotoPage++;
               break;
           }
         }
@@ -7714,16 +7736,6 @@ const getPublicServiceStats = () => {
     simorghArticlePage,
     articlePageServices
   );
-
-  // document.getElementById("Simorgh_story").innerHTML = getProgress(
-  //   simorghStoryPage,
-  //   storyPageServices
-  // );
-
-  // document.getElementById("Simorgh_photos").innerHTML = getProgress(
-  //   simorghPhotoPage,
-  //   photoPageServices
-  // );
 };
 
 const loadData = async () => {
