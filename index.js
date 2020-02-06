@@ -233,6 +233,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c4g19kgl85ko"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c4g19kgl85ko"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/ce3nlgrelv1o"
+          }
+        ]
       }
     ]
   },
@@ -299,6 +320,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cz216x22106o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cz216x22106o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cx80n852v6mo"
           }
         ]
       }
@@ -369,6 +411,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/czqverekrldo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/czqverekrldo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c0lgxqknqkdo"
+          }
+        ]
       }
     ]
   },
@@ -437,6 +500,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c1er5mjnznzo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c1er5mjnznzo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c8j91j2ljppo"
+          }
+        ]
       }
     ]
   },
@@ -482,6 +566,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c5k08pqnzexo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c5k08pqnzexo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cv0lm08kngmo"
           }
         ]
       }
@@ -552,6 +657,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c6p3yp5zzmeo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c6p3yp5zzmeo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cv90149zq1eo"
+          }
+        ]
       }
     ]
   },
@@ -618,6 +744,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cn0exdy1jzvo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cn0exdy1jzvo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c41px3vd4nxo"
           }
         ]
       }
@@ -692,6 +839,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cey23zx8wx8o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cey23zx8wx8o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cryd02nzn81o"
+          }
+        ]
       }
     ]
   },
@@ -737,6 +905,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cr5el5kw591o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cr5el5kw591o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c2rnxj48elwo"
           }
         ]
       }
@@ -807,6 +996,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c2nr6xqmnewo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c2nr6xqmnewo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c41rj1z261zo"
+          }
+        ]
       }
     ]
   },
@@ -875,6 +1085,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c0469479x9xo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c0469479x9xo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cd80y3ezl8go"
+          }
+        ]
       }
     ]
   },
@@ -920,6 +1151,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cr1lw620ygjo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cr1lw620ygjo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/ckjn8jnrn75o"
           }
         ]
       }
@@ -990,6 +1242,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c0q2zq8pzvzo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c0q2zq8pzvzo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cvd36dly8zdo"
+          }
+        ]
       }
     ]
   },
@@ -1035,6 +1308,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cdd6p3r9g7jo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cdd6p3r9g7jo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cj4m7n5nrd8o"
           }
         ]
       }
@@ -1105,6 +1399,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c3mn1lvz65xo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c3mn1lvz65xo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/crym1243d97o"
+          }
+        ]
       }
     ]
   },
@@ -1173,6 +1488,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c3xd4xg3rm9o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c3xd4xg3rm9o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c414v42gy75o"
+          }
+        ]
       }
     ]
   },
@@ -1220,6 +1556,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cp47g4myxz7o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cp47g4myxz7o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cvjxwvn04yjo"
+          }
+        ]
       }
     ]
   },
@@ -1265,6 +1622,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/ce42wzqr2mko"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/ce42wzqr2mko"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cdwrpl7qwqqo"
           }
         ]
       }
@@ -1339,6 +1717,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cl90j9m3mn6o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cl90j9m3mn6o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c16ljg1v008o"
+          }
+        ]
       }
     ]
   },
@@ -1409,6 +1808,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cyjmdl92z3ro"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cyjmdl92z3ro"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c70970g2251o"
           }
         ]
       }
@@ -1494,6 +1914,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cej3lzd5e0go"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cej3lzd5e0go"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c7eel0lmr4do"
+          }
+        ]
       }
     ]
   },
@@ -1539,6 +1980,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cwl08rd38l6o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cwl08rd38l6o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cgwk9w4zlg8o"
           }
         ]
       }
@@ -1588,6 +2050,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cd61pm8gzmpo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cd61pm8gzmpo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cpg5prg95lmo"
+          }
+        ]
       }
     ]
   },
@@ -1635,6 +2118,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c0l79lr39qyo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c0l79lr39qyo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c39p51156lyo"
+          }
+        ]
       }
     ]
   },
@@ -1680,6 +2184,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/ck7pz7re3zgo"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/ck7pz7re3zgo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c6ygxgl53w9o"
           }
         ]
       }
@@ -1734,6 +2259,27 @@ const services = [
             path: "cyr"
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/cyr"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/cyr"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/cyr"
+          }
+        ]
       }
     ]
   },
@@ -1780,6 +2326,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: "lat"
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/lat"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/lat"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c805k05kr73o/lat"
           }
         ]
       }
@@ -1850,6 +2417,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c45w255zlexo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c45w255zlexo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cldr38jnwd2o"
+          }
+        ]
       }
     ]
   },
@@ -1916,6 +2504,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cgn6emk3jm8o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cgn6emk3jm8o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c8z79d4mzrlo"
           }
         ]
       }
@@ -1986,6 +2595,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/czjqge2jwn2o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/czjqge2jwn2o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cw794z3gpd5o"
+          }
+        ]
       }
     ]
   },
@@ -2054,6 +2684,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cwl08ll3me8o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cwl08ll3me8o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cvr4752gr13o"
+          }
+        ]
       }
     ]
   },
@@ -2101,6 +2752,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cq0y4008d4vo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cq0y4008d4vo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c1x76pey3x3o"
+          }
+        ]
       }
     ]
   },
@@ -2146,6 +2818,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c442rl3md0eo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c442rl3md0eo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/czx7w3zyme1o"
           }
         ]
       }
@@ -2216,6 +2909,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/ck62z3rjwdeo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/ck62z3rjwdeo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c3vq38ve33xo"
+          }
+        ]
       }
     ]
   },
@@ -2261,6 +2975,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c8q1ze59n25o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c8q1ze59n25o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cpgzpzjl3pdo"
           }
         ]
       }
@@ -2311,6 +3046,27 @@ const services = [
             path: "simp"
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/simp"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/simp"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/simp"
+          }
+        ]
       }
     ]
   },
@@ -2359,6 +3115,27 @@ const services = [
             path: "trad"
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/trad"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/trad"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c0e8weny66ko/trad"
+          }
+        ]
       }
     ]
   },
@@ -2404,6 +3181,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cp4l2mrejvdo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cp4l2mrejvdo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c8zv0eed9gko"
           }
         ]
       }
@@ -2474,6 +3272,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cwgq7rzv172o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/cwgq7rzv172o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c4qg7qq63y6o"
+          }
+        ]
       }
     ]
   },
@@ -2542,6 +3361,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/cxj3rjxm6r0o"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/cxj3rjxm6r0o"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/cxj3rjxm6r0o"
+          }
+        ]
       }
     ]
   },
@@ -2589,6 +3429,27 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/c3y59g5zm19o"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/c3y59g5zm19o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cpgqngyexq7o"
+          }
+        ]
       }
     ]
   },
@@ -2634,6 +3495,27 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: ""
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/clw06m0nj8qo"
+          },
+          {
+            env: "stage",
+            renderer: "Simorgh",
+            path: "articles/clw06m0nj8qo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cg7qz71en35o"
           }
         ]
       }
@@ -2684,6 +3566,27 @@ const services = [
             path: "simp"
           }
         ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/simp"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/simp"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/simp"
+          }
+        ]
       }
     ]
   },
@@ -2730,6 +3633,27 @@ const services = [
             env: "live",
             renderer: "PAL",
             path: "trad"
+          }
+        ]
+      },
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/trad"
+          },
+          {
+            env: "stage",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/trad"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "articles/c3xd4x9prgyo/trad"
           }
         ]
       }
@@ -2807,10 +3731,12 @@ const getSimorghStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
   let mapPageServices = 0;
+  let articlePageServices = 0;
 
   let simorghLiveRadio = 0;
   let simorghHomePage = 0;
   let simorghMapPage = 0;
+  let simorghArticlePage = 0;
 
   const distinctServices = [];
   const map = new Map();
@@ -2833,6 +3759,9 @@ const getSimorghStats = () => {
         case "MAP":
           mapPageServices++;
           break;
+        case "article":
+          articlePageServices++;
+          break; 
       }
 
       pageType.environments.forEach(environment => {
@@ -2846,6 +3775,9 @@ const getSimorghStats = () => {
               break;
             case "MAP":
               simorghMapPage++;
+              break;
+            case "article":
+              simorghArticlePage++;
               break;
           }
         }
@@ -2864,6 +3796,10 @@ const getSimorghStats = () => {
   document.getElementById(
     "Simorgh_home"
   ).innerHTML = getProgress(Math.round((simorghHomePage / homePageServices) * 100));
+
+  document.getElementById(
+    "Simorgh_article"
+  ).innerHTML = getProgress(Math.round((simorghArticlePage / articlePageServices) * 100));
 };
 
 const loadData = async () => {
