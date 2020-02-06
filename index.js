@@ -5491,6 +5491,16 @@ const getProgress = value => {
   return `<progress min="0" max="100" value="${value}"></progress><span> ${value}% </span>`;
 };
 
+const getPercentage = (numerator, denominator) => {
+  let percentage = 0;
+
+  if (denominator > 0) {
+    percentage = numerator / denominator;
+  }
+
+  return Math.round(percentage * 100);
+};
+
 const getSimorghStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
@@ -5498,6 +5508,8 @@ const getSimorghStats = () => {
   let articlePageServices = 0;
   let storyPageServices = 0;
   let photoPageServices = 0;
+  let onDemandRadioPageServices = 0;
+  let onDemandTVPageServices = 0;
 
   let simorghLiveRadio = 0;
   let simorghHomePage = 0;
@@ -5505,6 +5517,8 @@ const getSimorghStats = () => {
   let simorghArticlePage = 0;
   let simorghStoryPage = 0;
   let simorghPhotoPage = 0;
+  let simorghOnDemandRadioPage = 0;
+  let simorghOnDemandTVPage = 0;
 
   const distinctServices = [];
   const map = new Map();
@@ -5536,6 +5550,12 @@ const getSimorghStats = () => {
         case "PGL":
           photoPageServices++;
           break;
+        case "ODR":
+          onDemandRadioPageServices++;
+          break;
+        case "ODT":
+          onDemandTVPageServices++;
+          break;
       }
 
       pageType.environments.forEach(environment => {
@@ -5559,35 +5579,33 @@ const getSimorghStats = () => {
             case "PGL":
               simorghPhotoPage++;
               break;
+            case "ODR":
+              simorghOnDemandRadioPage++;
+              break;
+            case "ODT":
+              simorghOnDemandTVPage++;
+              break;
           }
         }
       });
     });
   });
 
-  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(
-    Math.round((simorghLiveRadio / liveRadioServices) * 100)
-  );
+  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(getPercentage(simorghLiveRadio, liveRadioServices));
 
-  document.getElementById("Simorgh_MAP").innerHTML = getProgress(
-    Math.round((simorghMapPage / mapPageServices) * 100)
-  );
+  document.getElementById("Simorgh_MAP").innerHTML = getProgress(getPercentage(simorghMapPage, mapPageServices));
 
-  document.getElementById("Simorgh_home").innerHTML = getProgress(
-    Math.round((simorghHomePage / homePageServices) * 100)
-  );
+  document.getElementById("Simorgh_home").innerHTML = getProgress(getPercentage(simorghHomePage, homePageServices));
 
-  document.getElementById("Simorgh_article").innerHTML = getProgress(
-    Math.round((simorghArticlePage / articlePageServices) * 100)
-  );
+  document.getElementById("Simorgh_article").innerHTML = getProgress(getPercentage(simorghArticlePage, articlePageServices));
 
-  document.getElementById("Simorgh_story").innerHTML = getProgress(
-    Math.round((simorghStoryPage / storyPageServices) * 100)
-  );
+  document.getElementById("Simorgh_story").innerHTML = getProgress(getPercentage(simorghStoryPage, storyPageServices));
 
-  document.getElementById("Simorgh_photos").innerHTML = getProgress(
-    Math.round((simorghPhotoPage / photoPageServices) * 100)
-  );
+  document.getElementById("Simorgh_photos").innerHTML = getProgress(getPercentage(simorghPhotoPage, photoPageServices));
+
+  document.getElementById("Simorgh_onDemandRadio").innerHTML = getProgress(getPercentage(simorghOnDemandRadioPage, onDemandRadioPageServices));
+
+  document.getElementById("Simorgh_onDemandTV").innerHTML = getProgress(getPercentage(simorghOnDemandTVPage, onDemandTVPageServices));
 };
 
 const loadData = async () => {
