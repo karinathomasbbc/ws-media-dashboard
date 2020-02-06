@@ -296,6 +296,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -410,6 +452,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -558,6 +642,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -689,6 +815,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -782,6 +950,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -930,6 +1140,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1044,6 +1296,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -1196,6 +1490,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1289,6 +1625,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -1437,6 +1815,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1568,6 +1988,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1661,6 +2123,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -1809,6 +2313,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1902,6 +2448,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -2050,6 +2638,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2181,6 +2811,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2291,6 +2963,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2357,6 +3071,90 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cdwrpl7qwqqo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2494,6 +3292,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2612,6 +3452,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -2775,6 +3657,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2868,6 +3792,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -2995,6 +3961,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3105,6 +4113,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3198,6 +4248,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -3330,6 +4422,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3424,6 +4558,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -3572,6 +4748,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3686,6 +4904,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -3834,6 +5094,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3965,6 +5267,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -4075,6 +5419,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -4168,6 +5554,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -4316,6 +5744,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -4409,6 +5879,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -4537,6 +6049,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -4648,6 +6202,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -4741,6 +6337,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -4889,6 +6527,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -5020,6 +6700,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -5130,6 +6852,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -5196,6 +6960,90 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cg7qz71en35o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -5292,6 +7140,48 @@ const services = [
       {
         type: "PGL",
         category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
         environments: [
           {
             env: "test",
@@ -5420,6 +7310,48 @@ const services = [
             path: ""
           }
         ]
+      },
+      {
+        type: "ODR",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "ODT",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   }
@@ -5487,8 +7419,9 @@ const checkAllPages = async () => {
   }
 };
 
-const getProgress = value => {
-  return `<progress min="0" max="100" value="${value}"></progress><span> ${value}% </span>`;
+const getProgress = (numerator, denominator) => {
+  const value = getPercentage(numerator, denominator);
+  return `<progress min="0" max="100" value="${value}"></progress><span> ${value}% [${numerator} / ${denominator}]</span>`;
 };
 
 const getPercentage = (numerator, denominator) => {
@@ -5591,21 +7524,45 @@ const getSimorghStats = () => {
     });
   });
 
-  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(getPercentage(simorghLiveRadio, liveRadioServices));
+  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(
+    simorghLiveRadio,
+    liveRadioServices
+  );
 
-  document.getElementById("Simorgh_MAP").innerHTML = getProgress(getPercentage(simorghMapPage, mapPageServices));
+  document.getElementById("Simorgh_MAP").innerHTML = getProgress(
+    simorghMapPage,
+    mapPageServices
+  );
 
-  document.getElementById("Simorgh_home").innerHTML = getProgress(getPercentage(simorghHomePage, homePageServices));
+  document.getElementById("Simorgh_home").innerHTML = getProgress(
+    simorghHomePage,
+    homePageServices
+  );
 
-  document.getElementById("Simorgh_article").innerHTML = getProgress(getPercentage(simorghArticlePage, articlePageServices));
+  document.getElementById("Simorgh_article").innerHTML = getProgress(
+    simorghArticlePage,
+    articlePageServices
+  );
 
-  document.getElementById("Simorgh_story").innerHTML = getProgress(getPercentage(simorghStoryPage, storyPageServices));
+  document.getElementById("Simorgh_story").innerHTML = getProgress(
+    simorghStoryPage,
+    storyPageServices
+  );
 
-  document.getElementById("Simorgh_photos").innerHTML = getProgress(getPercentage(simorghPhotoPage, photoPageServices));
+  document.getElementById("Simorgh_photos").innerHTML = getProgress(
+    simorghPhotoPage,
+    photoPageServices
+  );
 
-  document.getElementById("Simorgh_onDemandRadio").innerHTML = getProgress(getPercentage(simorghOnDemandRadioPage, onDemandRadioPageServices));
+  document.getElementById("Simorgh_onDemandRadio").innerHTML = getProgress(
+    simorghOnDemandRadioPage,
+    onDemandRadioPageServices
+  );
 
-  document.getElementById("Simorgh_onDemandTV").innerHTML = getProgress(getPercentage(simorghOnDemandTVPage, onDemandTVPageServices));
+  document.getElementById("Simorgh_onDemandTV").innerHTML = getProgress(
+    simorghOnDemandTVPage,
+    onDemandTVPageServices
+  );
 };
 
 const loadData = async () => {
