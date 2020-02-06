@@ -2785,18 +2785,18 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "international-51113461"
+            renderer: "Simorgh",
+            path: "thailand-23248713"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "international-51113461"
+            renderer: "Simorgh",
+            path: "thailand-23248713"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: "international-51113461"
+            renderer: "Simorgh",
+            path: "international-51285795"
           }
         ]
       },
