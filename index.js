@@ -198,18 +198,18 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "oduu-49490954"
+            renderer: "Simorgh",
+            path: "23149891"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "oduu-49490954"
+            renderer: "Simorgh",
+            path: "23149891"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: "oduu-51103116"
+            renderer: "Simorgh",
+            path: "oduu-51044232"
           }
         ]
       },
