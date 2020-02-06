@@ -254,6 +254,48 @@ const services = [
             path: "articles/ce3nlgrelv1o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -341,6 +383,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cx80n852v6mo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -432,6 +516,48 @@ const services = [
             path: "articles/c0lgxqknqkdo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -521,6 +647,48 @@ const services = [
             path: "articles/c8j91j2ljppo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -587,6 +755,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cv0lm08kngmo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -678,6 +888,48 @@ const services = [
             path: "articles/cv90149zq1eo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -765,6 +1017,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c41px3vd4nxo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -860,6 +1154,48 @@ const services = [
             path: "articles/cryd02nzn81o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -926,6 +1262,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c2rnxj48elwo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -1017,6 +1395,48 @@ const services = [
             path: "articles/c41rj1z261zo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1106,6 +1526,48 @@ const services = [
             path: "articles/cd80y3ezl8go"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1172,6 +1634,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/ckjn8jnrn75o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -1263,6 +1767,48 @@ const services = [
             path: "articles/cvd36dly8zdo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1329,6 +1875,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cj4m7n5nrd8o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -1420,6 +2008,48 @@ const services = [
             path: "articles/crym1243d97o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1509,6 +2139,48 @@ const services = [
             path: "articles/c414v42gy75o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1575,6 +2247,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cvjxwvn04yjo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -1738,6 +2452,48 @@ const services = [
             path: "articles/c16ljg1v008o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -1829,6 +2585,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c70970g2251o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -1935,6 +2733,48 @@ const services = [
             path: "articles/c7eel0lmr4do"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2001,6 +2841,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cgwk9w4zlg8o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2071,6 +2953,48 @@ const services = [
             path: "articles/cpg5prg95lmo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2139,6 +3063,48 @@ const services = [
             path: "articles/c39p51156lyo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2205,6 +3171,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c6ygxgl53w9o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2280,6 +3288,48 @@ const services = [
             path: "articles/c805k05kr73o/cyr"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2347,6 +3397,48 @@ const services = [
             env: "live",
             renderer: "N/A",
             path: "articles/c805k05kr73o/lat"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2438,6 +3530,48 @@ const services = [
             path: "articles/cldr38jnwd2o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2525,6 +3659,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c8z79d4mzrlo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2616,6 +3792,48 @@ const services = [
             path: "articles/cw794z3gpd5o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2705,6 +3923,48 @@ const services = [
             path: "articles/cvr4752gr13o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2773,6 +4033,48 @@ const services = [
             path: "articles/c1x76pey3x3o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2839,6 +4141,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/czx7w3zyme1o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -2930,6 +4274,48 @@ const services = [
             path: "articles/c3vq38ve33xo"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -2996,6 +4382,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cpgzpzjl3pdo"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -3067,6 +4495,48 @@ const services = [
             path: "articles/c0e8weny66ko/simp"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3136,6 +4606,48 @@ const services = [
             path: "articles/c0e8weny66ko/trad"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3202,6 +4714,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/c8zv0eed9gko"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -3293,6 +4847,48 @@ const services = [
             path: "articles/c4qg7qq63y6o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3382,6 +4978,48 @@ const services = [
             path: "articles/cxj3rjxm6r0o"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3448,6 +5086,48 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "articles/cpgqngyexq7o"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -3587,6 +5267,48 @@ const services = [
             path: "articles/c3xd4x9prgyo/simp"
           }
         ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
       }
     ]
   },
@@ -3654,6 +5376,48 @@ const services = [
             env: "live",
             renderer: "N/A",
             path: "articles/c3xd4x9prgyo/trad"
+          }
+        ]
+      },
+      {
+        type: "STY",
+        category: "story",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
+          }
+        ]
+      },
+      {
+        type: "PGL",
+        category: "photos",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "stage",
+            renderer: "PAL",
+            path: ""
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: ""
           }
         ]
       }
@@ -3725,18 +5489,22 @@ const checkAllPages = async () => {
 
 const getProgress = value => {
   return `<progress min="0" max="100" value="${value}"></progress><span> ${value}% </span>`;
-}
+};
 
 const getSimorghStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
   let mapPageServices = 0;
   let articlePageServices = 0;
+  let storyPageServices = 0;
+  let photoPageServices = 0;
 
   let simorghLiveRadio = 0;
   let simorghHomePage = 0;
   let simorghMapPage = 0;
   let simorghArticlePage = 0;
+  let simorghStoryPage = 0;
+  let simorghPhotoPage = 0;
 
   const distinctServices = [];
   const map = new Map();
@@ -3761,7 +5529,13 @@ const getSimorghStats = () => {
           break;
         case "article":
           articlePageServices++;
-          break; 
+          break;
+        case "STY":
+          storyPageServices++;
+          break;
+        case "PGL":
+          photoPageServices++;
+          break;
       }
 
       pageType.environments.forEach(environment => {
@@ -3779,27 +5553,41 @@ const getSimorghStats = () => {
             case "article":
               simorghArticlePage++;
               break;
+            case "STY":
+              simorghStoryPage++;
+              break;
+            case "PGL":
+              simorghPhotoPage++;
+              break;
           }
         }
       });
     });
   });
 
-  document.getElementById(
-    "Simorgh_liveRadio"
-  ).innerHTML = getProgress(Math.round((simorghLiveRadio / liveRadioServices) * 100));
+  document.getElementById("Simorgh_liveRadio").innerHTML = getProgress(
+    Math.round((simorghLiveRadio / liveRadioServices) * 100)
+  );
 
-  document.getElementById(
-    "Simorgh_MAP"
-  ).innerHTML = getProgress(Math.round((simorghMapPage / mapPageServices) * 100));
+  document.getElementById("Simorgh_MAP").innerHTML = getProgress(
+    Math.round((simorghMapPage / mapPageServices) * 100)
+  );
 
-  document.getElementById(
-    "Simorgh_home"
-  ).innerHTML = getProgress(Math.round((simorghHomePage / homePageServices) * 100));
+  document.getElementById("Simorgh_home").innerHTML = getProgress(
+    Math.round((simorghHomePage / homePageServices) * 100)
+  );
 
-  document.getElementById(
-    "Simorgh_article"
-  ).innerHTML = getProgress(Math.round((simorghArticlePage / articlePageServices) * 100));
+  document.getElementById("Simorgh_article").innerHTML = getProgress(
+    Math.round((simorghArticlePage / articlePageServices) * 100)
+  );
+
+  document.getElementById("Simorgh_story").innerHTML = getProgress(
+    Math.round((simorghStoryPage / storyPageServices) * 100)
+  );
+
+  document.getElementById("Simorgh_photos").innerHTML = getProgress(
+    Math.round((simorghPhotoPage / photoPageServices) * 100)
+  );
 };
 
 const loadData = async () => {
