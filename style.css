@@ -53,3 +53,7 @@ h1 {
 .status {
     font-size: 10px;
 }
+
+progress {
+    width:100px;
+}

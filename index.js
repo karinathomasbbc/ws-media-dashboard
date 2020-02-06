@@ -2799,6 +2799,10 @@ const checkAllPages = async () => {
   }
 };
 
+const getProgress = value => {
+  return `<progress min="0" max="100" value="${value}"></progress><span> ${value}% </span>`;
+}
+
 const getSimorghStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
@@ -2851,19 +2855,15 @@ const getSimorghStats = () => {
 
   document.getElementById(
     "Simorgh_liveRadio"
-  ).innerHTML = `${simorghLiveRadio} / ${liveRadioServices} (${Math.round(
-    (simorghLiveRadio / liveRadioServices) * 100
-  )}%)`;
+  ).innerHTML = getProgress(Math.round((simorghLiveRadio / liveRadioServices) * 100));
+
   document.getElementById(
     "Simorgh_MAP"
-  ).innerHTML = `${simorghMapPage} / ${mapPageServices} (${Math.round(
-    (simorghMapPage / mapPageServices) * 100
-  )}%)`;
+  ).innerHTML = getProgress(Math.round((simorghMapPage / mapPageServices) * 100));
+
   document.getElementById(
     "Simorgh_home"
-  ).innerHTML = `${simorghHomePage} / ${homePageServices} (${Math.round(
-    (simorghHomePage / homePageServices) * 100
-  )}%)`;
+  ).innerHTML = getProgress(Math.round((simorghHomePage / homePageServices) * 100));
 };
 
 const loadData = async () => {
