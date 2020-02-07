@@ -1243,7 +1243,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: ""
           },
           {
