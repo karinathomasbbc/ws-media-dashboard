@@ -12,7 +12,7 @@ const handleResponse = async response => {
 };
 
 const makeRequest = url => {
-  const prefix = "http://localhost:8080/";
+  const prefix = "https://ws-dashboard-cors.herokuapp.com/";
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {

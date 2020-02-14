@@ -49,21 +49,21 @@ const EnvironmentItem = ({ environment, serviceName, page }) => {
     return id;
   };
 
-  const getMediaStatus = async outerHTML => {
-    let mediaStatus = "";
-    const mediaPage = new DOMParser().parseFromString(outerHTML, "text/html");
-    const mediaPlayerContainer = mediaPage.querySelector("iframe");
+  // const getMediaStatus = async outerHTML => {
+  //   let mediaStatus = "";
+  //   const mediaPage = new DOMParser().parseFromString(outerHTML, "text/html");
+  //   const mediaPlayerContainer = mediaPage.querySelector("iframe");
 
-    if (mediaPlayerContainer !== null) {
-      const embedURL = mediaPlayerContainer.src;
-      const mediaHTML = await makeRequest(embedURL).then(result => {
-        return result;
-      });
-      mediaStatus = mediaHTML !== null ? true : false;
-    }
+  //   if (mediaPlayerContainer !== null) {
+  //     const embedURL = mediaPlayerContainer.src;
+  //     const mediaHTML = await makeRequest(embedURL).then(result => {
+  //       return result;
+  //     });
+  //     mediaStatus = mediaHTML !== null ? true : false;
+  //   }
 
-    return mediaStatus;
-  };
+  //   return mediaStatus;
+  // };
 
   const setEnvironmentStatus = async (renderer, html, pageCategory) => {
     let pageStatus = "";
