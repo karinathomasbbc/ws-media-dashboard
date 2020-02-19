@@ -1447,12 +1447,12 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: ""
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: ""
           }
         ]
