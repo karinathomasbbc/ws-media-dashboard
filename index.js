@@ -6071,7 +6071,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "simp"
           },
           {
@@ -6225,7 +6225,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "trad"
           },
           {
