@@ -1774,7 +1774,7 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: ""
           },
           {
