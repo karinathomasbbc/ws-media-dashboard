@@ -4434,7 +4434,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "cyr"
           },
           {
@@ -4588,7 +4588,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "lat"
           },
           {
