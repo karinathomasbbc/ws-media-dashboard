@@ -4434,7 +4434,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "cyr"
           },
           {
@@ -4588,7 +4588,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "lat"
           },
           {
@@ -6071,7 +6071,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "simp"
           },
           {
@@ -6225,7 +6225,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "trad"
           },
           {
@@ -7186,7 +7186,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "simp"
           },
           {
@@ -7340,7 +7340,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: "trad"
           },
           {
