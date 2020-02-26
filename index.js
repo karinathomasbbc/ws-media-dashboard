@@ -1774,7 +1774,7 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: ""
           },
           {
@@ -2602,7 +2602,7 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: ""
           },
           {
@@ -3669,7 +3669,7 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: ""
           },
           {
@@ -4941,7 +4941,7 @@ const services = [
           },
           {
             env: "stage",
-            renderer: "Simorgh",
+            renderer: "N/A",
             path: ""
           },
           {
