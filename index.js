@@ -1421,17 +1421,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "amakuru-49534170"
+            renderer: "Simorgh",
+            path: "amakuru-23257470"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "amakuru-49534170"
+            renderer: "Simorgh",
+            path: "amakuru-23257470"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "amakuru-51108248"
           }
         ]
