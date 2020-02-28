@@ -4741,17 +4741,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "sri-lanka-51249064"
+            renderer: "Simorgh",
+            path: "world-23257567"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "sri-lanka-51249064"
+            renderer: "Simorgh",
+            path: "world-23257567"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "sri-lanka-51037588"
           }
         ]
