@@ -2750,17 +2750,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "sapar-tv-48695523"
+            renderer: "Simorgh",
+            path: "media-23257484"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "sapar-tv-48695523"
+            renderer: "Simorgh",
+            path: "media-23257484"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "entertainment-51113261"
           }
         ]
