@@ -874,17 +874,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "region-49364777"
+            renderer: "Simorgh",
+            path: "azerbaijan-23257464"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "region-49364777"
+            renderer: "Simorgh",
+            path: "azerbaijan-23257464"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "region-51069170"
           }
         ]
