@@ -5896,17 +5896,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "haberler-dunya-51110866"
+            renderer: "Simorgh",
+            path: "media-23268997"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "haberler-dunya-51110866"
+            renderer: "Simorgh",
+            path: "media-23268997"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "haberler-dunya-51110866"
           }
         ]
