@@ -5263,17 +5263,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "science-49626264"
+            renderer: "Simorgh",
+            path: "india-23268994"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "science-49626264"
+            renderer: "Simorgh",
+            path: "india-23268994"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "global-51099200"
           }
         ]
