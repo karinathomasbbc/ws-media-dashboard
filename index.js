@@ -1748,17 +1748,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "labarai-49513456"
+            renderer: "Simorgh",
+            path: "23269030"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "labarai-49513456"
+            renderer: "Simorgh",
+            path: "23269030"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "labarai-51100239"
           }
         ]
