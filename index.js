@@ -4915,17 +4915,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "media-48870869"
+            renderer: "Simorgh",
+            path: "hayadeed-23269042"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "media-48870869"
+            renderer: "Simorgh",
+            path: "hayadeed-23269042"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "51050628"
           }
         ]
