@@ -1222,17 +1222,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "media-49571787"
+            renderer: "Simorgh",
+            path: "media-23269011"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "media-49571787"
+            renderer: "Simorgh",
+            path: "media-23269011"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "media-51097769"
           }
         ]
