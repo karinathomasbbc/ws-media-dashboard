@@ -6531,17 +6531,17 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "pakistan-49644768"
+            renderer: "Simorgh",
+            path: "world-23268929"
           },
           {
             env: "stage",
-            renderer: "PAL",
-            path: "pakistan-49644768"
+            renderer: "Simorgh",
+            path: "world-23268929"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "pakistan-49644768"
           }
         ]
