@@ -181,11 +181,7 @@ const services = [
             renderer: "Simorgh",
             path: "bbc_afaanoromoo_radio/liveradio"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_afaanoromoo_radio/liveradio"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -199,11 +195,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "23149891"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "23149891"
           },
@@ -224,11 +215,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -241,11 +227,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c4g19kgl85ko"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c4g19kgl85ko"
           },
@@ -266,11 +247,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -283,11 +259,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -308,11 +279,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -325,11 +291,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -356,11 +317,6 @@ const services = [
             path: "bbc_afrique_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_afrique_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_afrique_radio/liveradio"
@@ -373,11 +329,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "monde-49500638"
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: "monde-49500638"
           },
@@ -398,11 +349,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -418,11 +364,7 @@ const services = [
             renderer: "Simorgh",
             path: "articles/cz216x22106o"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cz216x22106o"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -436,11 +378,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -461,11 +398,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -482,11 +414,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -499,11 +426,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -530,11 +452,6 @@ const services = [
             path: "bbc_amharic_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_amharic_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_amharic_radio/liveradio"
@@ -547,11 +464,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "news-23263266"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "news-23263266"
           },
@@ -572,11 +484,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -589,11 +496,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/czqverekrldo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/czqverekrldo"
           },
@@ -614,11 +516,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -631,11 +528,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -656,11 +548,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -673,11 +560,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -704,11 +586,6 @@ const services = [
             path: "bbc_arabic_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_arabic_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_arabic_radio/liveradio"
@@ -721,11 +598,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "media-49580542"
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: "media-49580542"
           },
@@ -746,11 +618,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -763,11 +630,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c1er5mjnznzo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c1er5mjnznzo"
           },
@@ -788,11 +650,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -805,11 +662,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -830,11 +682,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -847,11 +694,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -878,11 +720,6 @@ const services = [
             path: "azerbaijan-23257464"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "azerbaijan-23257464"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "region-51069170"
@@ -895,11 +732,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -920,11 +752,6 @@ const services = [
             path: "articles/c5k08pqnzexo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c5k08pqnzexo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cv0lm08kngmo"
@@ -937,11 +764,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -962,11 +784,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -983,11 +800,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1000,11 +812,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1031,11 +838,6 @@ const services = [
             path: "bbc_bangla_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_bangla_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_bangla_radio/liveradio"
@@ -1048,11 +850,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "media-23269006"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "media-23269006"
           },
@@ -1073,11 +870,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -1090,11 +882,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c6p3yp5zzmeo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c6p3yp5zzmeo"
           },
@@ -1115,11 +902,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1132,11 +914,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1157,11 +934,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1174,11 +946,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1205,11 +972,6 @@ const services = [
             path: "bbc_burmese_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_burmese_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_burmese_radio/liveradio"
@@ -1222,11 +984,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "media-23269011"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "media-23269011"
           },
@@ -1247,11 +1004,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -1264,11 +1016,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/cn0exdy1jzvo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/cn0exdy1jzvo"
           },
@@ -1289,11 +1036,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1306,11 +1048,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1331,11 +1068,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1352,11 +1084,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1368,27 +1095,24 @@ const services = [
   {
     service: "cymrufyw",
     isWorldService: false,
-    pageTypes: [{
-      type: "article",
-      category: "article",
-      environments: [
-        {
-          env: "test",
-          renderer: "N/A",
-          path: "erthyglau/c06p32z9x2mo"
-        },
-        {
-          env: "stage",
-          renderer: "N/A",
-          path: "erthyglau/c06p32z9x2mo"
-        },
-        {
-          env: "live",
-          renderer: "N/A",
-          path: "erthyglau/c06p32z9x2mo"
-        }
-      ]
-    }]
+    pageTypes: [
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "erthyglau/c06p32z9x2mo"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "erthyglau/c06p32z9x2mo"
+          }
+        ]
+      }
+    ]
   },
   {
     service: "gahuza",
@@ -1400,11 +1124,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_gahuza_radio/liveradio"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "bbc_gahuza_radio/liveradio"
           },
@@ -1424,11 +1143,7 @@ const services = [
             renderer: "Simorgh",
             path: "amakuru-23257470"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "amakuru-23257470"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -1442,11 +1157,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -1467,11 +1177,6 @@ const services = [
             path: "articles/cey23zx8wx8o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cey23zx8wx8o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cryd02nzn81o"
@@ -1484,11 +1189,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1509,11 +1209,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1530,11 +1225,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1547,11 +1237,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1577,11 +1262,7 @@ const services = [
             renderer: "Simorgh",
             path: "other-news-23130286"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "other-news-23130286"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -1595,11 +1276,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -1620,11 +1296,6 @@ const services = [
             path: "articles/cr5el5kw591o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cr5el5kw591o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/c2rnxj48elwo"
@@ -1637,11 +1308,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1662,11 +1328,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -1683,11 +1344,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1700,11 +1356,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1731,11 +1382,6 @@ const services = [
             path: "bbc_hausa_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_hausa_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_hausa_radio/liveradio"
@@ -1751,11 +1397,7 @@ const services = [
             renderer: "Simorgh",
             path: "23269030"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "23269030"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -1773,11 +1415,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1790,11 +1427,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c2nr6xqmnewo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c2nr6xqmnewo"
           },
@@ -1815,11 +1447,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1832,11 +1459,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1857,11 +1479,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -1874,11 +1491,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1905,11 +1517,6 @@ const services = [
             path: "bbc_hindi_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_hindi_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_hindi_radio/liveradio"
@@ -1925,11 +1532,7 @@ const services = [
             renderer: "PAL",
             path: "media-51106346"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "media-51106346"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -1943,11 +1546,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -1968,11 +1566,6 @@ const services = [
             path: "articles/c0469479x9xo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c0469479x9xo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cd80y3ezl8go"
@@ -1985,11 +1578,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2010,11 +1598,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2031,11 +1614,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2048,11 +1626,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2078,11 +1651,7 @@ const services = [
             renderer: "Simorgh",
             path: "23182843"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "23182843"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -2096,11 +1665,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2121,11 +1685,6 @@ const services = [
             path: "articles/cr1lw620ygjo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cr1lw620ygjo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/ckjn8jnrn75o"
@@ -2138,11 +1697,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2163,11 +1717,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -2183,11 +1732,7 @@ const services = [
             renderer: "PAL",
             path: ""
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -2204,11 +1749,7 @@ const services = [
             renderer: "PAL",
             path: ""
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -2232,11 +1773,6 @@ const services = [
             path: "bbc_indonesian_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_indonesian_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_indonesian_radio/liveradio"
@@ -2252,11 +1788,7 @@ const services = [
             renderer: "Simorgh",
             path: "media-23269037"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23269037"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -2270,11 +1802,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2295,11 +1822,6 @@ const services = [
             path: "articles/c0q2zq8pzvzo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c0q2zq8pzvzo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cvd36dly8zdo"
@@ -2312,11 +1834,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2337,11 +1854,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2358,11 +1870,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2375,11 +1882,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2405,11 +1907,7 @@ const services = [
             renderer: "PAL",
             path: "video-51291089"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "video-51291089"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -2423,11 +1921,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2448,11 +1941,6 @@ const services = [
             path: "articles/cdd6p3r9g7jo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cdd6p3r9g7jo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cj4m7n5nrd8o"
@@ -2465,11 +1953,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2490,11 +1973,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -2511,11 +1989,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2528,11 +2001,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2559,11 +2027,6 @@ const services = [
             path: "bbc_korean_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_korean_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_korean_radio/liveradio"
@@ -2579,11 +2042,7 @@ const services = [
             renderer: "Simorgh",
             path: "media-23248686"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23248686"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -2601,11 +2060,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2618,11 +2072,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c3mn1lvz65xo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c3mn1lvz65xo"
           },
@@ -2643,11 +2092,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2660,11 +2104,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2685,11 +2124,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2702,11 +2136,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2733,11 +2162,6 @@ const services = [
             path: "bbc_kyrgyz_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_kyrgyz_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_kyrgyz_radio/liveradio"
@@ -2753,11 +2177,7 @@ const services = [
             renderer: "Simorgh",
             path: "media-23257484"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23257484"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -2771,11 +2191,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2796,11 +2211,6 @@ const services = [
             path: "articles/c3xd4xg3rm9o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c3xd4xg3rm9o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/c414v42gy75o"
@@ -2813,11 +2223,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2838,11 +2243,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2859,11 +2259,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -2876,11 +2271,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2906,11 +2296,7 @@ const services = [
             renderer: "Simorgh",
             path: "media-23127353"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23127353"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -2924,11 +2310,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -2949,11 +2330,6 @@ const services = [
             path: "articles/cp47g4myxz7o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cp47g4myxz7o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cvjxwvn04yjo"
@@ -2966,11 +2342,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -2991,11 +2362,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -3012,11 +2378,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3029,11 +2390,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3059,11 +2415,7 @@ const services = [
             renderer: "PAL",
             path: "noticias-49546078"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "noticias-49546078"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -3081,11 +2433,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3098,11 +2445,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/ce42wzqr2mko"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/ce42wzqr2mko"
           },
@@ -3123,11 +2465,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3140,11 +2477,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3165,11 +2497,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3186,11 +2513,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3202,27 +2524,24 @@ const services = [
   {
     service: "naidheachdan",
     isWorldService: false,
-    pageTypes: [{
-      type: "article",
-      category: "article",
-      environments: [
-        {
-          env: "test",
-          renderer: "N/A",
-          path: "sgeulachdan/c18q7nedn2ko"
-        },
-        {
-          env: "stage",
-          renderer: "N/A",
-          path: "sgeulachdan/c18q7nedn2ko"
-        },
-        {
-          env: "live",
-          renderer: "N/A",
-          path: "sgeulachdan/c18q7nedn2ko"
-        }
-      ]
-    }]
+    pageTypes: [
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "N/A",
+            path: "sgeulachdan/c18q7nedn2ko"
+          },
+          {
+            env: "live",
+            renderer: "N/A",
+            path: "sgeulachdan/c18q7nedn2ko"
+          }
+        ]
+      }
+    ]
   },
   {
     service: "nepali",
@@ -3234,11 +2553,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_nepali_radio/liveradio"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "bbc_nepali_radio/liveradio"
           },
@@ -3258,11 +2572,7 @@ const services = [
             renderer: "Simorgh",
             path: "media-23269034"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23269034"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -3280,11 +2590,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -3297,11 +2602,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/cl90j9m3mn6o"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/cl90j9m3mn6o"
           },
@@ -3322,11 +2622,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3339,11 +2634,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3364,11 +2654,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3385,11 +2670,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3401,27 +2681,24 @@ const services = [
   {
     service: "news",
     isWorldService: false,
-    pageTypes: [{
-      type: "article",
-      category: "article",
-      environments: [
-        {
-          env: "test",
-          renderer: "Simorgh",
-          path: "articles/cn7k01xp8kxo"
-        },
-        {
-          env: "stage",
-          renderer: "Simorgh",
-          path: "articles/cn7k01xp8kxo"
-        },
-        {
-          env: "live",
-          renderer: "Simorgh",
-          path: "articles/cj7xrxz0e8zo"
-        }
-      ]
-    },]
+    pageTypes: [
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/cn7k01xp8kxo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cj7xrxz0e8zo"
+          }
+        ]
+      }
+    ]
   },
   {
     service: "pashto",
@@ -3436,11 +2713,7 @@ const services = [
             renderer: "Simorgh",
             path: "bbc_pashto_radio/liveradio"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_pashto_radio/liveradio"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -3454,11 +2727,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "media-23257523"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "media-23257523"
           },
@@ -3479,11 +2747,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3499,11 +2762,7 @@ const services = [
             renderer: "Simorgh",
             path: "articles/cyjmdl92z3ro"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cyjmdl92z3ro"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -3517,11 +2776,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3542,11 +2796,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3563,11 +2812,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3580,11 +2824,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3610,26 +2849,25 @@ const services = [
             renderer: "Simorgh",
             path: "bbc_persian_radio/liveradio"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_persian_radio/liveradio"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_persian_radio/liveradio"
           },
+
           {
             env: "test_dari",
             renderer: "Simorgh",
             path: "bbc_dari_radio/liveradio"
           },
+
           {
             env: "stage_dari",
             renderer: "Simorgh",
             path: "bbc_dari_radio/liveradio"
           },
+
           {
             env: "live_dari",
             renderer: "Simorgh",
@@ -3643,11 +2881,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "iran-23231114"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "iran-23231114"
           },
@@ -3668,11 +2901,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3688,11 +2916,7 @@ const services = [
             renderer: "Simorgh",
             path: "articles/cej3lzd5e0go"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cej3lzd5e0go"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -3706,11 +2930,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3731,11 +2950,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3752,11 +2966,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3769,11 +2978,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3799,11 +3003,7 @@ const services = [
             renderer: "Simorgh",
             path: "23248703"
           },
-          {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "23248703"
-          },
+
           {
             env: "live",
             renderer: "Simorgh",
@@ -3817,11 +3017,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -3842,11 +3037,6 @@ const services = [
             path: "articles/cwl08rd38l6o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cwl08rd38l6o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cgwk9w4zlg8o"
@@ -3859,11 +3049,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3884,11 +3069,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -3905,11 +3085,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -3922,11 +3097,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3952,11 +3122,7 @@ const services = [
             renderer: "PAL",
             path: "geral-49602758"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "geral-49602758"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -3970,11 +3136,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -3995,11 +3156,6 @@ const services = [
             path: "articles/cd61pm8gzmpo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cd61pm8gzmpo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cpg5prg95lmo"
@@ -4012,11 +3168,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4037,11 +3188,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4058,11 +3204,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4075,11 +3216,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4106,11 +3242,6 @@ const services = [
             path: "media-23248705"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23248705"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "india-51325361"
@@ -4123,11 +3254,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -4148,11 +3274,6 @@ const services = [
             path: "articles/c0l79lr39qyo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c0l79lr39qyo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/c39p51156lyo"
@@ -4165,11 +3286,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4190,11 +3306,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -4211,11 +3322,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4228,11 +3334,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4258,11 +3359,7 @@ const services = [
             renderer: "PAL",
             path: "media-49281069"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "media-49281069"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -4276,11 +3373,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4301,11 +3393,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4318,11 +3405,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4343,11 +3425,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4364,11 +3441,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4380,27 +3452,24 @@ const services = [
   {
     service: "scotland",
     isWorldService: false,
-    pageTypes: [{
-      type: "article",
-      category: "article",
-      environments: [
-        {
-          env: "test",
-          renderer: "Simorgh",
-          path: "articles/czwj5l0n210o"
-        },
-        {
-          env: "stage",
-          renderer: "Simorgh",
-          path: "articles/czwj5l0n210o"
-        },
-        {
-          env: "live",
-          renderer: "Simorgh",
-          path: "articles/cm49v4x1r9lo"
-        }
-      ]
-    }]
+    pageTypes: [
+      {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/czwj5l0n210o"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/cm49v4x1r9lo"
+          }
+        ]
+      }
+    ]
   },
   {
     service: "serbian",
@@ -4416,11 +3485,7 @@ const services = [
             renderer: "PAL",
             path: "cyr/svet-51052616"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "cyr/svet-51052616"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -4435,11 +3500,6 @@ const services = [
           {
             env: "test",
             renderer: "N/A",
-            path: "cyr"
-          },
-          {
-            env: "stage",
-            renderer: "PAL",
             path: "cyr"
           },
           {
@@ -4459,11 +3519,6 @@ const services = [
             path: "articles/c805k05kr73o/cyr"
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: "articles/c805k05kr73o/cyr"
-          },
-          {
             env: "live",
             renderer: "N/A",
             path: "articles/c805k05kr73o/cyr"
@@ -4476,11 +3531,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4501,11 +3551,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4522,11 +3567,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4539,11 +3579,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4571,11 +3606,6 @@ const services = [
             path: "lat/svet-51096369"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "lat/svet-51096369"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "lat/svet-51096369"
@@ -4592,11 +3622,6 @@ const services = [
             path: "lat"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "lat"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "lat"
@@ -4609,11 +3634,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: "articles/c805k05kr73o/lat"
-          },
-          {
-            env: "stage",
             renderer: "N/A",
             path: "articles/c805k05kr73o/lat"
           },
@@ -4634,11 +3654,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4651,11 +3666,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4676,11 +3686,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4693,11 +3698,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4724,11 +3724,6 @@ const services = [
             path: "bbc_sinhala_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_sinhala_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_sinhala_radio/liveradio"
@@ -4741,11 +3736,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "world-23257567"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "world-23257567"
           },
@@ -4766,11 +3756,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -4783,11 +3768,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/c45w255zlexo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/c45w255zlexo"
           },
@@ -4808,11 +3788,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4825,11 +3800,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4850,11 +3820,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4867,11 +3832,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -4898,11 +3858,6 @@ const services = [
             path: "bbc_somali_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_somali_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_somali_radio/liveradio"
@@ -4915,11 +3870,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "hayadeed-23269042"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "hayadeed-23269042"
           },
@@ -4940,11 +3890,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4957,11 +3902,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/cgn6emk3jm8o"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/cgn6emk3jm8o"
           },
@@ -4982,11 +3922,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -4999,11 +3934,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5024,11 +3954,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5041,11 +3966,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5072,11 +3992,6 @@ const services = [
             path: "bbc_swahili_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_swahili_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_swahili_radio/liveradio"
@@ -5089,11 +4004,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "media-23268999"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "media-23268999"
           },
@@ -5114,11 +4024,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5131,11 +4036,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/czjqge2jwn2o"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/czjqge2jwn2o"
           },
@@ -5156,11 +4056,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5173,11 +4068,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5198,11 +4088,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5215,11 +4100,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5246,11 +4126,6 @@ const services = [
             path: "bbc_tamil_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_tamil_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_tamil_radio/liveradio"
@@ -5263,11 +4138,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "india-23268994"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "india-23268994"
           },
@@ -5288,11 +4158,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -5305,11 +4170,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/cwl08ll3me8o"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/cwl08ll3me8o"
           },
@@ -5330,11 +4190,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5347,11 +4202,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5372,11 +4222,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5389,11 +4234,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5420,11 +4260,6 @@ const services = [
             path: "international-23263261"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "international-23263261"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "india-51309092"
@@ -5437,11 +4272,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -5462,11 +4292,6 @@ const services = [
             path: "articles/cq0y4008d4vo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cq0y4008d4vo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/c1x76pey3x3o"
@@ -5479,11 +4304,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5504,11 +4324,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -5525,11 +4340,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5542,11 +4352,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5573,11 +4378,6 @@ const services = [
             path: "thailand-23248713"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "thailand-23248713"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "international-51285795"
@@ -5590,11 +4390,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -5615,11 +4410,6 @@ const services = [
             path: "articles/c442rl3md0eo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c442rl3md0eo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/czx7w3zyme1o"
@@ -5632,11 +4422,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5657,11 +4442,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -5678,11 +4458,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5695,11 +4470,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5726,11 +4496,6 @@ const services = [
             path: "bbc_tigrinya_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_tigrinya_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_tigrinya_radio/liveradio"
@@ -5743,11 +4508,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "news-23263262"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "news-23263262"
           },
@@ -5768,11 +4528,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -5785,11 +4540,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/ck62z3rjwdeo"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/ck62z3rjwdeo"
           },
@@ -5810,11 +4560,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5827,11 +4572,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -5852,11 +4592,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -5869,11 +4604,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5900,11 +4630,6 @@ const services = [
             path: "media-23268997"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23268997"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "haberler-dunya-51110866"
@@ -5917,11 +4642,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -5942,11 +4662,6 @@ const services = [
             path: "articles/c8q1ze59n25o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c8q1ze59n25o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cpgzpzjl3pdo"
@@ -5959,11 +4674,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -5984,11 +4694,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6005,11 +4710,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6022,11 +4722,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6054,11 +4749,6 @@ const services = [
             path: "simp/51085214"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "simp/51085214"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "simp/51085214"
@@ -6075,11 +4765,6 @@ const services = [
             path: "simp"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "simp"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "simp"
@@ -6092,11 +4777,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: "articles/c0e8weny66ko/simp"
-          },
-          {
-            env: "stage",
             renderer: "N/A",
             path: "articles/c0e8weny66ko/simp"
           },
@@ -6117,11 +4797,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6134,11 +4809,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6159,11 +4829,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6176,11 +4841,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6208,11 +4868,6 @@ const services = [
             path: "trad/51085214"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "trad/51085214"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "trad/51085214"
@@ -6229,11 +4884,6 @@ const services = [
             path: "trad"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "trad"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "trad"
@@ -6246,11 +4896,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: "articles/c0e8weny66ko/trad"
-          },
-          {
-            env: "stage",
             renderer: "N/A",
             path: "articles/c0e8weny66ko/trad"
           },
@@ -6271,11 +4916,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6288,11 +4928,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6313,11 +4948,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6330,11 +4960,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6361,11 +4986,6 @@ const services = [
             path: "learningenglish-51110076"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "learningenglish-51110076"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "learningenglish-51110076"
@@ -6378,11 +4998,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6403,11 +5018,6 @@ const services = [
             path: "articles/cp4l2mrejvdo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/cp4l2mrejvdo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/c8zv0eed9gko"
@@ -6420,11 +5030,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6445,11 +5050,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6466,11 +5066,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6483,11 +5078,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6514,11 +5104,6 @@ const services = [
             path: "bbc_urdu_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_urdu_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_urdu_radio/liveradio"
@@ -6531,11 +5116,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "world-23268929"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "world-23268929"
           },
@@ -6556,11 +5136,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: ""
@@ -6573,11 +5148,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "articles/cwgq7rzv172o"
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: "articles/cwgq7rzv172o"
           },
@@ -6598,11 +5168,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6615,11 +5180,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6640,11 +5200,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6657,11 +5212,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6688,11 +5238,6 @@ const services = [
             path: "bbc_uzbek_radio/liveradio"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "bbc_uzbek_radio/liveradio"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "bbc_uzbek_radio/liveradio"
@@ -6708,11 +5253,7 @@ const services = [
             renderer: "PAL",
             path: "media-50461363"
           },
-          {
-            env: "stage",
-            renderer: "PAL",
-            path: "media-50461363"
-          },
+
           {
             env: "live",
             renderer: "PAL",
@@ -6726,11 +5267,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -6751,11 +5287,6 @@ const services = [
             path: "articles/cxj3rjxm6r0o"
           },
           {
-            env: "stage",
-            renderer: "N/A",
-            path: "articles/cxj3rjxm6r0o"
-          },
-          {
             env: "live",
             renderer: "N/A",
             path: "articles/cxj3rjxm6r0o"
@@ -6768,11 +5299,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6793,11 +5319,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6814,11 +5335,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6831,11 +5347,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6862,11 +5373,6 @@ const services = [
             path: "media-23257614"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "media-23257614"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "media-49614583"
@@ -6879,11 +5385,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -6904,11 +5405,6 @@ const services = [
             path: "articles/c3y59g5zm19o"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/c3y59g5zm19o"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cpgqngyexq7o"
@@ -6921,11 +5417,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -6946,11 +5437,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6967,11 +5453,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -6984,11 +5465,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7015,11 +5491,6 @@ const services = [
             path: "23183994"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "23183994"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "media-42985961"
@@ -7032,11 +5503,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "Simorgh",
             path: ""
           },
@@ -7057,11 +5523,6 @@ const services = [
             path: "articles/clw06m0nj8qo"
           },
           {
-            env: "stage",
-            renderer: "Simorgh",
-            path: "articles/clw06m0nj8qo"
-          },
-          {
             env: "live",
             renderer: "Simorgh",
             path: "articles/cg7qz71en35o"
@@ -7074,11 +5535,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7099,11 +5555,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7120,11 +5571,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7137,11 +5583,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7169,11 +5610,6 @@ const services = [
             path: "simp/chinese-news-51088031"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "simp/chinese-news-51088031"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "simp/chinese-news-51088031"
@@ -7190,11 +5626,6 @@ const services = [
             path: "simp"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "simp"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "simp"
@@ -7207,11 +5638,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: "articles/c3xd4x9prgyo/simp"
-          },
-          {
-            env: "stage",
             renderer: "N/A",
             path: "articles/c3xd4x9prgyo/simp"
           },
@@ -7232,11 +5658,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7249,11 +5670,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7274,11 +5690,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7291,11 +5702,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7323,11 +5729,6 @@ const services = [
             path: "trad/chinese-news-51088031"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "trad/chinese-news-51088031"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "trad/chinese-news-51088031"
@@ -7344,11 +5745,6 @@ const services = [
             path: "trad"
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: "trad"
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: "trad"
@@ -7361,11 +5757,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: "articles/c3xd4x9prgyo/trad"
-          },
-          {
-            env: "stage",
             renderer: "N/A",
             path: "articles/c3xd4x9prgyo/trad"
           },
@@ -7386,11 +5777,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7403,11 +5789,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7428,11 +5809,6 @@ const services = [
             path: ""
           },
           {
-            env: "stage",
-            renderer: "PAL",
-            path: ""
-          },
-          {
             env: "live",
             renderer: "PAL",
             path: ""
@@ -7445,11 +5821,6 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "stage",
             renderer: "PAL",
             path: ""
           },
@@ -7505,9 +5876,9 @@ const checkAllPages = async () => {
         let allEnvironments = pageType.environments;
 
         if (params.env) {
-          allEnvironments = pageType.environments.filter(
-            environmentConfig => environmentConfig.env.startsWith(params.env)
-            );
+          allEnvironments = pageType.environments.filter(environmentConfig =>
+            environmentConfig.env.startsWith(params.env)
+          );
         }
 
         if (params.renderer) {
@@ -7667,7 +6038,9 @@ const getWorldServiceStats = () => {
     photoPageServices
   );
 
-  document.getElementById("Simorgh_W2020_onDemandRadio").innerHTML = getProgress(
+  document.getElementById(
+    "Simorgh_W2020_onDemandRadio"
+  ).innerHTML = getProgress(
     simorghOnDemandRadioPage,
     onDemandRadioPageServices
   );

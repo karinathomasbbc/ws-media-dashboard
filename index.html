@@ -10,1004 +10,849 @@
 
 <body onload="loadData()">
     <table class='tg' align="left">
-        <tr><td>
-            <table align='left' class='tg'>
-                <th colspan="2">Simorgh - Off Forge Statistics</th>
-                <tr>
-                    <th colspan="2">World Service</th>
-                </tr>
-                <tr>
-                    <td>Live Radio</td>
-                    <td id='Simorgh_W2020_liveRadio'></td>
-                </tr>
-                <tr>
-                    <td>Article (Optimo)</td>
-                    <td id='Simorgh_W2020_article'></td>
-                </tr>
-                <tr>
-                    <td>Home</td>
-                    <td id='Simorgh_W2020_home'></td>
-                </tr>
-                <tr>
-                    <td>MAP (CPS)</td>
-                    <td id='Simorgh_W2020_MAP'></td>
-                </tr>
-                <tr>
-                    <td>Story (CPS)</td>
-                    <td id='Simorgh_W2020_story'></td>
-                </tr>
-                <tr>
-                    <td>Photo Gallery (CPS)</td>
-                    <td id='Simorgh_W2020_photos'></td>
-                </tr>
-                <tr>
-                    <td>On Demand Radio</td>
-                    <td id='Simorgh_W2020_onDemandRadio'></td>
-                </tr>
-                <tr>
-                    <td>On Demand TV</td>
-                    <td id='Simorgh_W2020_onDemandTV'></td>
-                </tr>
-            </table>
-        </td>
+        <tr>
+            <td>
+                <table align='left' class='tg'>
+                    <th colspan="2">Simorgh - Off Forge Statistics</th>
+                    <tr>
+                        <th colspan="2">World Service</th>
+                    </tr>
+                    <tr>
+                        <td>Live Radio</td>
+                        <td id='Simorgh_W2020_liveRadio'></td>
+                    </tr>
+                    <tr>
+                        <td>Article (Optimo)</td>
+                        <td id='Simorgh_W2020_article'></td>
+                    </tr>
+                    <tr>
+                        <td>Home</td>
+                        <td id='Simorgh_W2020_home'></td>
+                    </tr>
+                    <tr>
+                        <td>MAP (CPS)</td>
+                        <td id='Simorgh_W2020_MAP'></td>
+                    </tr>
+                    <tr>
+                        <td>Story (CPS)</td>
+                        <td id='Simorgh_W2020_story'></td>
+                    </tr>
+                    <tr>
+                        <td>Photo Gallery (CPS)</td>
+                        <td id='Simorgh_W2020_photos'></td>
+                    </tr>
+                    <tr>
+                        <td>On Demand Radio</td>
+                        <td id='Simorgh_W2020_onDemandRadio'></td>
+                    </tr>
+                    <tr>
+                        <td>On Demand TV</td>
+                        <td id='Simorgh_W2020_onDemandTV'></td>
+                    </tr>
+                </table>
+            </td>
         </tr>
-        <tr><td>
-            <table class="tg">
-                <th>Public Service</th>
-                <tr>
-                    <td>Article (Optimo)</td>
-                    <td id='Simorgh_article'></td>
-                </tr>
-            </table>
-        </td></tr>
+        <tr>
+            <td>
+                <table class="tg">
+                    <th>Public Service</th>
+                    <tr>
+                        <td>Article (Optimo)</td>
+                        <td id='Simorgh_article'></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-    <table align="center">
+        <table align="center">
+            <td valign="top">
+                <table id='col-1' class="tg">
+                    <tr>
+                        <th></th>
+                        <th>Test</th>
+                        <th>Live</th>
+                    </tr>
+
+                    <!-- afaanoromoo -->
+                    <tr>
+                        <th colspan="3">afaanoromoo</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="afaanoromoo_liveRadio"></td>
+                        <td>
+                            <span class="status" id="afaanoromoo_test_liveRadio_status"></span>
+                            <span id="afaanoromoo_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afaanoromoo_live_liveRadio_status"></span>
+                            <span id="afaanoromoo_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="afaanoromoo_MAP"></td>
+                        <td>
+                            <span class="status" id="afaanoromoo_test_MAP_status"></span>
+                            <span id="afaanoromoo_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afaanoromoo_live_MAP_status"></span>
+                            <span id="afaanoromoo_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="afaanoromoo_home"></td>
+                        <td>
+                            <span class="status" id="afaanoromoo_test_home_status"></span>
+                            <span id="afaanoromoo_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afaanoromoo_live_home_status"></span>
+                            <span id="afaanoromoo_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="afaanoromoo_article"></td>
+                        <td>
+                            <span class="status" id="afaanoromoo_test_article_status"></span>
+                            <span id="afaanoromoo_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afaanoromoo_live_article_status"></span>
+                            <span id="afaanoromoo_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- afrique -->
+                    <tr>
+                        <th colspan="3">afrique</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="afrique_liveRadio"></td>
+                        <td>
+                            <span class="status" id="afrique_test_liveRadio_status"></span>
+                            <span id="afrique_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afrique_live_liveRadio_status"></span>
+                            <span id="afrique_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="afrique_MAP"></td>
+                        <td>
+                            <span class="status" id="afrique_test_MAP_status"></span>
+                            <span id="afrique_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afrique_live_MAP_status"></span>
+                            <span id="afrique_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="afrique_home"></td>
+                        <td>
+                            <span class="status" id="afrique_test_home_status"></span>
+                            <span id="afrique_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afrique_live_home_status"></span>
+                            <span id="afrique_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="afrique_article"></td>
+                        <td>
+                            <span class="status" id="afrique_test_article_status"></span>
+                            <span id="afrique_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="afrique_live_article_status"></span>
+                            <span id="afrique_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- amharic -->
+                    <tr>
+                        <th colspan="3">amharic</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="amharic_liveRadio"></td>
+                        <td>
+                            <span class="status" id="amharic_test_liveRadio_status"></span>
+                            <span id="amharic_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="amharic_live_liveRadio_status"></span>
+                            <span id="amharic_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="amharic_MAP"></td>
+                        <td>
+                            <span class="status" id="amharic_test_MAP_status"></span>
+                            <span id="amharic_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="amharic_live_MAP_status"></span>
+                            <span id="amharic_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="amharic_home"></td>
+                        <td>
+                            <span class="status" id="amharic_test_home_status"></span>
+                            <span id="amharic_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="amharic_live_home_status"></span>
+                            <span id="amharic_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="amharic_article"></td>
+                        <td>
+                            <span class="status" id="amharic_test_article_status"></span>
+                            <span id="amharic_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="amharic_live_article_status"></span>
+                            <span id="amharic_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- arabic -->
+                    <tr>
+                        <th colspan="3">arabic</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="arabic_liveRadio"></td>
+                        <td>
+                            <span class="status" id="arabic_test_liveRadio_status"></span>
+                            <span id="arabic_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="arabic_live_liveRadio_status"></span>
+                            <span id="arabic_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="arabic_MAP"></td>
+                        <td>
+                            <span class="status" id="arabic_test_MAP_status"></span>
+                            <span id="arabic_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="arabic_live_MAP_status"></span>
+                            <span id="arabic_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="arabic_home"></td>
+                        <td>
+                            <span class="status" id="arabic_test_home_status"></span>
+                            <span id="arabic_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="arabic_live_home_status"></span>
+                            <span id="arabic_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="arabic_article"></td>
+                        <td>
+                            <span class="status" id="arabic_test_article_status"></span>
+                            <span id="arabic_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="arabic_live_article_status"></span>
+                            <span id="arabic_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- azeri -->
+                    <tr>
+                        <th colspan="3">azeri</th>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="azeri_MAP"></td>
+                        <td>
+                            <span class="status" id="azeri_test_MAP_status"></span>
+                            <span id="azeri_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="azeri_live_MAP_status"></span>
+                            <span id="azeri_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="azeri_home"></td>
+                        <td>
+                            <span class="status" id="azeri_test_home_status"></span>
+                            <span id="azeri_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="azeri_live_home_status"></span>
+                            <span id="azeri_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="azeri_article"></td>
+                        <td>
+                            <span class="status" id="azeri_test_article_status"></span>
+                            <span id="azeri_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="azeri_live_article_status"></span>
+                            <span id="azeri_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- bengali -->
+                    <tr>
+                        <th colspan="3">bengali</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="bengali_liveRadio"></td>
+                        <td>
+                            <span class="status" id="bengali_test_liveRadio_status"></span>
+                            <span id="bengali_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="bengali_live_liveRadio_status"></span>
+                            <span id="bengali_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="bengali_MAP"></td>
+                        <td>
+                            <span class="status" id="bengali_test_MAP_status"></span>
+                            <span id="bengali_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="bengali_live_MAP_status"></span>
+                            <span id="bengali_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="bengali_home"></td>
+                        <td>
+                            <span class="status" id="bengali_test_home_status"></span>
+                            <span id="bengali_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="bengali_live_home_status"></span>
+                            <span id="bengali_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="bengali_article"></td>
+                        <td>
+                            <span class="status" id="bengali_test_article_status"></span>
+                            <span id="bengali_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="bengali_live_article_status"></span>
+                            <span id="bengali_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- Burmese -->
+                    <tr>
+                        <th colspan="3">burmese</th>
+                    </tr>
+                    <!-- Live Radio -->
+                    <tr>
+                        <td id="burmese_liveRadio"></td>
+                        <td>
+                            <span class="status" id="burmese_test_liveRadio_status"></span>
+                            <span id="burmese_test_liveRadio_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="burmese_live_liveRadio_status"></span>
+                            <span id="burmese_live_liveRadio_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- MAP -->
+                        <td id="burmese_MAP"></td>
+                        <td>
+                            <span class="status" id="burmese_test_MAP_status"></span>
+                            <span id="burmese_test_MAP_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="burmese_live_MAP_status"></span>
+                            <span id="burmese_live_MAP_renderer"></span>
+                        </td>
+                    </tr>
+                    <!-- home -->
+                    <tr>
+                        <td id="burmese_home"></td>
+                        <td>
+                            <span class="status" id="burmese_test_home_status"></span>
+                            <span id="burmese_test_home_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="burmese_live_home_status"></span>
+                            <span id="burmese_live_home_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+                    <!-- article -->
+                    <tr>
+                        <td id="burmese_article"></td>
+                        <td>
+                            <span class="status" id="burmese_test_article_status"></span>
+                            <span id="burmese_test_article_renderer"></span>
+                        </td>
+                        
+                        <td>
+                            <span class="status" id="burmese_live_article_status"></span>
+                            <span id="burmese_live_article_renderer"></span>
+                            <br />
+                        </td>
+                    </tr>
+            </td>
+        </table>
+
         <td valign="top">
-            <table id='col-1' class="tg">
+            <table id="col-2" class="tg">
                 <tr>
                     <th></th>
                     <th>Test</th>
-                    <th>Stage</th>
                     <th>Live</th>
                 </tr>
-
-                <!-- afaanoromoo -->
+                <!-- gahuza -->
                 <tr>
-                    <th colspan="4">afaanoromoo</th>
+                    <th colspan="3">gahuza</th>
                 </tr>
                 <!-- Live Radio -->
                 <tr>
-                    <td id="afaanoromoo_liveRadio"></td>
+                    <td id="gahuza_liveRadio"></td>
                     <td>
-                        <span class="status" id="afaanoromoo_test_liveRadio_status"></span>
-                        <span id="afaanoromoo_test_liveRadio_renderer"></span>
+                        <span class="status" id="gahuza_test_liveRadio_status"></span>
+                        <span id="gahuza_test_liveRadio_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afaanoromoo_stage_liveRadio_status"></span>
-                        <span id="afaanoromoo_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afaanoromoo_live_liveRadio_status"></span>
-                        <span id="afaanoromoo_live_liveRadio_renderer"></span>
+                        <span class="status" id="gahuza_live_liveRadio_status"></span>
+                        <span id="gahuza_live_liveRadio_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <tr>
                     <!-- MAP -->
-                    <td id="afaanoromoo_MAP"></td>
+                    <td id="gahuza_MAP"></td>
                     <td>
-                        <span class="status" id="afaanoromoo_test_MAP_status"></span>
-                        <span id="afaanoromoo_test_MAP_renderer"></span>
+                        <span class="status" id="gahuza_test_MAP_status"></span>
+                        <span id="gahuza_test_MAP_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afaanoromoo_stage_MAP_status"></span>
-                        <span id="afaanoromoo_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afaanoromoo_live_MAP_status"></span>
-                        <span id="afaanoromoo_live_MAP_renderer"></span>
+                        <span class="status" id="gahuza_live_MAP_status"></span>
+                        <span id="gahuza_live_MAP_renderer"></span>
                     </td>
                 </tr>
                 <!-- home -->
                 <tr>
-                    <td id="afaanoromoo_home"></td>
+                    <td id="gahuza_home"></td>
                     <td>
-                        <span class="status" id="afaanoromoo_test_home_status"></span>
-                        <span id="afaanoromoo_test_home_renderer"></span>
+                        <span class="status" id="gahuza_test_home_status"></span>
+                        <span id="gahuza_test_home_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afaanoromoo_stage_home_status"></span>
-                        <span id="afaanoromoo_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afaanoromoo_live_home_status"></span>
-                        <span id="afaanoromoo_live_home_renderer"></span>
+                        <span class="status" id="gahuza_live_home_status"></span>
+                        <span id="gahuza_live_home_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <!-- article -->
                 <tr>
-                    <td id="afaanoromoo_article"></td>
+                    <td id="gahuza_article"></td>
                     <td>
-                        <span class="status" id="afaanoromoo_test_article_status"></span>
-                        <span id="afaanoromoo_test_article_renderer"></span>
+                        <span class="status" id="gahuza_test_article_status"></span>
+                        <span id="gahuza_test_article_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afaanoromoo_stage_article_status"></span>
-                        <span id="afaanoromoo_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afaanoromoo_live_article_status"></span>
-                        <span id="afaanoromoo_live_article_renderer"></span>
+                        <span class="status" id="gahuza_live_article_status"></span>
+                        <span id="gahuza_live_article_renderer"></span>
                         <br />
                     </td>
                 </tr>
-                <!-- afrique -->
+                <!-- gujarati -->
+                <th colspan="3">gujarati</th>
+                </tr>
                 <tr>
-                    <th colspan="4">afrique</th>
+                    <!-- MAP -->
+                    <td id="gujarati_MAP"></td>
+                    <td>
+                        <span class="status" id="gujarati_test_MAP_status"></span>
+                        <span id="gujarati_test_MAP_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="gujarati_live_MAP_status"></span>
+                        <span id="gujarati_live_MAP_renderer"></span>
+                    </td>
+                </tr>
+                <!-- home -->
+                <tr>
+                    <td id="gujarati_home"></td>
+                    <td>
+                        <span class="status" id="gujarati_test_home_status"></span>
+                        <span id="gujarati_test_home_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="gujarati_live_home_status"></span>
+                        <span id="gujarati_live_home_renderer"></span>
+                        <br />
+                    </td>
+                </tr>
+                <!-- article -->
+                <tr>
+                    <td id="gujarati_article"></td>
+                    <td>
+                        <span class="status" id="gujarati_test_article_status"></span>
+                        <span id="gujarati_test_article_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="gujarati_live_article_status"></span>
+                        <span id="gujarati_live_article_renderer"></span>
+                        <br />
+                    </td>
+                </tr>
+                <!-- hausa -->
+                <tr>
+                    <th colspan="3">hausa</th>
                 </tr>
                 <!-- Live Radio -->
                 <tr>
-                    <td id="afrique_liveRadio"></td>
+                    <td id="hausa_liveRadio"></td>
                     <td>
-                        <span class="status" id="afrique_test_liveRadio_status"></span>
-                        <span id="afrique_test_liveRadio_renderer"></span>
+                        <span class="status" id="hausa_test_liveRadio_status"></span>
+                        <span id="hausa_test_liveRadio_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afrique_stage_liveRadio_status"></span>
-                        <span id="afrique_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afrique_live_liveRadio_status"></span>
-                        <span id="afrique_live_liveRadio_renderer"></span>
+                        <span class="status" id="hausa_live_liveRadio_status"></span>
+                        <span id="hausa_live_liveRadio_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <tr>
                     <!-- MAP -->
-                    <td id="afrique_MAP"></td>
+                    <td id="hausa_MAP"></td>
                     <td>
-                        <span class="status" id="afrique_test_MAP_status"></span>
-                        <span id="afrique_test_MAP_renderer"></span>
+                        <span class="status" id="hausa_test_MAP_status"></span>
+                        <span id="hausa_test_MAP_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afrique_stage_MAP_status"></span>
-                        <span id="afrique_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afrique_live_MAP_status"></span>
-                        <span id="afrique_live_MAP_renderer"></span>
+                        <span class="status" id="hausa_live_MAP_status"></span>
+                        <span id="hausa_live_MAP_renderer"></span>
                     </td>
                 </tr>
                 <!-- home -->
                 <tr>
-                    <td id="afrique_home"></td>
+                    <td id="hausa_home"></td>
                     <td>
-                        <span class="status" id="afrique_test_home_status"></span>
-                        <span id="afrique_test_home_renderer"></span>
+                        <span class="status" id="hausa_test_home_status"></span>
+                        <span id="hausa_test_home_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afrique_stage_home_status"></span>
-                        <span id="afrique_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afrique_live_home_status"></span>
-                        <span id="afrique_live_home_renderer"></span>
+                        <span class="status" id="hausa_live_home_status"></span>
+                        <span id="hausa_live_home_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <!-- article -->
                 <tr>
-                    <td id="afrique_article"></td>
+                    <td id="hausa_article"></td>
                     <td>
-                        <span class="status" id="afrique_test_article_status"></span>
-                        <span id="afrique_test_article_renderer"></span>
+                        <span class="status" id="hausa_test_article_status"></span>
+                        <span id="hausa_test_article_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="afrique_stage_article_status"></span>
-                        <span id="afrique_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="afrique_live_article_status"></span>
-                        <span id="afrique_live_article_renderer"></span>
+                        <span class="status" id="hausa_live_article_status"></span>
+                        <span id="hausa_live_article_renderer"></span>
                         <br />
                     </td>
                 </tr>
-                <!-- amharic -->
+                <!-- hindi -->
                 <tr>
-                    <th colspan="4">amharic</th>
+                    <th colspan="3">hindi</th>
                 </tr>
                 <!-- Live Radio -->
                 <tr>
-                    <td id="amharic_liveRadio"></td>
+                    <td id="hindi_liveRadio"></td>
                     <td>
-                        <span class="status" id="amharic_test_liveRadio_status"></span>
-                        <span id="amharic_test_liveRadio_renderer"></span>
+                        <span class="status" id="hindi_test_liveRadio_status"></span>
+                        <span id="hindi_test_liveRadio_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="amharic_stage_liveRadio_status"></span>
-                        <span id="amharic_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="amharic_live_liveRadio_status"></span>
-                        <span id="amharic_live_liveRadio_renderer"></span>
+                        <span class="status" id="hindi_live_liveRadio_status"></span>
+                        <span id="hindi_live_liveRadio_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <tr>
                     <!-- MAP -->
-                    <td id="amharic_MAP"></td>
+                    <td id="hindi_MAP"></td>
                     <td>
-                        <span class="status" id="amharic_test_MAP_status"></span>
-                        <span id="amharic_test_MAP_renderer"></span>
+                        <span class="status" id="hindi_test_MAP_status"></span>
+                        <span id="hindi_test_MAP_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="amharic_stage_MAP_status"></span>
-                        <span id="amharic_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="amharic_live_MAP_status"></span>
-                        <span id="amharic_live_MAP_renderer"></span>
+                        <span class="status" id="hindi_live_MAP_status"></span>
+                        <span id="hindi_live_MAP_renderer"></span>
                     </td>
                 </tr>
                 <!-- home -->
                 <tr>
-                    <td id="amharic_home"></td>
+                    <td id="hindi_home"></td>
                     <td>
-                        <span class="status" id="amharic_test_home_status"></span>
-                        <span id="amharic_test_home_renderer"></span>
+                        <span class="status" id="hindi_test_home_status"></span>
+                        <span id="hindi_test_home_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="amharic_stage_home_status"></span>
-                        <span id="amharic_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="amharic_live_home_status"></span>
-                        <span id="amharic_live_home_renderer"></span>
+                        <span class="status" id="hindi_live_home_status"></span>
+                        <span id="hindi_live_home_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <!-- article -->
                 <tr>
-                    <td id="amharic_article"></td>
+                    <td id="hindi_article"></td>
                     <td>
-                        <span class="status" id="amharic_test_article_status"></span>
-                        <span id="amharic_test_article_renderer"></span>
+                        <span class="status" id="hindi_test_article_status"></span>
+                        <span id="hindi_test_article_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="amharic_stage_article_status"></span>
-                        <span id="amharic_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="amharic_live_article_status"></span>
-                        <span id="amharic_live_article_renderer"></span>
+                        <span class="status" id="hindi_live_article_status"></span>
+                        <span id="hindi_live_article_renderer"></span>
                         <br />
                     </td>
                 </tr>
-                <!-- arabic -->
+                <!-- indonesia -->
                 <tr>
-                    <th colspan="4">arabic</th>
+                    <th colspan="3">indonesia</th>
                 </tr>
                 <!-- Live Radio -->
                 <tr>
-                    <td id="arabic_liveRadio"></td>
+                    <td id="indonesia_liveRadio"></td>
                     <td>
-                        <span class="status" id="arabic_test_liveRadio_status"></span>
-                        <span id="arabic_test_liveRadio_renderer"></span>
+                        <span class="status" id="indonesia_test_liveRadio_status"></span>
+                        <span id="indonesia_test_liveRadio_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="arabic_stage_liveRadio_status"></span>
-                        <span id="arabic_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="arabic_live_liveRadio_status"></span>
-                        <span id="arabic_live_liveRadio_renderer"></span>
+                        <span class="status" id="indonesia_live_liveRadio_status"></span>
+                        <span id="indonesia_live_liveRadio_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <tr>
                     <!-- MAP -->
-                    <td id="arabic_MAP"></td>
+                    <td id="indonesia_MAP"></td>
                     <td>
-                        <span class="status" id="arabic_test_MAP_status"></span>
-                        <span id="arabic_test_MAP_renderer"></span>
+                        <span class="status" id="indonesia_test_MAP_status"></span>
+                        <span id="indonesia_test_MAP_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="arabic_stage_MAP_status"></span>
-                        <span id="arabic_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="arabic_live_MAP_status"></span>
-                        <span id="arabic_live_MAP_renderer"></span>
+                        <span class="status" id="indonesia_live_MAP_status"></span>
+                        <span id="indonesia_live_MAP_renderer"></span>
                     </td>
                 </tr>
                 <!-- home -->
                 <tr>
-                    <td id="arabic_home"></td>
+                    <td id="indonesia_home"></td>
                     <td>
-                        <span class="status" id="arabic_test_home_status"></span>
-                        <span id="arabic_test_home_renderer"></span>
+                        <span class="status" id="indonesia_test_home_status"></span>
+                        <span id="indonesia_test_home_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="arabic_stage_home_status"></span>
-                        <span id="arabic_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="arabic_live_home_status"></span>
-                        <span id="arabic_live_home_renderer"></span>
+                        <span class="status" id="indonesia_live_home_status"></span>
+                        <span id="indonesia_live_home_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <!-- article -->
                 <tr>
-                    <td id="arabic_article"></td>
+                    <td id="indonesia_article"></td>
                     <td>
-                        <span class="status" id="arabic_test_article_status"></span>
-                        <span id="arabic_test_article_renderer"></span>
+                        <span class="status" id="indonesia_test_article_status"></span>
+                        <span id="indonesia_test_article_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="arabic_stage_article_status"></span>
-                        <span id="arabic_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="arabic_live_article_status"></span>
-                        <span id="arabic_live_article_renderer"></span>
+                        <span class="status" id="indonesia_live_article_status"></span>
+                        <span id="indonesia_live_article_renderer"></span>
                         <br />
                     </td>
                 </tr>
-                <!-- azeri -->
+                <!-- igbo -->
                 <tr>
-                    <th colspan="4">azeri</th>
+                    <th colspan="3">igbo</th>
+                </tr>
+                <!-- MAP -->
+                <tr>
+                    <td id="igbo_MAP"></td>
+                    <td>
+                        <span class="status" id="igbo_test_MAP_status"></span>
+                        <span id="igbo_test_MAP_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="igbo_live_MAP_status"></span>
+                        <span id="igbo_live_MAP_renderer"></span>
+                    </td>
+                </tr>
+                <!-- home -->
+                <tr>
+                    <td id="igbo_home"></td>
+                    <td>
+                        <span class="status" id="igbo_test_home_status"></span>
+                        <span id="igbo_test_home_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="igbo_live_home_status"></span>
+                        <span id="igbo_live_home_renderer"></span>
+                        <br />
+                    </td>
+                </tr>
+                <!-- article -->
+                <tr>
+                    <td id="igbo_article"></td>
+                    <td>
+                        <span class="status" id="igbo_test_article_status"></span>
+                        <span id="igbo_test_article_renderer"></span>
+                    </td>
+                    
+                    <td>
+                        <span class="status" id="igbo_live_article_status"></span>
+                        <span id="igbo_live_article_renderer"></span>
+                        <br />
+                    </td>
+                </tr>
+                <!-- japanese -->
+                <tr>
+                    <th colspan="3">japanese</th>
                 </tr>
                 <tr>
                     <!-- MAP -->
-                    <td id="azeri_MAP"></td>
+                    <td id="japanese_MAP"></td>
                     <td>
-                        <span class="status" id="azeri_test_MAP_status"></span>
-                        <span id="azeri_test_MAP_renderer"></span>
+                        <span class="status" id="japanese_test_MAP_status"></span>
+                        <span id="japanese_test_MAP_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="azeri_stage_MAP_status"></span>
-                        <span id="azeri_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="azeri_live_MAP_status"></span>
-                        <span id="azeri_live_MAP_renderer"></span>
+                        <span class="status" id="japanese_live_MAP_status"></span>
+                        <span id="japanese_live_MAP_renderer"></span>
                     </td>
                 </tr>
                 <!-- home -->
                 <tr>
-                    <td id="azeri_home"></td>
+                    <td id="japanese_home"></td>
                     <td>
-                        <span class="status" id="azeri_test_home_status"></span>
-                        <span id="azeri_test_home_renderer"></span>
+                        <span class="status" id="japanese_test_home_status"></span>
+                        <span id="japanese_test_home_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="azeri_stage_home_status"></span>
-                        <span id="azeri_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="azeri_live_home_status"></span>
-                        <span id="azeri_live_home_renderer"></span>
+                        <span class="status" id="japanese_live_home_status"></span>
+                        <span id="japanese_live_home_renderer"></span>
                         <br />
                     </td>
                 </tr>
                 <!-- article -->
                 <tr>
-                    <td id="azeri_article"></td>
+                    <td id="japanese_article"></td>
                     <td>
-                        <span class="status" id="azeri_test_article_status"></span>
-                        <span id="azeri_test_article_renderer"></span>
+                        <span class="status" id="japanese_test_article_status"></span>
+                        <span id="japanese_test_article_renderer"></span>
                     </td>
+                    
                     <td>
-                        <span class="status" id="azeri_stage_article_status"></span>
-                        <span id="azeri_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="azeri_live_article_status"></span>
-                        <span id="azeri_live_article_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <!-- bengali -->
-                <tr>
-                    <th colspan="4">bengali</th>
-                </tr>
-                <!-- Live Radio -->
-                <tr>
-                    <td id="bengali_liveRadio"></td>
-                    <td>
-                        <span class="status" id="bengali_test_liveRadio_status"></span>
-                        <span id="bengali_test_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_stage_liveRadio_status"></span>
-                        <span id="bengali_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_live_liveRadio_status"></span>
-                        <span id="bengali_live_liveRadio_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <tr>
-                    <!-- MAP -->
-                    <td id="bengali_MAP"></td>
-                    <td>
-                        <span class="status" id="bengali_test_MAP_status"></span>
-                        <span id="bengali_test_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_stage_MAP_status"></span>
-                        <span id="bengali_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_live_MAP_status"></span>
-                        <span id="bengali_live_MAP_renderer"></span>
-                    </td>
-                </tr>
-                <!-- home -->
-                <tr>
-                    <td id="bengali_home"></td>
-                    <td>
-                        <span class="status" id="bengali_test_home_status"></span>
-                        <span id="bengali_test_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_stage_home_status"></span>
-                        <span id="bengali_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_live_home_status"></span>
-                        <span id="bengali_live_home_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <!-- article -->
-                <tr>
-                    <td id="bengali_article"></td>
-                    <td>
-                        <span class="status" id="bengali_test_article_status"></span>
-                        <span id="bengali_test_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_stage_article_status"></span>
-                        <span id="bengali_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="bengali_live_article_status"></span>
-                        <span id="bengali_live_article_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <!-- Burmese -->
-                <tr>
-                    <th colspan="4">burmese</th>
-                </tr>
-                <!-- Live Radio -->
-                <tr>
-                    <td id="burmese_liveRadio"></td>
-                    <td>
-                        <span class="status" id="burmese_test_liveRadio_status"></span>
-                        <span id="burmese_test_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_stage_liveRadio_status"></span>
-                        <span id="burmese_stage_liveRadio_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_live_liveRadio_status"></span>
-                        <span id="burmese_live_liveRadio_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <tr>
-                    <!-- MAP -->
-                    <td id="burmese_MAP"></td>
-                    <td>
-                        <span class="status" id="burmese_test_MAP_status"></span>
-                        <span id="burmese_test_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_stage_MAP_status"></span>
-                        <span id="burmese_stage_MAP_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_live_MAP_status"></span>
-                        <span id="burmese_live_MAP_renderer"></span>
-                    </td>
-                </tr>
-                <!-- home -->
-                <tr>
-                    <td id="burmese_home"></td>
-                    <td>
-                        <span class="status" id="burmese_test_home_status"></span>
-                        <span id="burmese_test_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_stage_home_status"></span>
-                        <span id="burmese_stage_home_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_live_home_status"></span>
-                        <span id="burmese_live_home_renderer"></span>
-                        <br />
-                    </td>
-                </tr>
-                <!-- article -->
-                <tr>
-                    <td id="burmese_article"></td>
-                    <td>
-                        <span class="status" id="burmese_test_article_status"></span>
-                        <span id="burmese_test_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_stage_article_status"></span>
-                        <span id="burmese_stage_article_renderer"></span>
-                    </td>
-                    <td>
-                        <span class="status" id="burmese_live_article_status"></span>
-                        <span id="burmese_live_article_renderer"></span>
+                        <span class="status" id="japanese_live_article_status"></span>
+                        <span id="japanese_live_article_renderer"></span>
                         <br />
                     </td>
                 </tr>
         </td>
-    </table>
-
-    <td valign="top">
-        <table id="col-2" class="tg">
-            <tr>
-                <th></th>
-                <th>Test</th>
-                <th>Stage</th>
-                <th>Live</th>
-            </tr>
-            <!-- gahuza -->
-            <tr>
-                <th colspan="4">gahuza</th>
-            </tr>
-            <!-- Live Radio -->
-            <tr>
-                <td id="gahuza_liveRadio"></td>
-                <td>
-                    <span class="status" id="gahuza_test_liveRadio_status"></span>
-                    <span id="gahuza_test_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_stage_liveRadio_status"></span>
-                    <span id="gahuza_stage_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_live_liveRadio_status"></span>
-                    <span id="gahuza_live_liveRadio_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="gahuza_MAP"></td>
-                <td>
-                    <span class="status" id="gahuza_test_MAP_status"></span>
-                    <span id="gahuza_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_stage_MAP_status"></span>
-                    <span id="gahuza_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_live_MAP_status"></span>
-                    <span id="gahuza_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="gahuza_home"></td>
-                <td>
-                    <span class="status" id="gahuza_test_home_status"></span>
-                    <span id="gahuza_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_stage_home_status"></span>
-                    <span id="gahuza_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_live_home_status"></span>
-                    <span id="gahuza_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="gahuza_article"></td>
-                <td>
-                    <span class="status" id="gahuza_test_article_status"></span>
-                    <span id="gahuza_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_stage_article_status"></span>
-                    <span id="gahuza_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gahuza_live_article_status"></span>
-                    <span id="gahuza_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- gujarati -->
-            <th colspan="4">gujarati</th>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="gujarati_MAP"></td>
-                <td>
-                    <span class="status" id="gujarati_test_MAP_status"></span>
-                    <span id="gujarati_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_stage_MAP_status"></span>
-                    <span id="gujarati_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_live_MAP_status"></span>
-                    <span id="gujarati_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="gujarati_home"></td>
-                <td>
-                    <span class="status" id="gujarati_test_home_status"></span>
-                    <span id="gujarati_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_stage_home_status"></span>
-                    <span id="gujarati_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_live_home_status"></span>
-                    <span id="gujarati_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="gujarati_article"></td>
-                <td>
-                    <span class="status" id="gujarati_test_article_status"></span>
-                    <span id="gujarati_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_stage_article_status"></span>
-                    <span id="gujarati_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="gujarati_live_article_status"></span>
-                    <span id="gujarati_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- hausa -->
-            <tr>
-                <th colspan="4">hausa</th>
-            </tr>
-            <!-- Live Radio -->
-            <tr>
-                <td id="hausa_liveRadio"></td>
-                <td>
-                    <span class="status" id="hausa_test_liveRadio_status"></span>
-                    <span id="hausa_test_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_stage_liveRadio_status"></span>
-                    <span id="hausa_stage_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_live_liveRadio_status"></span>
-                    <span id="hausa_live_liveRadio_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="hausa_MAP"></td>
-                <td>
-                    <span class="status" id="hausa_test_MAP_status"></span>
-                    <span id="hausa_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_stage_MAP_status"></span>
-                    <span id="hausa_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_live_MAP_status"></span>
-                    <span id="hausa_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="hausa_home"></td>
-                <td>
-                    <span class="status" id="hausa_test_home_status"></span>
-                    <span id="hausa_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_stage_home_status"></span>
-                    <span id="hausa_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_live_home_status"></span>
-                    <span id="hausa_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="hausa_article"></td>
-                <td>
-                    <span class="status" id="hausa_test_article_status"></span>
-                    <span id="hausa_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_stage_article_status"></span>
-                    <span id="hausa_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hausa_live_article_status"></span>
-                    <span id="hausa_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- hindi -->
-            <tr>
-                <th colspan="4">hindi</th>
-            </tr>
-            <!-- Live Radio -->
-            <tr>
-                <td id="hindi_liveRadio"></td>
-                <td>
-                    <span class="status" id="hindi_test_liveRadio_status"></span>
-                    <span id="hindi_test_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_stage_liveRadio_status"></span>
-                    <span id="hindi_stage_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_live_liveRadio_status"></span>
-                    <span id="hindi_live_liveRadio_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="hindi_MAP"></td>
-                <td>
-                    <span class="status" id="hindi_test_MAP_status"></span>
-                    <span id="hindi_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_stage_MAP_status"></span>
-                    <span id="hindi_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_live_MAP_status"></span>
-                    <span id="hindi_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="hindi_home"></td>
-                <td>
-                    <span class="status" id="hindi_test_home_status"></span>
-                    <span id="hindi_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_stage_home_status"></span>
-                    <span id="hindi_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_live_home_status"></span>
-                    <span id="hindi_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="hindi_article"></td>
-                <td>
-                    <span class="status" id="hindi_test_article_status"></span>
-                    <span id="hindi_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_stage_article_status"></span>
-                    <span id="hindi_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="hindi_live_article_status"></span>
-                    <span id="hindi_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- indonesia -->
-            <tr>
-                <th colspan="4">indonesia</th>
-            </tr>
-            <!-- Live Radio -->
-            <tr>
-                <td id="indonesia_liveRadio"></td>
-                <td>
-                    <span class="status" id="indonesia_test_liveRadio_status"></span>
-                    <span id="indonesia_test_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_stage_liveRadio_status"></span>
-                    <span id="indonesia_stage_liveRadio_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_live_liveRadio_status"></span>
-                    <span id="indonesia_live_liveRadio_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="indonesia_MAP"></td>
-                <td>
-                    <span class="status" id="indonesia_test_MAP_status"></span>
-                    <span id="indonesia_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_stage_MAP_status"></span>
-                    <span id="indonesia_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_live_MAP_status"></span>
-                    <span id="indonesia_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="indonesia_home"></td>
-                <td>
-                    <span class="status" id="indonesia_test_home_status"></span>
-                    <span id="indonesia_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_stage_home_status"></span>
-                    <span id="indonesia_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_live_home_status"></span>
-                    <span id="indonesia_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="indonesia_article"></td>
-                <td>
-                    <span class="status" id="indonesia_test_article_status"></span>
-                    <span id="indonesia_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_stage_article_status"></span>
-                    <span id="indonesia_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="indonesia_live_article_status"></span>
-                    <span id="indonesia_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- igbo -->
-            <tr>
-                <th colspan="4">igbo</th>
-            </tr>
-            <!-- MAP -->
-            <tr>
-                <td id="igbo_MAP"></td>
-                <td>
-                    <span class="status" id="igbo_test_MAP_status"></span>
-                    <span id="igbo_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_stage_MAP_status"></span>
-                    <span id="igbo_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_live_MAP_status"></span>
-                    <span id="igbo_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="igbo_home"></td>
-                <td>
-                    <span class="status" id="igbo_test_home_status"></span>
-                    <span id="igbo_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_stage_home_status"></span>
-                    <span id="igbo_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_live_home_status"></span>
-                    <span id="igbo_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="igbo_article"></td>
-                <td>
-                    <span class="status" id="igbo_test_article_status"></span>
-                    <span id="igbo_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_stage_article_status"></span>
-                    <span id="igbo_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="igbo_live_article_status"></span>
-                    <span id="igbo_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- japanese -->
-            <tr>
-                <th colspan="4">japanese</th>
-            </tr>
-            <tr>
-                <!-- MAP -->
-                <td id="japanese_MAP"></td>
-                <td>
-                    <span class="status" id="japanese_test_MAP_status"></span>
-                    <span id="japanese_test_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_stage_MAP_status"></span>
-                    <span id="japanese_stage_MAP_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_live_MAP_status"></span>
-                    <span id="japanese_live_MAP_renderer"></span>
-                </td>
-            </tr>
-            <!-- home -->
-            <tr>
-                <td id="japanese_home"></td>
-                <td>
-                    <span class="status" id="japanese_test_home_status"></span>
-                    <span id="japanese_test_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_stage_home_status"></span>
-                    <span id="japanese_stage_home_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_live_home_status"></span>
-                    <span id="japanese_live_home_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-            <!-- article -->
-            <tr>
-                <td id="japanese_article"></td>
-                <td>
-                    <span class="status" id="japanese_test_article_status"></span>
-                    <span id="japanese_test_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_stage_article_status"></span>
-                    <span id="japanese_stage_article_renderer"></span>
-                </td>
-                <td>
-                    <span class="status" id="japanese_live_article_status"></span>
-                    <span id="japanese_live_article_renderer"></span>
-                    <br />
-                </td>
-            </tr>
-    </td>
     </table>
 
     <td valign="top">
@@ -1015,12 +860,11 @@
             <tr>
                 <th></th>
                 <th>Test</th>
-                <th>Stage</th>
                 <th>Live</th>
             </tr>
             <!-- Korean -->
             <tr>
-                <th colspan="4">korean</th>
+                <th colspan="3">korean</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1029,10 +873,7 @@
                     <span class="status" id="korean_test_liveRadio_status"></span>
                     <span id="korean_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="korean_stage_liveRadio_status"></span>
-                    <span id="korean_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="korean_live_liveRadio_status"></span>
                     <span id="korean_live_liveRadio_renderer"></span>
@@ -1046,10 +887,7 @@
                     <span class="status" id="korean_test_MAP_status"></span>
                     <span id="korean_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="korean_stage_MAP_status"></span>
-                    <span id="korean_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="korean_live_MAP_status"></span>
                     <span id="korean_live_MAP_renderer"></span>
@@ -1062,10 +900,7 @@
                     <span class="status" id="korean_test_home_status"></span>
                     <span id="korean_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="korean_stage_home_status"></span>
-                    <span id="korean_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="korean_live_home_status"></span>
                     <span id="korean_live_home_renderer"></span>
@@ -1079,10 +914,7 @@
                     <span class="status" id="korean_test_article_status"></span>
                     <span id="korean_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="korean_stage_article_status"></span>
-                    <span id="korean_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="korean_live_article_status"></span>
                     <span id="korean_live_article_renderer"></span>
@@ -1091,7 +923,7 @@
             </tr>
             <!-- kyrgyz -->
             <tr>
-                <th colspan="4">kyrgyz</th>
+                <th colspan="3">kyrgyz</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1100,10 +932,7 @@
                     <span class="status" id="kyrgyz_test_liveRadio_status"></span>
                     <span id="kyrgyz_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="kyrgyz_stage_liveRadio_status"></span>
-                    <span id="kyrgyz_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="kyrgyz_live_liveRadio_status"></span>
                     <span id="kyrgyz_live_liveRadio_renderer"></span>
@@ -1117,10 +946,7 @@
                     <span class="status" id="kyrgyz_test_MAP_status"></span>
                     <span id="kyrgyz_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="kyrgyz_stage_MAP_status"></span>
-                    <span id="kyrgyz_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="kyrgyz_live_MAP_status"></span>
                     <span id="kyrgyz_live_MAP_renderer"></span>
@@ -1133,10 +959,7 @@
                     <span class="status" id="kyrgyz_test_home_status"></span>
                     <span id="kyrgyz_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="kyrgyz_stage_home_status"></span>
-                    <span id="kyrgyz_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="kyrgyz_live_home_status"></span>
                     <span id="kyrgyz_live_home_renderer"></span>
@@ -1150,10 +973,7 @@
                     <span class="status" id="kyrgyz_test_article_status"></span>
                     <span id="kyrgyz_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="kyrgyz_stage_article_status"></span>
-                    <span id="kyrgyz_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="kyrgyz_live_article_status"></span>
                     <span id="kyrgyz_live_article_renderer"></span>
@@ -1162,7 +982,7 @@
             </tr>
             <!-- marathi -->
             <tr>
-                <th colspan="4">marathi</th>
+                <th colspan="3">marathi</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1171,10 +991,7 @@
                     <span class="status" id="marathi_test_MAP_status"></span>
                     <span id="marathi_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="marathi_stage_MAP_status"></span>
-                    <span id="marathi_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="marathi_live_MAP_status"></span>
                     <span id="marathi_live_MAP_renderer"></span>
@@ -1187,10 +1004,7 @@
                     <span class="status" id="marathi_test_home_status"></span>
                     <span id="marathi_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="marathi_stage_home_status"></span>
-                    <span id="marathi_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="marathi_live_home_status"></span>
                     <span id="marathi_live_home_renderer"></span>
@@ -1204,10 +1018,7 @@
                     <span class="status" id="marathi_test_article_status"></span>
                     <span id="marathi_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="marathi_stage_article_status"></span>
-                    <span id="marathi_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="marathi_live_article_status"></span>
                     <span id="marathi_live_article_renderer"></span>
@@ -1216,7 +1027,7 @@
             </tr>
             <!-- mundo -->
             <tr>
-                <th colspan="4">mundo</th>
+                <th colspan="3">mundo</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1225,10 +1036,7 @@
                     <span class="status" id="mundo_test_MAP_status"></span>
                     <span id="mundo_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="mundo_stage_MAP_status"></span>
-                    <span id="mundo_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="mundo_live_MAP_status"></span>
                     <span id="mundo_live_MAP_renderer"></span>
@@ -1241,10 +1049,7 @@
                     <span class="status" id="mundo_test_home_status"></span>
                     <span id="mundo_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="mundo_stage_home_status"></span>
-                    <span id="mundo_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="mundo_live_home_status"></span>
                     <span id="mundo_live_home_renderer"></span>
@@ -1258,10 +1063,7 @@
                     <span class="status" id="mundo_test_article_status"></span>
                     <span id="mundo_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="mundo_stage_article_status"></span>
-                    <span id="mundo_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="mundo_live_article_status"></span>
                     <span id="mundo_live_article_renderer"></span>
@@ -1270,7 +1072,7 @@
             </tr>
             <!-- nepali -->
             <tr>
-                <th colspan="4">nepali</th>
+                <th colspan="3">nepali</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1279,10 +1081,7 @@
                     <span class="status" id="nepali_test_liveRadio_status"></span>
                     <span id="nepali_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="nepali_stage_liveRadio_status"></span>
-                    <span id="nepali_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="nepali_live_liveRadio_status"></span>
                     <span id="nepali_live_liveRadio_renderer"></span>
@@ -1296,10 +1095,7 @@
                     <span class="status" id="nepali_test_MAP_status"></span>
                     <span id="nepali_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="nepali_stage_MAP_status"></span>
-                    <span id="nepali_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="nepali_live_MAP_status"></span>
                     <span id="nepali_live_MAP_renderer"></span>
@@ -1312,10 +1108,7 @@
                     <span class="status" id="nepali_test_home_status"></span>
                     <span id="nepali_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="nepali_stage_home_status"></span>
-                    <span id="nepali_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="nepali_live_home_status"></span>
                     <span id="nepali_live_home_renderer"></span>
@@ -1329,10 +1122,7 @@
                     <span class="status" id="nepali_test_article_status"></span>
                     <span id="nepali_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="nepali_stage_article_status"></span>
-                    <span id="nepali_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="nepali_live_article_status"></span>
                     <span id="nepali_live_article_renderer"></span>
@@ -1341,7 +1131,7 @@
             </tr>
             <!-- Pashto -->
             <tr>
-                <th colspan="4">pashto</th>
+                <th colspan="3">pashto</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1350,10 +1140,7 @@
                     <span class="status" id="pashto_test_liveRadio_status"></span>
                     <span id="pashto_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pashto_stage_liveRadio_status"></span>
-                    <span id="pashto_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pashto_live_liveRadio_status"></span>
                     <span id="pashto_live_liveRadio_renderer"></span>
@@ -1367,10 +1154,7 @@
                     <span class="status" id="pashto_test_MAP_status"></span>
                     <span id="pashto_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pashto_stage_MAP_status"></span>
-                    <span id="pashto_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pashto_live_MAP_status"></span>
                     <span id="pashto_live_MAP_renderer"></span>
@@ -1383,10 +1167,7 @@
                     <span class="status" id="pashto_test_home_status"></span>
                     <span id="pashto_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pashto_stage_home_status"></span>
-                    <span id="pashto_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pashto_live_home_status"></span>
                     <span id="pashto_live_home_renderer"></span>
@@ -1400,10 +1181,7 @@
                     <span class="status" id="pashto_test_article_status"></span>
                     <span id="pashto_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pashto_stage_article_status"></span>
-                    <span id="pashto_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pashto_live_article_status"></span>
                     <span id="pashto_live_article_renderer"></span>
@@ -1412,7 +1190,7 @@
             </tr>
             <!-- persian -->
             <tr>
-                <th colspan="4">persian</th>
+                <th colspan="3">persian</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1421,10 +1199,7 @@
                     <span class="status" id="persian_test_liveRadio_status"></span>
                     <span id="persian_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="persian_stage_liveRadio_status"></span>
-                    <span id="persian_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="persian_live_liveRadio_status"></span>
                     <span id="persian_live_liveRadio_renderer"></span>
@@ -1438,10 +1213,7 @@
                     <span class="status" id="persian_test_MAP_status"></span>
                     <span id="persian_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="persian_stage_MAP_status"></span>
-                    <span id="persian_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="persian_live_MAP_status"></span>
                     <span id="persian_live_MAP_renderer"></span>
@@ -1454,10 +1226,7 @@
                     <span class="status" id="persian_test_home_status"></span>
                     <span id="persian_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="persian_stage_home_status"></span>
-                    <span id="persian_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="persian_live_home_status"></span>
                     <span id="persian_live_home_renderer"></span>
@@ -1471,10 +1240,7 @@
                     <span class="status" id="persian_test_article_status"></span>
                     <span id="persian_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="persian_stage_article_status"></span>
-                    <span id="persian_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="persian_live_article_status"></span>
                     <span id="persian_live_article_renderer"></span>
@@ -1483,7 +1249,7 @@
             </tr>
             <!-- persian (dari) -->
             <tr>
-                <th colspan="4">persian - dari - radio</th>
+                <th colspan="3">persian - dari - radio</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1492,10 +1258,7 @@
                     <span class="status" id="persian_test_dari_liveRadio_status"></span>
                     <span id="persian_test_dari_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="persian_stage_dari_liveRadio_status"></span>
-                    <span id="persian_stage_dari_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="persian_live_dari_liveRadio_status"></span>
                     <span id="persian_live_dari_liveRadio_renderer"></span>
@@ -1510,12 +1273,11 @@
             <tr>
                 <th></th>
                 <th>Test</th>
-                <th>Stage</th>
                 <th>Live</th>
             </tr>
             <!-- pidgin -->
             <tr>
-                <th colspan="4">pidgin</th>
+                <th colspan="3">pidgin</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1524,10 +1286,7 @@
                     <span class="status" id="pidgin_test_MAP_status"></span>
                     <span id="pidgin_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pidgin_stage_MAP_status"></span>
-                    <span id="pidgin_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pidgin_live_MAP_status"></span>
                     <span id="pidgin_live_MAP_renderer"></span>
@@ -1540,10 +1299,7 @@
                     <span class="status" id="pidgin_test_home_status"></span>
                     <span id="pidgin_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pidgin_stage_home_status"></span>
-                    <span id="pidgin_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pidgin_live_home_status"></span>
                     <span id="pidgin_live_home_renderer"></span>
@@ -1557,10 +1313,7 @@
                     <span class="status" id="pidgin_test_article_status"></span>
                     <span id="pidgin_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="pidgin_stage_article_status"></span>
-                    <span id="pidgin_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="pidgin_live_article_status"></span>
                     <span id="pidgin_live_article_renderer"></span>
@@ -1569,7 +1322,7 @@
             </tr>
             <!-- portuguese -->
             <tr>
-                <th colspan="4">portuguese</th>
+                <th colspan="3">portuguese</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1578,10 +1331,7 @@
                     <span class="status" id="portuguese_test_MAP_status"></span>
                     <span id="portuguese_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="portuguese_stage_MAP_status"></span>
-                    <span id="portuguese_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="portuguese_live_MAP_status"></span>
                     <span id="portuguese_live_MAP_renderer"></span>
@@ -1594,10 +1344,7 @@
                     <span class="status" id="portuguese_test_home_status"></span>
                     <span id="portuguese_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="portuguese_stage_home_status"></span>
-                    <span id="portuguese_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="portuguese_live_home_status"></span>
                     <span id="portuguese_live_home_renderer"></span>
@@ -1611,10 +1358,7 @@
                     <span class="status" id="portuguese_test_article_status"></span>
                     <span id="portuguese_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="portuguese_stage_article_status"></span>
-                    <span id="portuguese_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="portuguese_live_article_status"></span>
                     <span id="portuguese_live_article_renderer"></span>
@@ -1623,7 +1367,7 @@
             </tr>
             <!-- punjabi -->
             <tr>
-                <th colspan="4">punjabi</th>
+                <th colspan="3">punjabi</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1632,10 +1376,7 @@
                     <span class="status" id="punjabi_test_MAP_status"></span>
                     <span id="punjabi_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="punjabi_stage_MAP_status"></span>
-                    <span id="punjabi_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="punjabi_live_MAP_status"></span>
                     <span id="punjabi_live_MAP_renderer"></span>
@@ -1648,10 +1389,7 @@
                     <span class="status" id="punjabi_test_home_status"></span>
                     <span id="punjabi_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="punjabi_stage_home_status"></span>
-                    <span id="punjabi_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="punjabi_live_home_status"></span>
                     <span id="punjabi_live_home_renderer"></span>
@@ -1665,10 +1403,7 @@
                     <span class="status" id="punjabi_test_article_status"></span>
                     <span id="punjabi_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="punjabi_stage_article_status"></span>
-                    <span id="punjabi_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="punjabi_live_article_status"></span>
                     <span id="punjabi_live_article_renderer"></span>
@@ -1677,7 +1412,7 @@
             </tr>
             <!-- russian -->
             <tr>
-                <th colspan="4">russian</th>
+                <th colspan="3">russian</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1686,10 +1421,7 @@
                     <span class="status" id="russian_test_MAP_status"></span>
                     <span id="russian_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="russian_stage_MAP_status"></span>
-                    <span id="russian_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="russian_live_MAP_status"></span>
                     <span id="russian_live_MAP_renderer"></span>
@@ -1702,10 +1434,7 @@
                     <span class="status" id="russian_test_home_status"></span>
                     <span id="russian_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="russian_stage_home_status"></span>
-                    <span id="russian_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="russian_live_home_status"></span>
                     <span id="russian_live_home_renderer"></span>
@@ -1719,10 +1448,7 @@
                     <span class="status" id="russian_test_article_status"></span>
                     <span id="russian_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="russian_stage_article_status"></span>
-                    <span id="russian_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="russian_live_article_status"></span>
                     <span id="russian_live_article_renderer"></span>
@@ -1731,7 +1457,7 @@
             </tr>
             <!-- serbian -->
             <tr>
-                <th colspan="4">serbian/cyr</th>
+                <th colspan="3">serbian/cyr</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1740,10 +1466,7 @@
                     <span class="status" id="serbian/cyr_test_MAP_status"></span>
                     <span id="serbian/cyr_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/cyr_stage_MAP_status"></span>
-                    <span id="serbian/cyr_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/cyr_live_MAP_status"></span>
                     <span id="serbian/cyr_live_MAP_renderer"></span>
@@ -1756,10 +1479,7 @@
                     <span class="status" id="serbian/cyr_test_home_status"></span>
                     <span id="serbian/cyr_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/cyr_stage_home_status"></span>
-                    <span id="serbian/cyr_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/cyr_live_home_status"></span>
                     <span id="serbian/cyr_live_home_renderer"></span>
@@ -1773,10 +1493,7 @@
                     <span class="status" id="serbian/cyr_test_article_status"></span>
                     <span id="serbian/cyr_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/cyr_stage_article_status"></span>
-                    <span id="serbian/cyr_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/cyr_live_article_status"></span>
                     <span id="serbian/cyr_live_article_renderer"></span>
@@ -1785,7 +1502,7 @@
             </tr>
             <!-- serbian (lat) -->
             <tr>
-                <th colspan="4">serbian/lat</th>
+                <th colspan="3">serbian/lat</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -1794,10 +1511,7 @@
                     <span class="status" id="serbian/lat_test_MAP_status"></span>
                     <span id="serbian/lat_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/lat_stage_MAP_status"></span>
-                    <span id="serbian/lat_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/lat_live_MAP_status"></span>
                     <span id="serbian/lat_live_MAP_renderer"></span>
@@ -1810,10 +1524,7 @@
                     <span class="status" id="serbian/lat_test_home_status"></span>
                     <span id="serbian/lat_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/lat_stage_home_status"></span>
-                    <span id="serbian/lat_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/lat_live_home_status"></span>
                     <span id="serbian/lat_live_home_renderer"></span>
@@ -1827,10 +1538,7 @@
                     <span class="status" id="serbian/lat_test_article_status"></span>
                     <span id="serbian/lat_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="serbian/lat_stage_article_status"></span>
-                    <span id="serbian/lat_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="serbian/lat_live_article_status"></span>
                     <span id="serbian/lat_live_article_renderer"></span>
@@ -1839,7 +1547,7 @@
             </tr>
             <!-- sinhala -->
             <tr>
-                <th colspan="4">sinhala</th>
+                <th colspan="3">sinhala</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1848,10 +1556,7 @@
                     <span class="status" id="sinhala_test_liveRadio_status"></span>
                     <span id="sinhala_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="sinhala_stage_liveRadio_status"></span>
-                    <span id="sinhala_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="sinhala_live_liveRadio_status"></span>
                     <span id="sinhala_live_liveRadio_renderer"></span>
@@ -1865,10 +1570,7 @@
                     <span class="status" id="sinhala_test_MAP_status"></span>
                     <span id="sinhala_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="sinhala_stage_MAP_status"></span>
-                    <span id="sinhala_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="sinhala_live_MAP_status"></span>
                     <span id="sinhala_live_MAP_renderer"></span>
@@ -1881,10 +1583,7 @@
                     <span class="status" id="sinhala_test_home_status"></span>
                     <span id="sinhala_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="sinhala_stage_home_status"></span>
-                    <span id="sinhala_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="sinhala_live_home_status"></span>
                     <span id="sinhala_live_home_renderer"></span>
@@ -1898,10 +1597,7 @@
                     <span class="status" id="sinhala_test_article_status"></span>
                     <span id="sinhala_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="sinhala_stage_article_status"></span>
-                    <span id="sinhala_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="sinhala_live_article_status"></span>
                     <span id="sinhala_live_article_renderer"></span>
@@ -1910,7 +1606,7 @@
             </tr>
             <!-- somali -->
             <tr>
-                <th colspan="4">somali</th>
+                <th colspan="3">somali</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -1919,10 +1615,7 @@
                     <span class="status" id="somali_test_liveRadio_status"></span>
                     <span id="somali_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="somali_stage_liveRadio_status"></span>
-                    <span id="somali_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="somali_live_liveRadio_status"></span>
                     <span id="somali_live_liveRadio_renderer"></span>
@@ -1936,10 +1629,7 @@
                     <span class="status" id="somali_test_MAP_status"></span>
                     <span id="somali_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="somali_stage_MAP_status"></span>
-                    <span id="somali_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="somali_live_MAP_status"></span>
                     <span id="somali_live_MAP_renderer"></span>
@@ -1952,10 +1642,7 @@
                     <span class="status" id="somali_test_home_status"></span>
                     <span id="somali_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="somali_stage_home_status"></span>
-                    <span id="somali_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="somali_live_home_status"></span>
                     <span id="somali_live_home_renderer"></span>
@@ -1969,10 +1656,7 @@
                     <span class="status" id="somali_test_article_status"></span>
                     <span id="somali_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="somali_stage_article_status"></span>
-                    <span id="somali_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="somali_live_article_status"></span>
                     <span id="somali_live_article_renderer"></span>
@@ -1987,12 +1671,11 @@
             <tr>
                 <th></th>
                 <th>Test</th>
-                <th>Stage</th>
                 <th>Live</th>
             </tr>
             <!-- swahili -->
             <tr>
-                <th colspan="4">swahili</th>
+                <th colspan="3">swahili</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -2001,10 +1684,7 @@
                     <span class="status" id="swahili_test_liveRadio_status"></span>
                     <span id="swahili_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="swahili_stage_liveRadio_status"></span>
-                    <span id="swahili_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="swahili_live_liveRadio_status"></span>
                     <span id="swahili_live_liveRadio_renderer"></span>
@@ -2018,10 +1698,7 @@
                     <span class="status" id="swahili_test_MAP_status"></span>
                     <span id="swahili_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="swahili_stage_MAP_status"></span>
-                    <span id="swahili_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="swahili_live_MAP_status"></span>
                     <span id="swahili_live_MAP_renderer"></span>
@@ -2034,10 +1711,7 @@
                     <span class="status" id="swahili_test_home_status"></span>
                     <span id="swahili_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="swahili_stage_home_status"></span>
-                    <span id="swahili_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="swahili_live_home_status"></span>
                     <span id="swahili_live_home_renderer"></span>
@@ -2051,10 +1725,7 @@
                     <span class="status" id="swahili_test_article_status"></span>
                     <span id="swahili_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="swahili_stage_article_status"></span>
-                    <span id="swahili_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="swahili_live_article_status"></span>
                     <span id="swahili_live_article_renderer"></span>
@@ -2063,7 +1734,7 @@
             </tr>
             <!-- tamil -->
             <tr>
-                <th colspan="4">tamil</th>
+                <th colspan="3">tamil</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -2072,10 +1743,7 @@
                     <span class="status" id="tamil_test_liveRadio_status"></span>
                     <span id="tamil_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tamil_stage_liveRadio_status"></span>
-                    <span id="tamil_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tamil_live_liveRadio_status"></span>
                     <span id="tamil_live_liveRadio_renderer"></span>
@@ -2089,10 +1757,7 @@
                     <span class="status" id="tamil_test_MAP_status"></span>
                     <span id="tamil_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tamil_stage_MAP_status"></span>
-                    <span id="tamil_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tamil_live_MAP_status"></span>
                     <span id="tamil_live_MAP_renderer"></span>
@@ -2105,10 +1770,7 @@
                     <span class="status" id="tamil_test_home_status"></span>
                     <span id="tamil_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tamil_stage_home_status"></span>
-                    <span id="tamil_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tamil_live_home_status"></span>
                     <span id="tamil_live_home_renderer"></span>
@@ -2122,10 +1784,7 @@
                     <span class="status" id="tamil_test_article_status"></span>
                     <span id="tamil_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tamil_stage_article_status"></span>
-                    <span id="tamil_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tamil_live_article_status"></span>
                     <span id="tamil_live_article_renderer"></span>
@@ -2134,7 +1793,7 @@
             </tr>
             <!-- telugu -->
             <tr>
-                <th colspan="4">telugu</th>
+                <th colspan="3">telugu</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2143,10 +1802,7 @@
                     <span class="status" id="telugu_test_MAP_status"></span>
                     <span id="telugu_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="telugu_stage_MAP_status"></span>
-                    <span id="telugu_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="telugu_live_MAP_status"></span>
                     <span id="telugu_live_MAP_renderer"></span>
@@ -2159,10 +1815,7 @@
                     <span class="status" id="telugu_test_home_status"></span>
                     <span id="telugu_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="telugu_stage_home_status"></span>
-                    <span id="telugu_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="telugu_live_home_status"></span>
                     <span id="telugu_live_home_renderer"></span>
@@ -2176,10 +1829,7 @@
                     <span class="status" id="telugu_test_article_status"></span>
                     <span id="telugu_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="telugu_stage_article_status"></span>
-                    <span id="telugu_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="telugu_live_article_status"></span>
                     <span id="telugu_live_article_renderer"></span>
@@ -2188,7 +1838,7 @@
             </tr>
             <!-- thai -->
             <tr>
-                <th colspan="4">thai</th>
+                <th colspan="3">thai</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2197,10 +1847,7 @@
                     <span class="status" id="thai_test_MAP_status"></span>
                     <span id="thai_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="thai_stage_MAP_status"></span>
-                    <span id="thai_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="thai_live_MAP_status"></span>
                     <span id="thai_live_MAP_renderer"></span>
@@ -2213,10 +1860,7 @@
                     <span class="status" id="thai_test_home_status"></span>
                     <span id="thai_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="thai_stage_home_status"></span>
-                    <span id="thai_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="thai_live_home_status"></span>
                     <span id="thai_live_home_renderer"></span>
@@ -2230,10 +1874,7 @@
                     <span class="status" id="thai_test_article_status"></span>
                     <span id="thai_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="thai_stage_article_status"></span>
-                    <span id="thai_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="thai_live_article_status"></span>
                     <span id="thai_live_article_renderer"></span>
@@ -2242,7 +1883,7 @@
             </tr>
             <!-- Tigrinya -->
             <tr>
-                <th colspan="4">tigrinya</th>
+                <th colspan="3">tigrinya</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -2251,10 +1892,7 @@
                     <span class="status" id="tigrinya_test_liveRadio_status"></span>
                     <span id="tigrinya_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tigrinya_stage_liveRadio_status"></span>
-                    <span id="tigrinya_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tigrinya_live_liveRadio_status"></span>
                     <span id="tigrinya_live_liveRadio_renderer"></span>
@@ -2268,10 +1906,7 @@
                     <span class="status" id="tigrinya_test_MAP_status"></span>
                     <span id="tigrinya_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tigrinya_stage_MAP_status"></span>
-                    <span id="tigrinya_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tigrinya_live_MAP_status"></span>
                     <span id="tigrinya_live_MAP_renderer"></span>
@@ -2284,10 +1919,7 @@
                     <span class="status" id="tigrinya_test_home_status"></span>
                     <span id="tigrinya_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tigrinya_stage_home_status"></span>
-                    <span id="tigrinya_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tigrinya_live_home_status"></span>
                     <span id="tigrinya_live_home_renderer"></span>
@@ -2301,10 +1933,7 @@
                     <span class="status" id="tigrinya_test_article_status"></span>
                     <span id="tigrinya_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="tigrinya_stage_article_status"></span>
-                    <span id="tigrinya_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="tigrinya_live_article_status"></span>
                     <span id="tigrinya_live_article_renderer"></span>
@@ -2313,7 +1942,7 @@
             </tr>
             <!-- turkce -->
             <tr>
-                <th colspan="4">turkce</th>
+                <th colspan="3">turkce</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2322,10 +1951,7 @@
                     <span class="status" id="turkce_test_MAP_status"></span>
                     <span id="turkce_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="turkce_stage_MAP_status"></span>
-                    <span id="turkce_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="turkce_live_MAP_status"></span>
                     <span id="turkce_live_MAP_renderer"></span>
@@ -2338,10 +1964,7 @@
                     <span class="status" id="turkce_test_home_status"></span>
                     <span id="turkce_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="turkce_stage_home_status"></span>
-                    <span id="turkce_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="turkce_live_home_status"></span>
                     <span id="turkce_live_home_renderer"></span>
@@ -2355,10 +1978,7 @@
                     <span class="status" id="turkce_test_article_status"></span>
                     <span id="turkce_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="turkce_stage_article_status"></span>
-                    <span id="turkce_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="turkce_live_article_status"></span>
                     <span id="turkce_live_article_renderer"></span>
@@ -2367,7 +1987,7 @@
             </tr>
             <!-- ukchina (simp) -->
             <tr>
-                <th colspan="4">ukchina/simp</th>
+                <th colspan="3">ukchina/simp</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2376,10 +1996,7 @@
                     <span class="status" id="ukchina/simp_test_MAP_status"></span>
                     <span id="ukchina/simp_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/simp_stage_MAP_status"></span>
-                    <span id="ukchina/simp_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/simp_live_MAP_status"></span>
                     <span id="ukchina/simp_live_MAP_renderer"></span>
@@ -2392,10 +2009,7 @@
                     <span class="status" id="ukchina/simp_test_home_status"></span>
                     <span id="ukchina/simp_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/simp_stage_home_status"></span>
-                    <span id="ukchina/simp_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/simp_live_home_status"></span>
                     <span id="ukchina/simp_live_home_renderer"></span>
@@ -2409,10 +2023,7 @@
                     <span class="status" id="ukchina/simp_test_article_status"></span>
                     <span id="ukchina/simp_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/simp_stage_article_status"></span>
-                    <span id="ukchina/simp_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/simp_live_article_status"></span>
                     <span id="ukchina/simp_live_article_renderer"></span>
@@ -2421,7 +2032,7 @@
             </tr>
             <!-- ukchina (trad) -->
             <tr>
-                <th colspan="4">ukchina/trad</th>
+                <th colspan="3">ukchina/trad</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2430,10 +2041,7 @@
                     <span class="status" id="ukchina/trad_test_MAP_status"></span>
                     <span id="ukchina/trad_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/trad_stage_MAP_status"></span>
-                    <span id="ukchina/trad_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/trad_live_MAP_status"></span>
                     <span id="ukchina/trad_live_MAP_renderer"></span>
@@ -2446,10 +2054,7 @@
                     <span class="status" id="ukchina/trad_test_home_status"></span>
                     <span id="ukchina/trad_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/trad_stage_home_status"></span>
-                    <span id="ukchina/trad_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/trad_live_home_status"></span>
                     <span id="ukchina/trad_live_home_renderer"></span>
@@ -2463,10 +2068,7 @@
                     <span class="status" id="ukchina/trad_test_article_status"></span>
                     <span id="ukchina/trad_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukchina/trad_stage_article_status"></span>
-                    <span id="ukchina/trad_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukchina/trad_live_article_status"></span>
                     <span id="ukchina/trad_live_article_renderer"></span>
@@ -2481,13 +2083,12 @@
             <tr>
                 <th></th>
                 <th>Test</th>
-                <th>Stage</th>
                 <th>Live</th>
             </tr>
 
             <!-- ukrainian -->
             <tr>
-                <th colspan="4">ukrainian</th>
+                <th colspan="3">ukrainian</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2496,10 +2097,7 @@
                     <span class="status" id="ukrainian_test_MAP_status"></span>
                     <span id="ukrainian_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukrainian_stage_MAP_status"></span>
-                    <span id="ukrainian_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukrainian_live_MAP_status"></span>
                     <span id="ukrainian_live_MAP_renderer"></span>
@@ -2512,10 +2110,7 @@
                     <span class="status" id="ukrainian_test_home_status"></span>
                     <span id="ukrainian_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukrainian_stage_home_status"></span>
-                    <span id="ukrainian_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukrainian_live_home_status"></span>
                     <span id="ukrainian_live_home_renderer"></span>
@@ -2529,10 +2124,7 @@
                     <span class="status" id="ukrainian_test_article_status"></span>
                     <span id="ukrainian_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="ukrainian_stage_article_status"></span>
-                    <span id="ukrainian_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="ukrainian_live_article_status"></span>
                     <span id="ukrainian_live_article_renderer"></span>
@@ -2541,7 +2133,7 @@
             </tr>
             <!-- urdu -->
             <tr>
-                <th colspan="4">urdu</th>
+                <th colspan="3">urdu</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -2550,10 +2142,7 @@
                     <span class="status" id="urdu_test_liveRadio_status"></span>
                     <span id="urdu_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="urdu_stage_liveRadio_status"></span>
-                    <span id="urdu_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="urdu_live_liveRadio_status"></span>
                     <span id="urdu_live_liveRadio_renderer"></span>
@@ -2567,10 +2156,7 @@
                     <span class="status" id="urdu_test_MAP_status"></span>
                     <span id="urdu_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="urdu_stage_MAP_status"></span>
-                    <span id="urdu_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="urdu_live_MAP_status"></span>
                     <span id="urdu_live_MAP_renderer"></span>
@@ -2583,10 +2169,7 @@
                     <span class="status" id="urdu_test_home_status"></span>
                     <span id="urdu_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="urdu_stage_home_status"></span>
-                    <span id="urdu_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="urdu_live_home_status"></span>
                     <span id="urdu_live_home_renderer"></span>
@@ -2600,10 +2183,7 @@
                     <span class="status" id="urdu_test_article_status"></span>
                     <span id="urdu_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="urdu_stage_article_status"></span>
-                    <span id="urdu_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="urdu_live_article_status"></span>
                     <span id="urdu_live_article_renderer"></span>
@@ -2612,7 +2192,7 @@
             </tr>
             <!-- uzbek -->
             <tr>
-                <th colspan="4">uzbek</th>
+                <th colspan="3">uzbek</th>
             </tr>
             <!-- Live Radio -->
             <tr>
@@ -2621,10 +2201,7 @@
                     <span class="status" id="uzbek_test_liveRadio_status"></span>
                     <span id="uzbek_test_liveRadio_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="uzbek_stage_liveRadio_status"></span>
-                    <span id="uzbek_stage_liveRadio_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="uzbek_live_liveRadio_status"></span>
                     <span id="uzbek_live_liveRadio_renderer"></span>
@@ -2638,10 +2215,7 @@
                     <span class="status" id="uzbek_test_MAP_status"></span>
                     <span id="uzbek_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="uzbek_stage_MAP_status"></span>
-                    <span id="uzbek_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="uzbek_live_MAP_status"></span>
                     <span id="uzbek_live_MAP_renderer"></span>
@@ -2654,10 +2228,7 @@
                     <span class="status" id="uzbek_test_home_status"></span>
                     <span id="uzbek_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="uzbek_stage_home_status"></span>
-                    <span id="uzbek_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="uzbek_live_home_status"></span>
                     <span id="uzbek_live_home_renderer"></span>
@@ -2671,10 +2242,7 @@
                     <span class="status" id="uzbek_test_article_status"></span>
                     <span id="uzbek_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="uzbek_stage_article_status"></span>
-                    <span id="uzbek_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="uzbek_live_article_status"></span>
                     <span id="uzbek_live_article_renderer"></span>
@@ -2683,7 +2251,7 @@
             </tr>
             <!-- vietnamese -->
             <tr>
-                <th colspan="4">vietnamese</th>
+                <th colspan="3">vietnamese</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2692,10 +2260,7 @@
                     <span class="status" id="vietnamese_test_MAP_status"></span>
                     <span id="vietnamese_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="vietnamese_stage_MAP_status"></span>
-                    <span id="vietnamese_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="vietnamese_live_MAP_status"></span>
                     <span id="vietnamese_live_MAP_renderer"></span>
@@ -2708,10 +2273,7 @@
                     <span class="status" id="vietnamese_test_home_status"></span>
                     <span id="vietnamese_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="vietnamese_stage_home_status"></span>
-                    <span id="vietnamese_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="vietnamese_live_home_status"></span>
                     <span id="vietnamese_live_home_renderer"></span>
@@ -2725,10 +2287,7 @@
                     <span class="status" id="vietnamese_test_article_status"></span>
                     <span id="vietnamese_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="vietnamese_stage_article_status"></span>
-                    <span id="vietnamese_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="vietnamese_live_article_status"></span>
                     <span id="vietnamese_live_article_renderer"></span>
@@ -2737,7 +2296,7 @@
             </tr>
             <!-- yoruba -->
             <tr>
-                <th colspan="4">yoruba</th>
+                <th colspan="3">yoruba</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2746,10 +2305,7 @@
                     <span class="status" id="yoruba_test_MAP_status"></span>
                     <span id="yoruba_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="yoruba_stage_MAP_status"></span>
-                    <span id="yoruba_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="yoruba_live_MAP_status"></span>
                     <span id="yoruba_live_MAP_renderer"></span>
@@ -2762,10 +2318,7 @@
                     <span class="status" id="yoruba_test_home_status"></span>
                     <span id="yoruba_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="yoruba_stage_home_status"></span>
-                    <span id="yoruba_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="yoruba_live_home_status"></span>
                     <span id="yoruba_live_home_renderer"></span>
@@ -2779,10 +2332,7 @@
                     <span class="status" id="yoruba_test_article_status"></span>
                     <span id="yoruba_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="yoruba_stage_article_status"></span>
-                    <span id="yoruba_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="yoruba_live_article_status"></span>
                     <span id="yoruba_live_article_renderer"></span>
@@ -2791,7 +2341,7 @@
             </tr>
             <!-- zhongwen/simp -->
             <tr>
-                <th colspan="4">zhongwen/simp</th>
+                <th colspan="3">zhongwen/simp</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2800,10 +2350,7 @@
                     <span class="status" id="zhongwen/simp_test_MAP_status"></span>
                     <span id="zhongwen/simp_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/simp_stage_MAP_status"></span>
-                    <span id="zhongwen/simp_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/simp_live_MAP_status"></span>
                     <span id="zhongwen/simp_live_MAP_renderer"></span>
@@ -2816,10 +2363,7 @@
                     <span class="status" id="zhongwen/simp_test_home_status"></span>
                     <span id="zhongwen/simp_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/simp_stage_home_status"></span>
-                    <span id="zhongwen/simp_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/simp_live_home_status"></span>
                     <span id="zhongwen/simp_live_home_renderer"></span>
@@ -2833,10 +2377,7 @@
                     <span class="status" id="zhongwen/simp_test_article_status"></span>
                     <span id="zhongwen/simp_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/simp_stage_article_status"></span>
-                    <span id="zhongwen/simp_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/simp_live_article_status"></span>
                     <span id="zhongwen/simp_live_article_renderer"></span>
@@ -2845,7 +2386,7 @@
             </tr>
             <!-- zhongwen/trad -->
             <tr>
-                <th colspan="4">zhongwen/trad</th>
+                <th colspan="3">zhongwen/trad</th>
             </tr>
             <tr>
                 <!-- MAP -->
@@ -2854,10 +2395,7 @@
                     <span class="status" id="zhongwen/trad_test_MAP_status"></span>
                     <span id="zhongwen/trad_test_MAP_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/trad_stage_MAP_status"></span>
-                    <span id="zhongwen/trad_stage_MAP_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/trad_live_MAP_status"></span>
                     <span id="zhongwen/trad_live_MAP_renderer"></span>
@@ -2870,10 +2408,7 @@
                     <span class="status" id="zhongwen/trad_test_home_status"></span>
                     <span id="zhongwen/trad_test_home_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/trad_stage_home_status"></span>
-                    <span id="zhongwen/trad_stage_home_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/trad_live_home_status"></span>
                     <span id="zhongwen/trad_live_home_renderer"></span>
@@ -2887,10 +2422,7 @@
                     <span class="status" id="zhongwen/trad_test_article_status"></span>
                     <span id="zhongwen/trad_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="zhongwen/trad_stage_article_status"></span>
-                    <span id="zhongwen/trad_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="zhongwen/trad_live_article_status"></span>
                     <span id="zhongwen/trad_live_article_renderer"></span>
@@ -2903,16 +2435,15 @@
     <td valign="top">
         <table class="tg">
             <tr>
-                <th colspan="4">Public Service</th>
+                <th colspan="3">Public Service</th>
             </tr>
             <tr>
                 <th></th>
                 <th>Test</th>
-                <th>Stage</th>
                 <th>Live</th>
             </tr>
             <tr>
-                <th colspan="4">cymrufyw</th>
+                <th colspan="3">cymrufyw</th>
             </tr>
             <tr>
 
@@ -2921,10 +2452,7 @@
                     <span class="status" id="cymrufyw_test_article_status"></span>
                     <span id="cymrufyw_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="cymrufyw_stage_article_status"></span>
-                    <span id="cymrufyw_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="cymrufyw_live_article_status"></span>
                     <span id="cymrufyw_live_article_renderer"></span>
@@ -2932,7 +2460,7 @@
             </tr>
 
             <tr>
-                <th colspan="4">news</th>
+                <th colspan="3">news</th>
             </tr>
             <tr>
                 <td id="news_article"></td>
@@ -2940,10 +2468,7 @@
                     <span class="status" id="news_test_article_status"></span>
                     <span id="news_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="news_stage_article_status"></span>
-                    <span id="news_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="news_live_article_status"></span>
                     <span id="news_live_article_renderer"></span>
@@ -2951,7 +2476,7 @@
             </tr>
 
             <tr>
-                <th colspan="4">naidheachdan</th>
+                <th colspan="3">naidheachdan</th>
             </tr>
             <tr>
                 <td id="naidheachdan_article"></td>
@@ -2959,17 +2484,14 @@
                     <span class="status" id="naidheachdan_test_article_status"></span>
                     <span id="naidheachdan_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="naidheachdan_stage_article_status"></span>
-                    <span id="naidheachdan_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="naidheachdan_live_article_status"></span>
                     <span id="naidheachdan_live_article_renderer"></span>
                 </td>
             </tr>
             <tr>
-                <th colspan="4">scotland</th>
+                <th colspan="3">scotland</th>
             </tr>
             <tr>
                 <td id="scotland_article"></td>
@@ -2977,10 +2499,7 @@
                     <span class="status" id="scotland_test_article_status"></span>
                     <span id="scotland_test_article_renderer"></span>
                 </td>
-                <td>
-                    <span class="status" id="scotland_stage_article_status"></span>
-                    <span id="scotland_stage_article_renderer"></span>
-                </td>
+
                 <td>
                     <span class="status" id="scotland_live_article_status"></span>
                     <span id="scotland_live_article_renderer"></span>
