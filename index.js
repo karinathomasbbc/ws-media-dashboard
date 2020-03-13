@@ -5433,13 +5433,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "23082328"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "culture-social-51495081"
           }
         ]
       },
