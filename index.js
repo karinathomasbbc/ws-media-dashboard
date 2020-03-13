@@ -3184,13 +3184,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "23044481"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "geral-51650397"
           }
         ]
       },
