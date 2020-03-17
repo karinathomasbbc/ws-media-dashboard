@@ -5622,7 +5622,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "PAL",
             path: "simp"
           },
           {
@@ -5741,7 +5741,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "PAL",
             path: "trad"
           },
           {
