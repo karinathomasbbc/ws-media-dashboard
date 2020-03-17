@@ -3499,12 +3499,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "cyr"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "cyr"
           }
         ]
@@ -3618,12 +3618,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "lat"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "lat"
           }
         ]
