@@ -2477,13 +2477,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: ""
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "noticias-internacional-51994643"
           }
         ]
       },
