@@ -4809,13 +4809,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "simp/23099907"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "simp/49178230"
           }
         ]
       },
@@ -4928,13 +4928,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "trad/23099907"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "trad/49178230"
           }
         ]
       },
