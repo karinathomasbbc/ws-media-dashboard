@@ -1904,8 +1904,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "video-51291089"
+            renderer: "Simorgh",
+            path: "video-23257480"
           },
 
           {
