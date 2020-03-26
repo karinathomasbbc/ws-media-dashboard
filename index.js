@@ -4745,8 +4745,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "simp/51085214"
+            renderer: "Simorgh",
+            path: "simp/media-23279042"
           },
           {
             env: "live",
@@ -4864,8 +4864,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "trad/51085214"
+            renderer: "Simorgh",
+            path: "trad/media-23279042"
           },
           {
             env: "live",
