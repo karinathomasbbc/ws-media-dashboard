@@ -5606,8 +5606,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "simp/chinese-news-51088031"
+            renderer: "Simorgh",
+            path: "simp/chinese-news-23257513"
           },
           {
             env: "live",
@@ -5725,8 +5725,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "trad/chinese-news-51088031"
+            renderer: "Simorgh",
+            path: "trad/chinese-news-23257513"
           },
           {
             env: "live",
