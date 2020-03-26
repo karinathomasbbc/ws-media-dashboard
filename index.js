@@ -3515,7 +3515,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c805k05kr73o/cyr"
           },
           {
@@ -3634,7 +3634,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c805k05kr73o/lat"
           },
           {
