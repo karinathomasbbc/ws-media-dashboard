@@ -3482,8 +3482,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "cyr/svet-51052616"
+            renderer: "Simorgh",
+            path: "cyr/srbija-23279035"
           },
 
           {
@@ -3602,8 +3602,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "lat/svet-51096369"
+            renderer: "Simorgh",
+            path: "lat/srbija-23279035"
           },
           {
             env: "live",
