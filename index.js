@@ -3141,7 +3141,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: ""
           }
         ]
