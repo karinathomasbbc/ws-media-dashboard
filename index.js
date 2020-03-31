@@ -5627,7 +5627,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "simp"
           }
         ]
@@ -5746,7 +5746,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "trad"
           }
         ]
