@@ -1910,7 +1910,7 @@ const services = [
 
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "video-51103346"
           }
         ]
