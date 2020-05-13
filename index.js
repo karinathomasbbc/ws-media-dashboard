@@ -3357,9 +3357,8 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "other-news-23257499"
+            path: "media-23291682"
           },
-
           {
             env: "live",
             renderer: "PAL",
