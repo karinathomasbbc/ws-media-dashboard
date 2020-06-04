@@ -243,13 +243,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "oduu-23141504"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "oduu-52904465"
           }
         ]
       },
@@ -379,12 +379,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "monde-52910972"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "monde-52922404"
           }
         ]
       },
@@ -512,13 +512,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "news-23143874"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "news-52916927"
           }
         ]
       },
@@ -647,12 +647,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "vert-cul-52912278"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "world-52919900"
           }
         ]
       },
@@ -764,13 +764,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "international-23069958"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "azerbaijan-51848459"
           }
         ]
       },
