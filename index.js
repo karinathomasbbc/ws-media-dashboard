@@ -1189,13 +1189,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "23307435"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "amakuru-52821373"
           }
         ]
       },
@@ -1698,12 +1698,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "/igbo/afirika-23252735"
+            path: "afirika-23252735"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: "/igbo/afirika-52816709"
+            path: "afirika-52816709"
           }
         ]
       },
@@ -2224,12 +2224,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "/kyrgyz/world-23090100"
+            path: "world-23090100"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: "/kyrgyz/world-52917194"
+            path: "world-52917194"
           }
         ]
       },
@@ -2777,12 +2777,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "/pashto/23289748"
+            path: "23289748"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: "/pashto/world-52917002"
+            path: "world-52917002"
           }
         ]
       },
@@ -3784,12 +3784,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "/sinhala/sri-lanka-23037210"
+            path: "sri-lanka-23037210"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: "/sinhala/world-52909487"
+            path: "world-52909487"
           }
         ]
       },
@@ -4792,13 +4792,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "simp/23307454"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "simp/52836902"
           }
         ]
       },
@@ -4911,13 +4911,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "trad/23307454"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "trad/52836902"
           }
         ]
       },
@@ -5535,12 +5535,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "/yoruba/23183200"
+            path: "23183200"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: "/yoruba/afrika-51569479"
+            path: "afrika-51569479"
           }
         ]
       },
