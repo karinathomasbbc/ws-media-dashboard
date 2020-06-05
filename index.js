@@ -3531,12 +3531,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "svet-52838404"
+            path: "cyr/svet-52838404"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "svet-52898028"
+            path: "cyr/svet-52898028"
           }
         ]
       },
@@ -3650,12 +3650,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "srbija-52676959"
+            path: "lat/srbija-52676959"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "srbija-52052748"
+            path: "lat/srbija-52052748"
           }
         ]
       },
@@ -4422,12 +4422,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "international-52926887"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "features-52924564"
           }
         ]
       },
@@ -5654,12 +5654,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "chinese-news-52902292"
+            path: "simp/chinese-news-52902292"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "world-52915597"
+            path: "simp/world-52915597"
           }
         ]
       },
@@ -5773,12 +5773,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: "world-52915597"
+            path: "trad/world-52915597"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "world-52923010"
+            path: "trad/world-52923010"
           }
         ]
       },
