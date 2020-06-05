@@ -791,22 +791,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -1335,22 +1319,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -1605,22 +1573,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -1719,23 +1671,6 @@ const services = [
           {
             env: "live",
             renderer: "Simorgh",
-            path: ""
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-
-          {
-            env: "live",
-            renderer: "PAL",
             path: ""
           }
         ]
@@ -1975,22 +1910,6 @@ const services = [
           {
             env: "live",
             renderer: "Simorgh",
-            path: ""
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
             path: ""
           }
         ]
@@ -2369,22 +2288,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -2484,22 +2387,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "noticias-internacional-51994643"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -3076,22 +2963,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -3191,22 +3062,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "internacional-50996103"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -3313,22 +3168,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -3411,22 +3250,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "features-46169140"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -3557,22 +3380,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -3672,22 +3479,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "lat/srbija-50329318"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -4330,22 +4121,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -4443,22 +4218,6 @@ const services = [
           {
             env: "live",
             renderer: "Simorgh",
-            path: ""
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
             path: ""
           }
         ]
@@ -4700,22 +4459,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -4815,22 +4558,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "simp/49178230"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -4938,22 +4665,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -5052,22 +4763,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "features-51563819"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -5443,22 +5138,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -5557,22 +5236,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "51815657"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
@@ -5680,22 +5343,6 @@ const services = [
         ]
       },
       {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      },
-      {
         type: "ODT",
         category: "media",
         environments: [
@@ -5795,22 +5442,6 @@ const services = [
             env: "live",
             renderer: "Simorgh",
             path: "trad/chinese-news-50469792"
-          }
-        ]
-      },
-      {
-        type: "ODR",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
           }
         ]
       },
