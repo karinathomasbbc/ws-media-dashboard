@@ -2343,12 +2343,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "india-52931539"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "india-52924210"
           }
         ]
       },
@@ -2462,12 +2462,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "noticias-america-latina-52930198"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "noticias-52803270"
           }
         ]
       },
@@ -5030,12 +5030,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "features-52903893"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "features-52919532"
           }
         ]
       },
@@ -5164,12 +5164,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "pakistan-52932000"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "world-52931204"
           }
         ]
       },
@@ -5298,13 +5298,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "23061087"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "uzbekistan-52903230"
           }
         ]
       },
@@ -5417,12 +5417,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "vietnam-52901599"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "52931399"
           }
         ]
       },
@@ -5654,12 +5654,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "chinese-news-52902292"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "world-52915597"
           }
         ]
       },
@@ -5773,12 +5773,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "world-52915597"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "world-52923010"
           }
         ]
       },
