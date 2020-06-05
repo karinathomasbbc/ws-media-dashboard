@@ -2093,7 +2093,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "Simorgh",
+            renderer: "PAL",
             path: "international-52932852"
           }
         ]
