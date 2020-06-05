@@ -270,7 +270,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -405,7 +405,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -539,7 +539,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -673,7 +673,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -909,7 +909,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -1043,7 +1043,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -1200,7 +1200,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -1438,7 +1438,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -1796,7 +1796,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -2034,7 +2034,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -2169,7 +2169,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -2532,7 +2532,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -2690,7 +2690,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -2844,7 +2844,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -3601,7 +3601,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -3735,7 +3735,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -3869,7 +3869,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -4003,7 +4003,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -4341,7 +4341,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -4885,7 +4885,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -5020,7 +5020,7 @@ const services = [
         ]
       },
       {
-        type: "ODR",
+        type: "onDemandRadio",
         category: "media",
         environments: [
           {
@@ -5597,7 +5597,7 @@ const getWorldServiceStats = () => {
         case "PGL":
           photoPageServices++;
           break;
-        case "ODR":
+        case "onDemandRadio":
           onDemandRadioPageServices++;
           break;
         case "ODT":
@@ -5626,7 +5626,7 @@ const getWorldServiceStats = () => {
             case "PGL":
               simorghPhotoPage++;
               break;
-            case "ODR":
+            case "onDemandRadio":
               simorghOnDemandRadioPage++;
               break;
             case "ODT":
