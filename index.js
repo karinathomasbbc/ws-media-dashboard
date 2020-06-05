@@ -285,22 +285,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -554,22 +538,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -688,22 +656,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -924,22 +876,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -1215,22 +1151,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -1675,23 +1595,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -1811,22 +1714,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -1914,22 +1801,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -2049,22 +1920,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -2390,22 +2245,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -2547,22 +2386,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -2859,22 +2682,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -2962,22 +2769,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3065,22 +2856,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3167,22 +2942,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3237,6 +2996,7 @@ const services = [
           }
         ]
       },
+      {
         type: "STY",
         category: "story",
         environments: [
@@ -3268,22 +3028,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3394,22 +3138,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3497,22 +3225,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -3631,22 +3343,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -4237,22 +3933,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -4371,22 +4051,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -4473,22 +4137,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -4576,22 +4224,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -4679,22 +4311,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -5152,22 +4768,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -5254,22 +4854,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -5357,22 +4941,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
@@ -5460,22 +5028,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   }
 ];
