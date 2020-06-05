@@ -3222,6 +3222,21 @@ const services = [
         ]
       },
       {
+        type: "article",
+        category: "article",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "articles/ck7pz7re3zgo"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "articles/c6ygxgl53w9o"
+          }
+        ]
+      },
         type: "STY",
         category: "story",
         environments: [
