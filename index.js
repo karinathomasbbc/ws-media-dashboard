@@ -1102,12 +1102,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "erthyglau/c06p32z9x2mo"
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "erthyglau/c06p32z9x2mo"
           }
         ]
@@ -2531,12 +2531,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "sgeulachdan/c18q7nedn2ko"
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "sgeulachdan/c18q7nedn2ko"
           }
         ]
