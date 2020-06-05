@@ -1835,12 +1835,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "indonesia-52931849"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "majalah-52931854"
           }
         ]
       },
@@ -1954,12 +1954,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "52931930"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "52931389"
           }
         ]
       },
@@ -2088,13 +2088,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "23228543"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "international-52932852"
           }
         ]
       },
