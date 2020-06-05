@@ -286,7 +286,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -421,7 +421,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -555,7 +555,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -689,7 +689,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -791,7 +791,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -925,7 +925,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1059,7 +1059,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1216,7 +1216,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1319,7 +1319,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1454,7 +1454,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1573,7 +1573,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1676,7 +1676,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1812,7 +1812,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -1915,7 +1915,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2050,7 +2050,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2185,7 +2185,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2288,7 +2288,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2391,7 +2391,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2548,7 +2548,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2706,7 +2706,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2860,7 +2860,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -2963,7 +2963,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3066,7 +3066,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3168,7 +3168,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3254,7 +3254,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3380,7 +3380,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3483,7 +3483,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3617,7 +3617,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3751,7 +3751,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -3885,7 +3885,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4019,7 +4019,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4121,7 +4121,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4223,7 +4223,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4357,7 +4357,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4459,7 +4459,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4562,7 +4562,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4665,7 +4665,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4767,7 +4767,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -4901,7 +4901,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5036,7 +5036,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5138,7 +5138,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5240,7 +5240,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5343,7 +5343,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5446,7 +5446,7 @@ const services = [
         ]
       },
       {
-        type: "ODT",
+        type: "onDemandTV",
         category: "media",
         environments: [
           {
@@ -5600,7 +5600,7 @@ const getWorldServiceStats = () => {
         case "onDemandRadio":
           onDemandRadioPageServices++;
           break;
-        case "ODT":
+        case "onDemandTV":
           onDemandTVPageServices++;
           break;
       }
@@ -5629,7 +5629,7 @@ const getWorldServiceStats = () => {
             case "onDemandRadio":
               simorghOnDemandRadioPage++;
               break;
-            case "ODT":
+            case "onDemandTV":
               simorghOnDemandTVPage++;
               break;
           }
