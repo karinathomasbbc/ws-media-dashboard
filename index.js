@@ -3101,7 +3101,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c805k05kr73o/cyr"
           }
         ]
@@ -3188,7 +3188,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c805k05kr73o/lat"
           }
         ]
@@ -4187,7 +4187,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c0e8weny66ko/simp"
           }
         ]
@@ -4274,7 +4274,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c0e8weny66ko/trad"
           }
         ]
@@ -4608,12 +4608,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/cxj3rjxm6r0o"
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/cxj3rjxm6r0o"
           }
         ]
@@ -4904,7 +4904,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c3xd4x9prgyo/simp"
           }
         ]
@@ -4991,7 +4991,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "articles/c3xd4x9prgyo/trad"
           }
         ]
