@@ -528,13 +528,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_amharic_radio/programmes/w13xttnt"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_amharic_radio/programmes/w13xttnt"
           }
         ]
       },
@@ -646,13 +646,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_arabic_radio/programmes/w13xtv4t"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_arabic_radio/programmes/w13xtv4t"
           }
         ]
       },
@@ -866,13 +866,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_bangla_radio/programmes/p030vjwg"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_bangla_radio/programmes/p030vjwg"
           }
         ]
       },
@@ -984,13 +984,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_burmese_radio/programmes/p030z23n"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_burmese_radio/programmes/p030z23n"
           }
         ]
       },
@@ -1141,13 +1141,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_gahuza_radio/programmes/p0340x2n"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_gahuza_radio/programmes/p0340x2n"
           }
         ]
       },
@@ -1363,13 +1363,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_hausa_radio/programmes/p030s4mx"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_hausa_radio/programmes/p030s4mx"
           }
         ]
       },
@@ -1704,13 +1704,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_indonesian_radio/programmes/w13xtt0s"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_indonesian_radio/programmes/w13xtt0s"
           }
         ]
       },
@@ -1910,13 +1910,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_korean_radio/programmes/w13xttlv"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_korean_radio/programmes/w13xttlv"
           }
         ]
       },
@@ -2029,13 +2029,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_kyrgyz_radio/programmes/p0340xth"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_kyrgyz_radio/programmes/p0340xth"
           }
         ]
       },
@@ -2376,13 +2376,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_nepali_radio/programmes/p0340xzt"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_nepali_radio/programmes/p0340xzt"
           }
         ]
       },
@@ -2518,13 +2518,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_pashto_radio/programmes/p0340ys9"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_pashto_radio/programmes/p0340ys9"
           }
         ]
       },
@@ -2672,13 +2672,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_persian_radio/programmes/p0340vyw"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_persian_radio/programmes/p0340vyw"
           }
         ]
       },
@@ -3333,13 +3333,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_sinhala_radio/programmes/p0341109"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_sinhala_radio/programmes/p0341109"
           }
         ]
       },
@@ -3451,13 +3451,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_somali_radio/programmes/p034117k"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_somali_radio/programmes/p034117k"
           }
         ]
       },
@@ -3585,13 +3585,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_swahili_radio/programmes/p030s7gh"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_swahili_radio/programmes/p030s7gh"
           }
         ]
       },
@@ -3719,13 +3719,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_tamil_radio/programmes/p03412jh"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_tamil_radio/programmes/p03412jh"
           }
         ]
       },
@@ -4041,13 +4041,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_tigrinya_radio/programmes/w13xttny"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_tigrinya_radio/programmes/w13xttny"
           }
         ]
       },
@@ -4521,13 +4521,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_urdu_radio/programmes/p03413l5"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_urdu_radio/programmes/p03413l5"
           }
         ]
       },
@@ -4656,13 +4656,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_uzbek_radio/programmes/p03414fb"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_uzbek_radio/programmes/p03414fb"
           }
         ]
       },
