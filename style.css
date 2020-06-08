@@ -16,7 +16,7 @@ h1 {
 .tg td {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    padding: 2px 5px;
+    padding: 2px 2px;
     border-width: 1px;
     overflow: hidden;
     word-break: normal;
@@ -28,8 +28,8 @@ h1 {
 
 .tg th {
     font-family: Arial, sans-serif;
-    font-size: 10px;
-    padding: 2px 5px;
+    font-size: 12px;
+    padding: 2px 2px;
     border-width: 1px;
     overflow: hidden;
     word-break: normal;
