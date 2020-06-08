@@ -394,13 +394,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_afrique_radio/programmes/p030s6d5"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_afrique_radio/programmes/p030s6d5"
           }
         ]
       },
