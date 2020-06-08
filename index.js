@@ -276,12 +276,12 @@ const services = [
           {
             env: "test",
             renderer: "PAL",
-            path: ""
+            path: "bbc_oromo_radio/programmes/w13xttnw"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_oromo_radio/programmes/w13xttnw"
           }
         ]
       },
