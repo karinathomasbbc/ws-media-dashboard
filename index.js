@@ -394,8 +394,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_afrique_radio/programmes/p030s6d5"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -528,8 +528,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_amharic_radio/programmes/w13xttnt"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -646,8 +646,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_arabic_radio/programmes/w13xtv4t"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -866,8 +866,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_bangla_radio/programmes/p030vjwg"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -984,8 +984,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_burmese_radio/programmes/p030z23n"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -1141,8 +1141,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_gahuza_radio/programmes/p0340x2n"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -1363,8 +1363,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_hausa_radio/programmes/p030s4mx"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -1704,8 +1704,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_indonesian_radio/programmes/w13xtt0s"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -1910,8 +1910,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_korean_radio/programmes/w13xttlv"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -2029,8 +2029,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_kyrgyz_radio/programmes/p0340xth"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -2376,8 +2376,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_nepali_radio/programmes/p0340xzt"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -2518,8 +2518,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_pashto_radio/programmes/p0340ys9"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -2672,8 +2672,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_persian_radio/programmes/p0340vyw"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -3333,8 +3333,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_sinhala_radio/programmes/p0341109"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -3451,8 +3451,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_somali_radio/programmes/p034117k"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -3585,8 +3585,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_swahili_radio/programmes/p030s7gh"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -3719,8 +3719,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_tamil_radio/programmes/p03412jh"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -4041,8 +4041,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_tigrinya_radio/programmes/w13xttny"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -4521,8 +4521,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_urdu_radio/programmes/p03413l5"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
@@ -4656,8 +4656,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "Simorgh",
-            path: "bbc_uzbek_radio/programmes/p03414fb"
+            renderer: "N/A",
+            path: ""
           },
           {
             env: "live",
