@@ -571,7 +571,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "media-51123379"
           }
         ]
