@@ -3585,13 +3585,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_swahili_radio/programmes/p03411ml"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "bbc_swahili_radio/programmes/p030s7gh"
+            path: "bbc_swahili_radio/programmes/p03411ml"
           }
         ]
       },
