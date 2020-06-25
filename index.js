@@ -646,8 +646,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_arabic_radio/programmes/w13xtv4t"
           },
           {
             env: "live",
