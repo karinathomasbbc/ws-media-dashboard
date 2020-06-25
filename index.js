@@ -2518,8 +2518,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_pashto_radio/programmes/p0340ys9"
           },
           {
             env: "live",
