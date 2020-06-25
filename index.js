@@ -4872,7 +4872,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "simp/chinese-news-51088031"
           }
         ]
@@ -4959,7 +4959,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "trad/chinese-news-51088031"
           }
         ]
