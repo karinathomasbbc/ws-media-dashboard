@@ -4155,7 +4155,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "simp/51085214"
           }
         ]
@@ -4242,7 +4242,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "trad/51085214"
           }
         ]
