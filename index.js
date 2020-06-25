@@ -275,7 +275,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "N/A",
             path: "bbc_oromo_radio/programmes/w13xttnw"
           },
           {
