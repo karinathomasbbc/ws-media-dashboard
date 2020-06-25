@@ -1911,7 +1911,7 @@ const services = [
           {
             env: "test",
             renderer: "N/A",
-            path: ""
+            path: "bbc_korean_radio/programmes/w13xttlv"
           },
           {
             env: "live",
