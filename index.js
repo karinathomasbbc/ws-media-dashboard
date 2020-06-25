@@ -5246,6 +5246,16 @@ const getWorldServiceStats = () => {
     simorghOnDemandTVPage,
     onDemandTVPageServices
   );
+
+  document.getElementById("Simorgh_TC2_MediaPlayer").innerHTML = getProgress(
+    0,
+    27
+  );
+
+  document.getElementById("Simorgh_IDX").innerHTML = getProgress(
+    1,
+    2
+  );
 };
 
 const getPublicServiceStats = () => {
