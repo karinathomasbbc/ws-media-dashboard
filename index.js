@@ -248,7 +248,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "oduu-52904465"
           }
         ]
@@ -501,7 +501,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "news-52916927"
           }
         ]
@@ -721,7 +721,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "azerbaijan-51848459"
           }
         ]
@@ -957,7 +957,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "world-52926563"
           }
         ]
@@ -1217,7 +1217,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "india-52932648"
           }
         ]
@@ -1883,7 +1883,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "international-52932852"
           }
         ]
@@ -2748,7 +2748,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "media-52924635"
           }
         ]
@@ -2916,12 +2916,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "india-52928833"
+            renderer: "Simorgh",
+            path: "institutional-23129794"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "india-52932535"
           }
         ]
@@ -3424,7 +3424,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "war-52917604"
           }
         ]
@@ -3558,7 +3558,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "52924556"
           }
         ]
@@ -4014,7 +4014,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "news-52929301"
           }
         ]
@@ -4629,7 +4629,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "uzbekistan-52903230"
           }
         ]
