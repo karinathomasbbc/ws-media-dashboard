@@ -3334,12 +3334,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "bbc_sinhala_radio/programmes/p0341109"
+            path: "bbc_sinhala_radio/programmes/w13xtv4q"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: "bbc_sinhala_radio/programmes/p0341109"
+            renderer: "Simorgh",
+            path: "bbc_sinhala_radio/programmes/w13xtv4q"
           }
         ]
       },
