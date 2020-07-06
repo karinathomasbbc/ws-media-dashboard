@@ -1368,7 +1368,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_hausa_radio/programmes/p030s4mx"
           }
         ]
