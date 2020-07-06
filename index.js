@@ -3590,7 +3590,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_swahili_radio/programmes/p03411ml"
           }
         ]
