@@ -5253,7 +5253,7 @@ const getWorldServiceStats = () => {
   );
 
   document.getElementById("Simorgh_IDX").innerHTML = getProgress(
-    1,
+    2,
     2
   );
 };
