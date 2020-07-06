@@ -1709,7 +1709,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_indonesian_radio/programmes/w13xtt0s"
           }
         ]
