@@ -4046,7 +4046,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_tigrinya_radio/programmes/w13xttny"
           }
         ]
