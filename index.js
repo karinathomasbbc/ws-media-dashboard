@@ -1792,12 +1792,12 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: ""
+            path: "world-23252856"
           },
           {
             env: "live",
             renderer: "Simorgh",
-            path: ""
+            path: "features-and-analysis-50914393"
           }
         ]
       },
