@@ -399,7 +399,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_afrique_radio/programmes/p030s6d5"
           }
         ]
