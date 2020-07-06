@@ -1915,7 +1915,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_korean_radio/programmes/w13xttlv"
           }
         ]
