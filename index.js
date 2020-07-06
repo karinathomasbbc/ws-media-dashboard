@@ -871,7 +871,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "SimorghBengali ",
             path: "bbc_bangla_radio/programmes/p030vjwg"
           }
         ]
