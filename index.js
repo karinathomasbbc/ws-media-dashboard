@@ -5102,7 +5102,7 @@ const checkAllPages = async () => {
 
 const getProgress = (numerator, denominator) => {
   const value = getPercentage(numerator, denominator);
-  return `<pre>${numerator} / ${denominator}</pre><progress min="0" max="100" value="${value}"></progress><pre>${value}%</pre>`;
+  return `<progress min="0" max="100" value="${value}"></progress><pre>${value}% (${numerator}/${denominator})</pre>`;
 };
 
 const getPercentage = (numerator, denominator) => {
