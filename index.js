@@ -2523,7 +2523,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_pashto_radio/programmes/p0340ys9"
           }
         ]
