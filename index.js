@@ -2381,7 +2381,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_nepali_radio/programmes/p0340xzt"
           }
         ]
