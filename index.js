@@ -2034,7 +2034,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_kyrgyz_radio/programmes/p0340xth"
           }
         ]
