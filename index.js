@@ -2677,7 +2677,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_persian_radio/programmes/p0340vyw"
           }
         ]
