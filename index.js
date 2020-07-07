@@ -2116,12 +2116,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "india-52931539"
+            renderer: "Simorgh",
+            path: "23247475"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "india-52924210"
           }
         ]
