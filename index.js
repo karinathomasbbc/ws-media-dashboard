@@ -5632,13 +5632,13 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "popular/read"
+            path: "simp/popular/read"
           },
 
           {
             env: "live",
             renderer: "Simorgh",
-            path: "popular/read"
+            path: "simp/popular/read"
           }
         ]
       },
@@ -5736,13 +5736,13 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "popular/read"
+            path: "trad/popular/read"
           },
 
           {
             env: "live",
             renderer: "Simorgh",
-            path: "popular/read"
+            path: "trad/popular/read"
           }
         ]
       },
