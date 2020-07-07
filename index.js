@@ -280,7 +280,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_oromo_radio/programmes/w13xttnw"
           }
         ]
