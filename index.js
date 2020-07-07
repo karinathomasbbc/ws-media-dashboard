@@ -989,7 +989,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_burmese_radio/programmes/p030z23n"
           }
         ]
