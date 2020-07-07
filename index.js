@@ -3199,12 +3199,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "lat/srbija-52676959"
+            renderer: "Simorgh",
+            path: "lat/srbija-23268653"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "lat/srbija-52052748"
           }
         ]
