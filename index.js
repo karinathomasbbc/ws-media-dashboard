@@ -3112,12 +3112,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "cyr/svet-52838404"
+            renderer: "Simorgh",
+            path: "cyr/srbija-23268653"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "cyr/svet-52898028"
           }
         ]
