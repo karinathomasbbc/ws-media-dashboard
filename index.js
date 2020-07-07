@@ -871,7 +871,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "SimorghBengali ",
+            renderer: "Simorgh",
             path: "bbc_bangla_radio/programmes/p030vjwg"
           }
         ]
