@@ -3907,12 +3907,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "international-52926887"
+            renderer: "Simorgh",
+            path: "international-23252825"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "features-52924564"
           }
         ]
