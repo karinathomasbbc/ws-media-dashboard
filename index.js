@@ -3456,7 +3456,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_somali_radio/programmes/p034117k"
           }
         ]
