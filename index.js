@@ -4279,13 +4279,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_tamil_tv/tv_programmes/w13xttmy"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_tamil_tv/tv_programmes/w13xttmy"
           }
         ]
       }
