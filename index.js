@@ -5083,13 +5083,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_ukrainian_tv/tv_programmes/w13xttp9"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_ukrainian_tv/tv_programmes/w13xttp9"
           }
         ]
       }
@@ -5240,7 +5240,7 @@ const services = [
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_ukrainian_tv/tv_programmes/w13xttp9"
           }
         ]
       }
