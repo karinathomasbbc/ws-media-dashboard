@@ -5234,13 +5234,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_urdu_tv/tv_programmes/w13xttn1"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: "bbc_ukrainian_tv/tv_programmes/w13xttp9"
+            path: "bbc_urdu_tv/tv_programmes/w13xttn1"
           }
         ]
       }
