@@ -444,13 +444,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_afrique_tv/tv_programmes/w13xttmz"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_afrique_tv/tv_programmes/w13xttmz"
           }
         ]
       }
