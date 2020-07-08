@@ -2874,13 +2874,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_pashto_tv/tv_programmes/w13xttn4"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_pashto_tv/tv_programmes/w13xttn4"
           }
         ]
       }
