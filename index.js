@@ -1550,13 +1550,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_hausa_tv/tv_programmes/w13xttn0"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_hausa_tv/tv_programmes/w13xttn0"
           }
         ]
       }
