@@ -173,6 +173,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "liveRadio",
         category: "media",
         environments: [
@@ -291,6 +308,23 @@ const services = [
     service: "afrique",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -427,6 +461,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "liveRadio",
         category: "media",
         environments: [
@@ -544,6 +595,23 @@ const services = [
     service: "arabic",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -663,6 +731,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -764,6 +849,23 @@ const services = [
     service: "bengali",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -882,6 +984,23 @@ const services = [
     service: "burmese",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -1017,6 +1136,23 @@ const services = [
     isWorldService: false,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "article",
         category: "article",
         environments: [
@@ -1038,6 +1174,23 @@ const services = [
     service: "gahuza",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -1158,6 +1311,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -1260,6 +1430,23 @@ const services = [
     service: "hausa",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -1396,6 +1583,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "liveRadio",
         category: "media",
         environments: [
@@ -1515,6 +1719,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -1601,6 +1822,23 @@ const services = [
     service: "indonesia",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -1721,6 +1959,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -1807,6 +2062,23 @@ const services = [
     service: "korean",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -1926,6 +2198,23 @@ const services = [
     service: "kyrgyz",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -2062,6 +2351,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -2164,6 +2470,23 @@ const services = [
     service: "mundo",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -2273,6 +2596,22 @@ const services = [
     service: "nepali",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -2415,6 +2754,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "liveRadio",
         category: "media",
         environments: [
@@ -2550,6 +2906,40 @@ const services = [
     service: "persian",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
+        type: "IDX",
+        category: "IDX",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "afghanistan"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "afghanistan"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -2689,6 +3079,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -2775,6 +3182,23 @@ const services = [
     service: "portuguese",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -2863,6 +3287,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -2948,6 +3389,23 @@ const services = [
     service: "russian",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -3058,6 +3516,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "cyr/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "cyr/popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -3146,6 +3621,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "lat/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "lat/popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -3231,6 +3723,23 @@ const services = [
     service: "sinhala",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -3349,6 +3858,23 @@ const services = [
     service: "somali",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -3484,6 +4010,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "liveRadio",
         category: "media",
         environments: [
@@ -3617,6 +4160,23 @@ const services = [
     service: "tamil",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -3752,6 +4312,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -3854,6 +4431,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -3939,6 +4533,23 @@ const services = [
     service: "tigrinya",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -4058,6 +4669,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -4144,6 +4772,23 @@ const services = [
     variant: "simp",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "simp/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "simp/popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -4232,6 +4877,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "trad/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "trad/popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -4317,6 +4979,40 @@ const services = [
     service: "ukrainian",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+            {
+        type: "IDX",
+        category: "IDX",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "ukraine_in_russian"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "ukraine_in_russian"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -4419,6 +5115,23 @@ const services = [
     service: "urdu",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -4553,6 +5266,23 @@ const services = [
     service: "uzbek",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "liveRadio",
         category: "media",
@@ -4689,6 +5419,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -4774,6 +5521,23 @@ const services = [
     service: "yoruba",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -4862,6 +5626,23 @@ const services = [
     isWorldService: true,
     pageTypes: [
       {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "simp/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "simp/popular/read"
+          }
+        ]
+      },
+      {
         type: "MAP",
         category: "media",
         environments: [
@@ -4948,6 +5729,23 @@ const services = [
     variant: "trad",
     isWorldService: true,
     pageTypes: [
+      {
+        type: "mostRead",
+        category: "popular",
+        environments: [
+          {
+            env: "test",
+            renderer: "Simorgh",
+            path: "trad/popular/read"
+          },
+
+          {
+            env: "live",
+            renderer: "Simorgh",
+            path: "trad/popular/read"
+          }
+        ]
+      },
       {
         type: "MAP",
         category: "media",
@@ -5118,6 +5916,7 @@ const getPercentage = (numerator, denominator) => {
 const getWorldServiceStats = () => {
   let liveRadioServices = 0;
   let homePageServices = 0;
+  let mostReadPageServices = 0;
   let mapPageServices = 0;
   let articlePageServices = 0;
   let storyPageServices = 0;
@@ -5127,6 +5926,7 @@ const getWorldServiceStats = () => {
 
   let simorghLiveRadio = 0;
   let simorghHomePage = 0;
+  let simorghMostReadPage = 0;
   let simorghMapPage = 0;
   let simorghArticlePage = 0;
   let simorghStoryPage = 0;
@@ -5170,6 +5970,9 @@ const getWorldServiceStats = () => {
         case "onDemandTV":
           onDemandTVPageServices++;
           break;
+        case "mostRead":
+          mostReadPageServices++;
+          break;
       }
 
       pageType.environments.forEach(environment => {
@@ -5198,6 +6001,9 @@ const getWorldServiceStats = () => {
               break;
             case "onDemandTV":
               simorghOnDemandTVPage++;
+              break;
+            case "mostRead":
+              simorghMostReadPage++;
               break;
           }
         }
@@ -5255,6 +6061,11 @@ const getWorldServiceStats = () => {
   document.getElementById("Simorgh_IDX").innerHTML = getProgress(
     2,
     2
+  );
+
+  document.getElementById("Simorgh_W2020_most_read").innerHTML = getProgress(
+    simorghHomePage,
+    homePageServices
   );
 };
 
