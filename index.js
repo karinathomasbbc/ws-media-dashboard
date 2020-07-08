@@ -2318,13 +2318,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_kyrgyz_tv/tv_programmes/w13xttqx"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_kyrgyz_tv/tv_programmes/w13xttqx"
           }
         ]
       }
