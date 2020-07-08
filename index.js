@@ -827,22 +827,6 @@ const services = [
           }
         ]
       },
-      {
-        type: "onDemandTV",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "PAL",
-            path: ""
-          },
-          {
-            env: "live",
-            renderer: "PAL",
-            path: ""
-          }
-        ]
-      }
     ]
   },
   {
