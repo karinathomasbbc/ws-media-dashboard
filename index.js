@@ -3977,13 +3977,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: ""
+            renderer: "Simorgh",
+            path: "bbc_somali_tv/tv_programmes/w13xttqt"
           },
           {
             env: "live",
             renderer: "PAL",
-            path: ""
+            path: "bbc_somali_tv/tv_programmes/w13xttqt"
           }
         ]
       }
