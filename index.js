@@ -2879,7 +2879,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_pashto_tv/tv_programmes/w13xttn4"
           }
         ]
@@ -3982,7 +3982,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_somali_tv/tv_programmes/w13xttqt"
           }
         ]
