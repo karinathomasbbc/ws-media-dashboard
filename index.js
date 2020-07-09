@@ -1894,13 +1894,13 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "indonesia-52931849"
+            renderer: "Simorgh",
+            path: "23254255"
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: "majalah-52931854"
+            renderer: "Simorgh",
+            path: "majalah-52895760"
           }
         ]
       },
