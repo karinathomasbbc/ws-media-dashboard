@@ -6051,6 +6051,11 @@ const getWorldServiceStats = () => {
     simorghHomePage,
     homePageServices
   );
+
+  document.getElementById("Simorgh_MostWatched").innerHTML = getProgress(
+    0,
+    16
+  );
 };
 
 const getPublicServiceStats = () => {
