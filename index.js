@@ -2014,12 +2014,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "52931930"
+            renderer: "Simorgh",
+            path: "world-23252833"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "52931389"
           }
         ]
@@ -4231,12 +4231,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "india-52916831"
+            renderer: "Simorgh",
+            path: "23254956"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "india-52934338"
           }
         ]
@@ -5473,12 +5473,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "vietnam-52901599"
+            renderer: "Simorgh",
+            path: "vietnam-23249106"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "52931399"
           }
         ]
