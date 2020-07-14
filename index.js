@@ -449,7 +449,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_afrique_tv/tv_programmes/w13xttmz"
           }
         ]
@@ -1108,7 +1108,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_burmese_tv/tv_programmes/w13xttn3"
           }
         ]
@@ -1403,7 +1403,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_gujarati_tv/tv_programmes/w13xttqr"
           }
         ]
@@ -1555,7 +1555,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_hausa_tv/tv_programmes/w13xttn0"
           }
         ]
@@ -1691,7 +1691,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_hindi_tv/tv_programmes/w13xttlw"
           }
         ]
@@ -2323,7 +2323,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_kyrgyz_tv/tv_programmes/w13xttqx"
           }
         ]
@@ -4133,7 +4133,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_swahili_tv/tv_programmes/w13xttt3"
           }
         ]
@@ -4284,7 +4284,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_tamil_tv/tv_programmes/w13xttmy"
           }
         ]
@@ -4403,7 +4403,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_telugu_tv/tv_programmes/w13xttld"
           }
         ]
@@ -5088,7 +5088,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_ukrainian_tv/tv_programmes/w13xttp9"
           }
         ]
@@ -5239,7 +5239,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_urdu_tv/tv_programmes/w13xttn1"
           }
         ]
@@ -5391,7 +5391,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_uzbek_tv/tv_programmes/w13xttqv"
           }
         ]
