@@ -3056,6 +3056,22 @@ const services = [
           }
         ]
       },
+      {
+        type: "onDemandTV",
+        category: "media",
+        environments: [
+          {
+            env: "test",
+            renderer: "PAL",
+            path: "bbc_persian_tv/tv_programmes/w13xttnb"
+          },
+          {
+            env: "live",
+            renderer: "PAL",
+            path: "bbc_persian_tv/tv_programmes/w13xttnb"
+          }
+        ]
+      }
     ]
   },
   {
