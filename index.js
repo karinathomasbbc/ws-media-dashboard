@@ -396,8 +396,8 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
-            path: "monde-52910972"
+            renderer: "Simorgh",
+            path: "region-23268823"
           },
           {
             env: "live",
@@ -682,7 +682,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "vert-cul-52912278"
           },
           {
@@ -920,7 +920,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "news-52927636"
           },
           {
@@ -1502,7 +1502,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "labarai-52922636"
           },
           {
@@ -1654,7 +1654,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "india-52932517"
           },
           {
@@ -2526,7 +2526,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "noticias-america-latina-52930198"
           },
           {
@@ -3014,7 +3014,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "magazine-52860331"
           },
           {
@@ -3254,7 +3254,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "brasil-52929263"
           },
           {
@@ -3460,7 +3460,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "news-52932621"
           },
           {
@@ -4739,7 +4739,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "haberler-turkiye-51818260"
           },
           {
@@ -5067,7 +5067,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "features-52903893"
           },
           {
@@ -5202,7 +5202,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "pakistan-52932000"
           },
           {
@@ -5696,7 +5696,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "simp/chinese-news-52902292"
           },
           {
@@ -5800,7 +5800,7 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "trad/world-52915597"
           },
           {
