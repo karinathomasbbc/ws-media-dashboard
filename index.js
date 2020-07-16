@@ -925,7 +925,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "news-52931870"
           }
         ]
@@ -1507,7 +1507,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "labarai-52803136"
           }
         ]
