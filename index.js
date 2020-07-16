@@ -683,7 +683,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "vert-cul-52912278"
+            path: "sports-23326231"
           },
           {
             env: "live",
@@ -921,7 +921,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "news-52927636"
+            path: "23268280"
           },
           {
             env: "live",
@@ -1503,7 +1503,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "labarai-52922636"
+            path: "labarai-23189520"
           },
           {
             env: "live",
@@ -1655,7 +1655,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "india-52932517"
+            path: "23313191"
           },
           {
             env: "live",
@@ -2527,7 +2527,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "noticias-america-latina-52930198"
+            path: "23303726"
           },
           {
             env: "live",
@@ -3015,7 +3015,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "magazine-52860331"
+            path: "afghanistan-23292277"
           },
           {
             env: "live",
@@ -3255,7 +3255,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "brasil-52929263"
+            path: "brasil-23241143"
           },
           {
             env: "live",
@@ -3461,7 +3461,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "news-52932621"
+            path: "news-23320203"
           },
           {
             env: "live",
@@ -4740,7 +4740,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "haberler-turkiye-51818260"
+            path: "23204115"
           },
           {
             env: "live",
@@ -5068,7 +5068,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "features-52903893"
+            path: "news-23268401"
           },
           {
             env: "live",
@@ -5203,7 +5203,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "pakistan-52932000"
+            path: "23165525"
           },
           {
             env: "live",
@@ -5697,7 +5697,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "simp/chinese-news-52902292"
+            path: "simp/chinese-news-23263669"
           },
           {
             env: "live",
@@ -5801,7 +5801,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "trad/world-52915597"
+            path: "trad/chinese-news-23263669"
           },
           {
             env: "live",
