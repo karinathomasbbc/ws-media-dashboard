@@ -2438,12 +2438,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "/bbc_marathi_tv/tv_programmes/w13xttr2"
           },
           {
             env: "live",
-            renderer: "N/A",
+            renderer: "Simorgh",
             path: "/bbc_marathi_tv/tv_programmes/w13xttr2"
           }
         ]
