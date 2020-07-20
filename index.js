@@ -5203,7 +5203,7 @@ const services = [
           {
             env: "test",
             renderer: "Simorgh",
-            path: "23165525"
+            path: "science-23286193"
           },
           {
             env: "live",
