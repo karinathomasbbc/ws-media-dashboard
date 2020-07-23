@@ -6054,7 +6054,7 @@ const getWorldServiceStats = () => {
   );
 
   document.getElementById("Simorgh_TC2_MediaPlayer").innerHTML = getProgress(
-    0,
+    26,
     27
   );
 
