@@ -3062,12 +3062,12 @@ const services = [
         environments: [
           {
             env: "test",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_persian_tv/tv_programmes/w13xttnb"
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "bbc_persian_tv/tv_programmes/w13xttnb"
           }
         ]
