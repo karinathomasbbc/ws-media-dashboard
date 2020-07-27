@@ -133,7 +133,7 @@ const parseId = html => {
 };
 
 const makeRequest = url => {
-  const prefix = "https://ws-media-cors.herokuapp.com/";
+  const prefix = "https://ws-dashboard-cors.herokuapp.com/";
   return fetch(`${prefix}${url}`)
     .then(handleResponse)
     .then(data => {
