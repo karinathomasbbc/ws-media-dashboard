@@ -3019,7 +3019,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "world-52930853"
           }
         ]
