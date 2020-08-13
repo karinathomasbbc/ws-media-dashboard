@@ -1584,22 +1584,6 @@ const services = [
         ]
       },
       {
-        type: "liveRadio",
-        category: "media",
-        environments: [
-          {
-            env: "test",
-            renderer: "Simorgh",
-            path: "bbc_hindi_radio/liveradio"
-          },
-          {
-            env: "live",
-            renderer: "Simorgh",
-            path: "bbc_hindi_radio/liveradio"
-          }
-        ]
-      },
-      {
         type: "MAP",
         category: "media",
         environments: [
