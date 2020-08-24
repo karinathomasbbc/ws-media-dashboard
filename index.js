@@ -4728,7 +4728,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "haberler-turkiye-52932481"
           }
         ]
@@ -5056,7 +5056,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "features-52919532"
           }
         ]
