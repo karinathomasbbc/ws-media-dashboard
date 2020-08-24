@@ -5534,7 +5534,7 @@ const services = [
           {
             env: "live",
             renderer: "Simorgh",
-            path: "media-42985961"
+            path: "afrika-53803477"
           }
         ]
       },
