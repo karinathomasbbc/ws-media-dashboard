@@ -6056,6 +6056,11 @@ const getWorldServiceStats = () => {
     0,
     16
   );
+
+  document.getElementById("Simorgh_FIX").innerHTML = getProgress(
+    0,
+    41
+  );
 };
 
 const getPublicServiceStats = () => {
