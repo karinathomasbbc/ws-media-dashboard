@@ -6054,7 +6054,7 @@ const getWorldServiceStats = () => {
 
   document.getElementById("Simorgh_MostWatched").innerHTML = getProgress(
     0,
-    16
+    41
   );
 
   document.getElementById("Simorgh_FIX").innerHTML = getProgress(
