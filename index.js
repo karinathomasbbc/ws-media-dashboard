@@ -1643,7 +1643,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "international-52923741"
           }
         ]
@@ -3243,7 +3243,7 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
+            renderer: "Simorgh",
             path: "internacional-52923020"
           }
         ]
