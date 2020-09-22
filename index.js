@@ -3449,8 +3449,8 @@ const services = [
           },
           {
             env: "live",
-            renderer: "PAL",
-            path: "features-52900457"
+            renderer: "Simorgh",
+            path: "news-54230210"
           }
         ]
       },
