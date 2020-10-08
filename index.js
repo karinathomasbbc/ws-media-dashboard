@@ -6053,7 +6053,7 @@ const getWorldServiceStats = () => {
   );
 
   document.getElementById("Simorgh_MostWatched").innerHTML = getProgress(
-    5,
+    38,
     41
   );
 
