@@ -6053,12 +6053,12 @@ const getWorldServiceStats = () => {
   );
 
   document.getElementById("Simorgh_MostWatched").innerHTML = getProgress(
-    38,
+    41,
     41
   );
 
   document.getElementById("Simorgh_FIX").innerHTML = getProgress(
-    0,
+    41,
     41
   );
 };
